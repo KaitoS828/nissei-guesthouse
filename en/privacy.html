@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Nissei</title>
+    <meta name="description" content="Privacy policy and personal information handling at Nissei.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+    <link rel="canonical" href="https://xnisse.com/en/privacy.html">
+
+    <meta property="og:title" content="Privacy Policy | Nissei">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xnisse.com/en/privacy.html">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/lang-switch.js?v=1" defer></script>
+    <script src="../main.js" defer></script>
+
+    <style>
+        .privacy-page {
+            padding: 160px 20px 100px;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+        }
+        .privacy-page__inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .privacy-page__updated {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+        .privacy-section {
+            margin-bottom: 48px;
+        }
+        .privacy-section__title {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .privacy-section p,
+        .privacy-section li {
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        .privacy-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .privacy-section li {
+            padding-left: 1.2em;
+            position: relative;
+            margin-bottom: 4px;
+        }
+        .privacy-section li::before {
+            content: '・';
+            position: absolute;
+            left: 0;
+        }
+        .privacy-section p + p {
+            margin-top: 12px;
+        }
+        .privacy-contact {
+            background: rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.07);
+            padding: 24px 28px;
+            border-radius: 2px;
+            font-size: 0.88rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub">一棟貸し宿</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html">
+                    <span class="header__logo-sub">一棟貸し宿</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="index.html#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li class="header__item"><a href="index.html#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li class="header__item"><a href="index.html#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="index.html#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn active" data-lang="en">EN</button>
+                <button class="header__lang-btn" data-lang="zh">中文</button>
+            </div>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" data-i18n-html="nav.top.link">Home<span>top</span></a></li>
+            <li><a href="index.html#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+            <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+            <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="index.html#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+            <li><a href="index.html#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+            <li><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn active" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="privacy-page">
+            <div class="privacy-page__inner">
+                <h2 class="section-title" data-i18n="privacy.title">Privacy Policy</h2>
+                <p class="section-subtitle-en" data-i18n="privacy.sub">Privacy Policy</p>
+                <p class="privacy-page__updated" data-i18n="privacy.updated">Last updated: May 30, 2026</p>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s1.title">1. Collection of Personal Information</h3>
+                    <p data-i18n="privacy.s1.p1">Nissei ("we", "our inn") may collect personal information such as your name, email address, and phone number when you use our contact form or make a reservation.</p>
+                    <p data-i18n="privacy.s1.p2">Our contact form uses Formspree (Formspree, Inc.). Submitted information is delivered to us via Formspree's servers.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s2.title">2. Purpose of Use</h3>
+                    <p data-i18n="privacy.s2.p1">We use collected personal information only for the following purposes:</p>
+                    <ul>
+                        <li data-i18n="privacy.s2.li1">Guidance and communication regarding reservations and stays</li>
+                        <li data-i18n="privacy.s2.li2">Responding to inquiries</li>
+                        <li data-i18n="privacy.s2.li3">Statistical analysis to improve our services (in non-identifiable form)</li>
+                    </ul>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s3.title">3. Provision to Third Parties</h3>
+                    <p data-i18n="privacy.s3.p1">We do not provide personal information to third parties without your consent, except as required by law. We may share information with contractors (e.g. reservation system providers) to the extent necessary to provide our services.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s4.title">4. Management of Personal Information</h3>
+                    <p data-i18n="privacy.s4.p1">We take appropriate security measures to prevent leakage, loss, or damage of personal information. Access is limited to staff who need it for business purposes.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s5.title">5. Cookies and Local Storage</h3>
+                    <p data-i18n="privacy.s5.p1">This site may use browser local storage for convenience such as language preferences. These do not collect your personal information.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s6.title">6. Disclosure, Correction, and Deletion</h3>
+                    <p data-i18n="privacy.s6.p1">If you wish to disclose, correct, or delete your personal information, please contact us below. We will respond within a reasonable period.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s7.title">7. Changes to This Policy</h3>
+                    <p data-i18n="privacy.s7.p1">We may update this privacy policy as needed. The revised policy takes effect when posted on this page.</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s8.title">8. Contact</h3>
+                    <div class="privacy-contact">
+                        <p><strong>日靜（NISSEI）</strong></p>
+                        <p data-i18n="access.addr">733 Oshirabetsu, Hiroo-cho, Hokkaido 089-2627</p>
+                        <p><span data-i18n="privacy.s8.mail">Email: </span><a href="contact.html" data-i18n="privacy.s8.form">Contact form</a><span data-i18n="privacy.s8.form.note"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="index.html#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li><a href="index.html#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li><a href="index.html#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li><a href="privacy.html" data-i18n-html="nav.privacy.link">Privacy Policy<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">Copyright © 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://reserva.be/nissei" class="floating-reserve" target="_blank" rel="noopener noreferrer" data-i18n="floating.reserve">Check Availability</a>
+
+</body>
+</html>

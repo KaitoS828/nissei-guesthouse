@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // お問い合わせフォームの設定
     setupContactForm();
+
+    // ヒーロースライドショーの設定
+    setupHeroSlideshow();
+
+    // 周辺環境ギャラリースライダーの設定
+    setupSurroundingsSlider();
 });
 
 // ========================================
@@ -169,6 +175,7 @@ function setupFadeInObserver() {
     const fadeElements = document.querySelectorAll(
         '.section-title, ' +
         '.about__content, ' +
+        '.rooms__gallery img, ' +
         '.surroundings__content, ' +
         '.activities-preview__item, ' +
         '.rooms__gallery, ' +
@@ -179,7 +186,9 @@ function setupFadeInObserver() {
         '.rates__content, ' +
         '.access__info, ' +
         '.faq__list, ' +
-        '.contact__inner'
+        '.contact__inner, ' +
+        '.news__list, ' +
+        '.sauna-gallery__grid'
     );
 
     // 初期状態でfade-inクラスを付与
@@ -204,4 +213,56 @@ function setupFadeInObserver() {
     fadeElements.forEach(el => {
         observer.observe(el);
     });
+}
+
+// ========================================
+// 周辺環境ギャラリースライダー
+// ========================================
+function setupSurroundingsSlider() {
+    const track = document.querySelector('.surroundings__track');
+    if (!track) return;
+    const slides = track.querySelectorAll('.surroundings__slide');
+    const prevBtn = document.querySelector('.surroundings__arrow--prev');
+    const nextBtn = document.querySelector('.surroundings__arrow--next');
+    if (slides.length < 2) return;
+
+    let current = 0;
+    const gap = 12;
+
+    function maxCurrent() {
+        const slideWidth = slides[0].offsetWidth + gap;
+        const totalWidth = slides.length * slides[0].offsetWidth + (slides.length - 1) * gap;
+        const viewportWidth = track.parentElement.clientWidth;
+        return Math.max(0, Math.ceil((totalWidth - viewportWidth) / slideWidth));
+    }
+
+    function update() {
+        const slideWidth = slides[0].offsetWidth + gap;
+        const max = maxCurrent();
+        if (current > max) current = max;
+        track.style.transform = `translateX(-${current * slideWidth}px)`;
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current >= max;
+    }
+
+    prevBtn.addEventListener('click', () => { current--; update(); });
+    nextBtn.addEventListener('click', () => { current++; update(); });
+    window.addEventListener('resize', () => { update(); });
+    update();
+}
+
+// ========================================
+// ヒーロースライドショー
+// ========================================
+function setupHeroSlideshow() {
+    const slides = document.querySelectorAll('.hero__slide');
+    if (slides.length < 2) return;
+
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('hero__slide--active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('hero__slide--active');
+    }, 5000);
 }

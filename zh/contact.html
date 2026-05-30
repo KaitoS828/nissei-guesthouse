@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | 日靜 - NISSEI</title>
+    <meta name="description" content="有关住宿的咨询，请通过邮件表单与我们联系。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+    <link rel="canonical" href="https://xnisse.com/zh/contact.html">
+
+    <meta property="og:title" content="联系我们 | 日靜 - NISSEI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xnisse.com/zh/contact.html">
+    <meta property="og:image" content="https://xnisse.com/img/kobusauna_hero.jpg">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:locale" content="zh_CN">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/lang-switch.js?v=1" defer></script>
+    <script src="../main.js" defer></script>
+
+    <style>
+        .contact-page {
+            padding: 160px 20px 100px;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+        }
+        .contact-page__inner {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .contact-page__lead {
+            font-size: 0.9rem;
+            line-height: 1.9;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+        .contact-page__reserve {
+            background: rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 28px 32px;
+            border-radius: 2px;
+            margin-bottom: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-page__reserve-text {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+        }
+        .contact-page__reserve-sub {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-top: 4px;
+            font-family: var(--font-sans);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub">一棟貸し宿</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html">
+                    <span class="header__logo-sub">一棟貸し宿</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="index.html#about">宿について<br><span>About</span></a></li>
+                    <li class="header__item"><a href="index.html#rooms">お部屋紹介<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="kobusauna.html">KOBU SAUNA<br><span>sauna</span></a></li>
+                    <li class="header__item"><a href="index.html#rates">料金案内<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="index.html#access">アクセス<br><span>access</span></a></li>
+                    <li class="header__item header__item--current"><a href="contact.html">お問い合わせ<br><span>contact</span></a></li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer">空室確認・ご予約</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn active" data-lang="zh">中文</button>
+            </div>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub">一棟貸し宿</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="index.html">トップページ<span>top</span></a></li>
+            <li><a href="index.html#about">宿について<span>about</span></a></li>
+            <li><a href="index.html#rooms">お部屋紹介<span>rooms</span></a></li>
+            <li><a href="kobusauna.html">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="index.html#rates">料金案内<span>rates</span></a></li>
+            <li><a href="index.html#access">アクセス<span>access</span></a></li>
+            <li><a href="contact.html">お問い合わせ<span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer">空室確認・ご予約</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn active" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-page">
+            <div class="contact-page__inner">
+                <h2 class="section-title" data-i18n="contact.title">联系我们</h2>
+                <p class="section-subtitle-en" data-i18n="contact.sub">contact</p>
+
+                <p class="contact-page__lead" data-i18n="contact.desc">如有关于住宿的问题，请通过以下表单联系我们。</p>
+
+                <div class="contact-page__reserve">
+                    <div>
+                        <p class="contact-page__reserve-text" data-i18n="contact.reserve.label">预约查询</p>
+                        <p class="contact-page__reserve-sub" data-i18n="contact.reserve.sub">Online reservation system</p>
+                    </div>
+                    <a href="https://reserva.be/nissei" class="btn-reservation" target="_blank" rel="noopener noreferrer" data-i18n="rates.reserve">预约查询</a>
+                </div>
+
+                <div id="form-success" class="form-message form-message--success" style="display: none;">
+                    <p data-i18n-html="contact.form.success">✓ 感谢您的咨询。<br>我们确认内容后将尽快与您联系。</p>
+                </div>
+
+                <form class="contact__form" action="https://formspree.io/f/xwvqwvpv" method="POST" id="contact-form">
+                    <div class="contact__form-item">
+                        <label for="name" data-i18n-label="contact.name">姓名<span>必填</span></label>
+                        <input type="text" id="name" name="name" required data-i18n-ph="contact.name.ph" placeholder="例：山田 太郎">
+                    </div>
+                    <div class="contact__form-item">
+                        <label for="email" data-i18n-label="contact.email">电子邮件<span>必填</span></label>
+                        <input type="email" id="email" name="email" required data-i18n-ph="contact.email.ph" placeholder="例：example@mail.com">
+                    </div>
+                    <div class="contact__form-item">
+                        <label for="message" data-i18n-label="contact.msg">咨询内容<span>必填</span></label>
+                        <textarea id="message" name="message" rows="6" required data-i18n-ph="contact.msg.ph" placeholder="请输入您的咨询内容"></textarea>
+                    </div>
+                    <div class="contact__form-submit">
+                        <button type="submit" class="btn-reservation" data-i18n="contact.submit">发送</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub">一棟貸し宿</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="index.html#about">宿について<br><span>About</span></a></li>
+                    <li><a href="index.html#rooms">お部屋紹介<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna.html">KOBU SAUNA<br><span>sauna</span></a></li>
+                    <li><a href="index.html#rates">料金案内<br><span>rates</span></a></li>
+                    <li><a href="index.html#access">アクセス<br><span>access</span></a></li>
+                    <li><a href="contact.html">お問い合わせ<br><span>contact</span></a></li>
+                    <li><a href="privacy.html">プライバシーポリシー<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">Copyright © 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://reserva.be/nissei" class="floating-reserve" target="_blank" rel="noopener noreferrer" data-i18n="floating.reserve">预约查询</a>
+
+</body>
+</html>

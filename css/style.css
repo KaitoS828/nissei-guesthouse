@@ -19,6 +19,10 @@
     --font-sans: 'Zen Kaku Gothic New', sans-serif;
 }
 
+html {
+    font-size: calc(100% + 3px);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -64,10 +68,12 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: background-color 0.3s ease;
     padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header__inner {
@@ -84,7 +90,7 @@ img {
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     display: flex;
     align-items: baseline;
     gap: 8px;
@@ -93,13 +99,13 @@ img {
 .header__logo-sub {
     font-size: 0.65rem;
     font-weight: 400;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .header__logo-en {
     font-size: 0.65rem;
     font-weight: 400;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.6);
     font-family: var(--font-serif);
 }
 
@@ -122,7 +128,7 @@ img {
 
 .header__item a {
     text-decoration: none;
-    color: var(--text-color);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 0.75rem;
     font-family: var(--font-sans);
     transition: color 0.3s;
@@ -132,12 +138,88 @@ img {
 
 .header__item a span {
     font-size: 0.6rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.45);
     display: block;
 }
 
 .header__item a:hover {
-    color: var(--accent-color);
+    color: #fff;
+}
+
+/* 言語切替 */
+.header__lang {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.header__lang-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.65rem;
+    font-family: var(--font-sans);
+    padding: 3px 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 1px;
+    letter-spacing: 0.05em;
+}
+
+.header__lang-btn:hover,
+.header__lang-btn.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+}
+
+a.header__lang-btn,
+a.mobile-nav__lang-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* モバイル言語切替 */
+.mobile-nav__lang {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.mobile-nav__lang-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+}
+
+.mobile-nav__lang-btn:hover,
+.mobile-nav__lang-btn.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+}
+
+.header__item--sauna a {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 11px 18px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.header__item--sauna a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
 }
 
 .header__item--reserve a {
@@ -168,7 +250,7 @@ img {
     display: block;
     width: 24px;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.85);
     transition: all 0.3s;
 }
 
@@ -339,9 +421,21 @@ img {
     overflow: hidden;
 }
 
-.hero__image-wrapper {
+.hero__slideshow {
+    position: relative;
     width: 100%;
     height: 100%;
+}
+
+.hero__slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.hero__slide--active {
+    opacity: 1;
 }
 
 .hero__image {
@@ -394,6 +488,12 @@ img {
     gap: 60px;
     /* Increased gap for better spacing */
     align-items: start;
+}
+
+.about__left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .about__figure {
@@ -498,13 +598,6 @@ img {
     vertical-align: middle;
 }
 
-.surroundings__content {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
 .surroundings__lead {
     margin-bottom: 40px;
     font-size: 0.9rem;
@@ -512,17 +605,74 @@ img {
     color: var(--text-light);
 }
 
-@media (max-width: 768px) {
-    .surroundings__content {
-        grid-template-columns: 1fr;
-    }
+.surroundings__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 
-.surroundings__figure img {
+.surroundings__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.surroundings__track {
+    display: flex;
+    gap: 12px;
+    transition: transform 0.5s ease;
+}
+
+.surroundings__slide {
+    min-width: calc(100% / 6 - 10px);
+    margin: 0;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.surroundings__slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2px;
+}
+
+.surroundings__controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.surroundings__arrow {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--text-color);
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.surroundings__arrow:hover {
+    background: var(--text-color);
+    color: #fff;
+}
+
+.surroundings__arrow:disabled {
+    opacity: 0.25;
+    cursor: default;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .surroundings__slide {
+        min-width: calc(50% - 6px);
+        height: 160px;
+    }
 }
 
 /* ==========================================================================
@@ -590,6 +740,13 @@ img {
     object-fit: cover;
     border-radius: 2px;
 }
+
+.rooms__gallery img:nth-child(1) { transition-delay: 0s; }
+.rooms__gallery img:nth-child(2) { transition-delay: 0.1s; }
+.rooms__gallery img:nth-child(3) { transition-delay: 0.2s; }
+.rooms__gallery img:nth-child(4) { transition-delay: 0.3s; }
+.rooms__gallery img:nth-child(5) { transition-delay: 0.4s; }
+.rooms__gallery img:nth-child(6) { transition-delay: 0.5s; }
 
 /* ==========================================================================
    Floor Info Section
@@ -799,6 +956,52 @@ img {
     margin-top: 0;
 }
 
+/* アコーディオン */
+.amenities__accordion {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 4px;
+}
+
+.amenities__accordion:first-child {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.amenities__accordion-title {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 18px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+    letter-spacing: 0.06em;
+}
+
+.amenities__accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+.amenities__accordion-title::after {
+    content: '+';
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--text-light);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.amenities__accordion[open] > .amenities__accordion-title::after {
+    content: '−';
+}
+
+.amenities__accordion .amenities__list {
+    padding-bottom: 24px;
+}
+
 .amenities__list {
     display: flex;
     gap: 15px;
@@ -901,11 +1104,111 @@ img {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+.experience-card--hero {
+    display: block;
+}
 
+.experience-card__hero-image {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.experience-card__hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.experience-card--hero:hover .experience-card__hero-image img {
+    transform: scale(1.03);
+}
+
+.experience-card__hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 40%, transparent 100%);
+    display: flex;
+    align-items: center;
+}
+
+.experience-card__hero-text {
+    padding: 0 60px;
+    color: #fff;
+    max-width: 500px;
+}
+
+.experience-card__hero-text h4 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.experience-card__hero-text p {
+    font-size: 0.9rem;
+    line-height: 2;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-arrow--light {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-arrow--light::after {
+    background-color: #fff;
+}
+
+.experience-card__badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-family: var(--font-sans);
+    color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 2px 8px;
+    margin-bottom: 14px;
+    letter-spacing: 0.08em;
+}
+
+.experience-card__coming-soon {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: var(--font-sans);
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 4px 16px;
+    letter-spacing: 0.12em;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
     .experience-card,
     .experience-card--reverse {
         flex-direction: column;
+    }
+
+    .experience-card__hero-image {
+        height: 420px;
+    }
+
+    .experience-card__hero-overlay {
+        background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.7) 100%);
+        align-items: flex-end;
+    }
+
+    .experience-card__hero-text {
+        padding: 0 24px 40px;
+        max-width: 100%;
+    }
+
+    .experience-card__hero-text h4 {
+        font-size: 1.3rem;
     }
 }
 
@@ -918,9 +1221,143 @@ img {
 }
 
 .rates__inner {
-    max-width: 700px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
+}
+
+.rates__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.rates__column {
+    background: rgba(255,255,255,0.7);
+    padding: 40px 36px;
+    border-radius: 2px;
+}
+
+.rates__column-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+.rates__sauna-add {
+    padding: 12px 0;
+    margin: 16px 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.rates__sauna-add-title {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--text-light);
+}
+
+.rates__sauna-add-price {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: var(--text-color);
+}
+
+.rates__sauna-add-note {
+    font-size: 0.72rem;
+    color: var(--text-light);
+}
+
+.rates__price-item--dayuse {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.rates__tax {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: var(--font-sans);
+}
+
+.rates__detail-list {
+    margin: 24px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.rates__detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+}
+
+.rates__detail-row dt {
+    color: var(--text-light);
+}
+
+.rates__dayuse-note {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-top: 16px;
+}
+
+.rates__sauna-notice {
+    margin-top: 40px;
+    padding: 32px 40px;
+    background: rgba(0,0,0,0.04);
+    border-radius: 2px;
+    text-align: left;
+}
+
+.rates__sauna-notice-title {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.rates__sauna-notice-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rates__sauna-notice-list li {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    padding-left: 1em;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.rates__sauna-notice-list li::before {
+    content: '・';
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .rates__columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rates__column {
+        padding: 28px 20px;
+    }
+    .rates__sauna-notice {
+        padding: 24px 20px;
+    }
 }
 
 .rates__content {
@@ -1166,9 +1603,32 @@ img {
     margin: 0 auto;
 }
 
+.contact__inner--simple {
+    text-align: center;
+}
+
+.contact__inner--simple .contact__desc {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact__desc {
     font-size: 0.9rem;
     margin-bottom: 40px;
+}
+
+/* 現在ページ表示 */
+.header__item--current a {
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+/* デスクトップのみ言語切替を表示 */
+@media (max-width: 1023px) {
+    .header__lang {
+        display: none;
+    }
 }
 
 .contact__form {
@@ -1564,7 +2024,22 @@ img {
 }
 
 .sauna-intro__gallery {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
+}
+
+.sauna-intro__photo-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 80px;
+}
+
+.sauna-intro__photo img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
 }
 
 .sauna-intro__gallery-inner {
@@ -1614,6 +2089,107 @@ img {
     margin-bottom: 30px;
 }
 
+/* 最新情報 (NEWS) — kobusauna 下層ページのセクション見出しに合わせたスタイル */
+.news {
+    padding: 100px 20px;
+    background-color: var(--bg-color);
+}
+
+.news__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.news__list {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.news-card {
+    padding: 32px 36px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-border);
+    border-radius: 2px;
+    transition: box-shadow 0.25s ease;
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.news-card__date {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+}
+
+.news-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.news-card__body {
+    font-size: 0.9rem;
+    line-height: 2;
+    color: var(--text-light);
+}
+
+/* KOBU SAUNA ギャラリー */
+.sauna-gallery {
+    margin: 80px 0;
+    padding-top: 80px;
+    border-top: 1px solid var(--gray-border);
+}
+
+.sauna-gallery__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.sauna-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 140px;
+    grid-auto-flow: dense;
+    gap: 12px;
+}
+
+.sauna-gallery__item {
+    grid-column: span 4;
+    grid-row: span 2;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: var(--gray-light);
+}
+
+.sauna-gallery__item--wide {
+    grid-column: span 8;
+}
+
+.sauna-gallery__item--tall {
+    grid-row: span 3;
+}
+
+.sauna-gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.sauna-gallery__item:hover img {
+    transform: scale(1.04);
+}
+
 .sauna-details {
     margin-top: 80px;
     padding-top: 80px;
@@ -1650,6 +2226,13 @@ img {
     font-family: var(--font-serif);
     font-size: 1.1rem;
     margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.sauna-details__plan {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
     color: var(--text-color);
 }
 
@@ -1705,6 +2288,34 @@ img {
 
     .sauna-intro__img--2 {
         margin-top: 0;
+    }
+
+    .sauna-intro__photo-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news {
+        padding: 72px 20px;
+    }
+
+    .news-card {
+        padding: 24px 20px;
+    }
+
+    .sauna-gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 160px;
+    }
+
+    .sauna-gallery__item,
+    .sauna-gallery__item--wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sauna-gallery__item--tall {
+        grid-row: span 2;
     }
 
     .sauna-intro__vertical-text {

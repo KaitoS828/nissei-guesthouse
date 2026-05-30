@@ -1,27 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xnisse.com/</loc>
-    <lastmod>2026-02-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://xnisse.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://xnisse.com/kobusauna.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/kobusauna.html"/>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://xnisse.com/en/kobusauna.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/zh/kobusauna.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/contact.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/en/contact.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/zh/contact.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://xnisse.com/houserule.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/houserule.html"/>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/404.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://xnisse.com/en/houserule.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/zh/houserule.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/privacy.html"/>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/en/privacy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xnisse.com/zh/privacy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

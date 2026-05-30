@@ -76,6 +76,7 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lang-switch.js?v=1" defer></script>
     <script src="./main.js" defer></script>
 </head>
 
@@ -93,18 +94,22 @@
             </h1>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="index.html#about">宿について<br><span>About</span></a></li>
-                    <li class="header__item"><a href="index.html#rooms">お部屋紹介<br><span>rooms</span></a></li>
-                    <li class="header__item"><a href="index.html#experiences">体験・アクティビティ<br><span>experiences</span></a>
-                    </li>
-                    <li class="header__item"><a href="index.html#rates">料金案内<br><span>rates</span></a></li>
-                    <li class="header__item"><a href="index.html#access">アクセス<br><span>access</span></a></li>
-                    <li class="header__item"><a href="index.html#contact">お問い合わせ<br><span>contact</span></a></li>
+                    <li class="header__item"><a href="index.html#about" data-i18n-html="nav.about.link">宿について<br><span>About</span></a></li>
+                    <li class="header__item"><a href="index.html#rooms" data-i18n-html="nav.rooms.link">お部屋紹介<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<br><span>sauna</span></a></li>
+                    <li class="header__item"><a href="index.html#rates" data-i18n-html="nav.rates.link">料金案内<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="index.html#access" data-i18n-html="nav.access.link">アクセス<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">お問い合わせ<br><span>contact</span></a></li>
                     <li class="header__item header__item--reserve">
-                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer">空室確認・ご予約</a>
+                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">空室確認・ご予約</a>
                     </li>
                 </ul>
             </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn active" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn" data-lang="zh">中文</button>
+            </div>
             <button class="header__menu-btn" aria-label="メニューを開く">
                 <span></span>
                 <span></span>
@@ -126,16 +131,21 @@
             <span class="mobile-nav__logo-en">Nissei</span>
         </div>
         <ul class="mobile-nav__list">
-            <li><a href="index.html">トップページ<span>top</span></a></li>
-            <li><a href="index.html#about">宿について<span>about</span></a></li>
-            <li><a href="index.html#rooms">お部屋紹介<span>rooms</span></a></li>
-            <li><a href="index.html#experiences">体験・アクティビティ<span>experiences</span></a></li>
-            <li><a href="index.html#rates">料金案内<span>rates</span></a></li>
-            <li><a href="index.html#access">アクセス<span>access</span></a></li>
-            <li><a href="index.html#contact">お問い合わせ<span>contact</span></a></li>
+            <li><a href="index.html" data-i18n-html="nav.top.link">トップページ<span>top</span></a></li>
+            <li><a href="index.html#about" data-i18n-html="nav.about.link">宿について<span>about</span></a></li>
+            <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">お部屋紹介<span>rooms</span></a></li>
+            <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="index.html#rates" data-i18n-html="nav.rates.link">料金案内<span>rates</span></a></li>
+            <li><a href="index.html#access" data-i18n-html="nav.access.link">アクセス<span>access</span></a></li>
+            <li><a href="contact.html" data-i18n-html="nav.contact.link">お問い合わせ<span>contact</span></a></li>
         </ul>
         <div class="mobile-nav__reserve">
-            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer">客室情報・ご予約</a>
+            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">空室確認・ご予約</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn active" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn" data-lang="zh">中文</button>
         </div>
     </nav>
 
@@ -150,7 +160,7 @@
             <div class="breadcrumb__inner">
                 <ul class="breadcrumb__list">
                     <li><a href="index.html">HOME</a></li>
-                    <li>ハウスルール</li>
+                    <li data-i18n="hr.breadcrumb">ハウスルール</li>
                 </ul>
             </div>
         </div>
@@ -158,77 +168,41 @@
         <section class="houserule section-padding">
             <div class="container--narrow">
                 <header class="houserule__header">
-                    <h2 class="houserule__title serif">宿泊のお客様へのお願い</h2>
+                    <h2 class="houserule__title serif" data-i18n="hr.title">宿泊のお客様へのお願い</h2>
                 </header>
 
                 <div class="houserule__content">
-                    <!-- Rule 1 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・全館禁煙です</h3>
-                        <p class="rule-item__txt-ja">館内は禁煙となっております。喫煙される場合は、屋外の指定場所をご利用ください。</p>
-                        <p class="rule-item__txt-en">Smoking is not permitted indoors.<br>If you wish to smoke, please
-                            use the designated outdoor smoking area.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r1.title">・全館禁煙です</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r1.body">館内は禁煙となっております。喫煙される場合は、屋外の指定場所をご利用ください。</p>
                     </div>
-
-                    <!-- Rule 2 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・19:00以降は静かにお過ごしください</h3>
-                        <p class="rule-item__txt-ja">
-                            本施設は漁師町に位置しており、地域の方々は早朝3〜4時頃から出漁されます。夜間は足音や話し声、テレビの音量などにご配慮いただき、穏やかな時間をお過ごしください。</p>
-                        <p class="rule-item__txt-en">Please keep noise to a minimum after 7:00 PM.<br>This area is a
-                            fishing village, and many local fishermen head out to sea early in the morning around 3-4
-                            AM.<br>We kindly ask for your consideration regarding footsteps, conversations, and TV
-                            volume during the evening hours.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r2.title">・19:00以降は静かにお過ごしください</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r2.body">本施設は漁師町に位置しており、地域の方々は早朝3〜4時頃から出漁されます。夜間は足音や話し声、テレビの音量などにご配慮いただき、穏やかな時間をお過ごしください。</p>
                     </div>
-
-                    <!-- Rule 3 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・パーティーやイベントはご遠慮ください</h3>
-                        <p class="rule-item__txt-ja">他のゲストや近隣の方々が安心して過ごせるよう、宴会・イベント目的でのご利用はお断りしております。</p>
-                        <p class="rule-item__txt-en">Parties and events are not allowed.<br>This is to ensure a
-                            comfortable and peaceful stay for other guests and our neighbors.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r3.title">・パーティーやイベントはご遠慮ください</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r3.body">他のゲストや近隣の方々が安心して過ごせるよう、宴会・イベント目的でのご利用はお断りしております。</p>
                     </div>
-
-                    <!-- Rule 4 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・ご予約人数以外の立ち入りはご遠慮ください</h3>
-                        <p class="rule-item__txt-ja">防犯および安全管理のため、事前にご登録いただいた人数以外の方の立ち入りはお控えください。</p>
-                        <p class="rule-item__txt-en">Only registered guests are allowed on the property.<br>For safety
-                            and security reasons, please do not allow unregistered visitors to enter.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r4.title">・ご予約人数以外の立ち入りはご遠慮ください</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r4.body">防犯および安全管理のため、事前にご登録いただいた人数以外の方の立ち入りはお控えください。</p>
                     </div>
-
-                    <!-- Rule 5 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・ペット同伴について</h3>
-                        <p class="rule-item__txt-ja">
-                            誠に申し訳ございませんが、当施設ではペットの同伴はご遠慮いただいております。アレルギーをお持ちのお客様や、次にご宿泊される方にも快適にお過ごしいただくための対応となります。</p>
-                        <p class="rule-item__txt-en">Pets are not allowed on the property.<br>Unfortunately, we do not
-                            allow pets in order to ensure a comfortable stay for all guests, including those with
-                            allergies.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r5.title">・ペット同伴について</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r5.body">誠に申し訳ございませんが、当施設ではペットの同伴はご遠慮いただいております。アレルギーをお持ちのお客様や、次にご宿泊される方にも快適にお過ごしいただくための対応となります。</p>
                     </div>
-
-                    <!-- Rule 6 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・火気の使用について</h3>
-                        <p class="rule-item__txt-ja">安全のため、火気の使用は指定された場所のみでお願いいたします。</p>
-                        <p class="rule-item__txt-en">Use of open flames is permitted only in designated areas.<br>This
-                            rule is in place for everyone's safety.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r6.title">・火気の使用について</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r6.body">安全のため、火気の使用は指定された場所のみでお願いいたします。</p>
                     </div>
-
-                    <!-- Rule 7 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・ゴミの分別にご協力ください</h3>
-                        <p class="rule-item__txt-ja">地域のルールに基づき、ゴミの分別を必ずお願いいたします。</p>
-                        <p class="rule-item__txt-en">Please separate your trash properly.<br>Kindly follow local waste
-                            separation rules.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r7.title">・ゴミの分別にご協力ください</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r7.body">地域のルールに基づき、ゴミの分別を必ずお願いいたします。</p>
                     </div>
-
-                    <!-- Rule 8 -->
                     <div class="rule-item" data-aos="fade-up">
-                        <h3 class="rule-item__title">・設備・備品の取り扱いについて</h3>
-                        <p class="rule-item__txt-ja">万が一、設備や備品の破損・汚損があった場合は、実費をご負担いただく場合がございます。</p>
-                        <p class="rule-item__txt-en">Please treat all facilities and furnishings with care.<br>In case
-                            of damage or excessive soiling, repair or replacement costs may be charged.</p>
+                        <h3 class="rule-item__title" data-i18n="hr.r8.title">・設備・備品の取り扱いについて</h3>
+                        <p class="rule-item__txt" data-i18n="hr.r8.body">万が一、設備や備品の破損・汚損があった場合は、実費をご負担いただく場合がございます。</p>
                     </div>
                 </div>
             </div>
@@ -245,12 +219,13 @@
             </div>
             <nav class="footer__nav">
                 <ul>
-                    <li><a href="index.html#about">宿について<br><span>About</span></a></li>
-                    <li><a href="index.html#rooms">お部屋紹介<br><span>rooms</span></a></li>
-                    <li><a href="index.html#experiences">体験・アクティビティ<br><span>experiences</span></a></li>
-                    <li><a href="index.html#rates">料金案内<br><span>guide</span></a></li>
-                    <li><a href="index.html#access">アクセス<br><span>access</span></a></li>
-                    <li><a href="index.html#contact">お問い合わせ<br><span>contact</span></a></li>
+                    <li><a href="index.html#about" data-i18n-html="nav.about.link">宿について<br><span>About</span></a></li>
+                    <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">お部屋紹介<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<br><span>sauna</span></a></li>
+                    <li><a href="index.html#rates" data-i18n-html="nav.rates.link">料金案内<br><span>rates</span></a></li>
+                    <li><a href="index.html#access" data-i18n-html="nav.access.link">アクセス<br><span>access</span></a></li>
+                    <li><a href="contact.html" data-i18n-html="nav.contact.link">お問い合わせ<br><span>contact</span></a></li>
+                    <li><a href="privacy.html" data-i18n-html="nav.privacy.link">プライバシーポリシー<br><span>privacy</span></a></li>
                 </ul>
             </nav>
             <div class="footer__sns">

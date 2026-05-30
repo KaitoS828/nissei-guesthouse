@@ -13,12 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- ファビコン設定 -->
     <link rel="icon" type="image/png" href="./img/favicon_logo.png">
     <link rel="apple-touch-icon" href="./img/favicon_logo.png">
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lang-switch.js?v=1" defer></script>
     <style>
         .error-page {
             min-height: 100vh;
@@ -91,6 +91,26 @@
             flex-wrap: wrap;
         }
 
+        .error-page__lang {
+            margin-top: 32px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .error-page__lang a {
+            font-size: 0.85rem;
+            padding: 6px 14px;
+            border: 1px solid rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .error-page__lang a.active {
+            background: var(--text-color);
+            color: #fff;
+        }
+
         @media (max-width: 768px) {
             .error-page__code {
                 font-size: 5rem;
@@ -117,21 +137,27 @@
     <div class="error-page">
         <div class="error-page__content">
             <div class="error-page__logo">
-                <span class="error-page__logo-sub">一棟貸し宿</span>
+                <span class="error-page__logo-sub" data-i18n="loading.sub">一棟貸し宿</span>
                 <span class="error-page__logo-main">日靜</span>
                 <span class="error-page__logo-en">Nissei</span>
             </div>
 
             <div class="error-page__code">404</div>
-            <h1 class="error-page__title">ページが見つかりません</h1>
-            <p class="error-page__desc">
+            <h1 class="error-page__title" data-i18n="404.title">ページが見つかりません</h1>
+            <p class="error-page__desc" data-i18n-html="404.desc">
                 お探しのページは移動または削除された可能性があります。<br>
                 URLをご確認いただくか、トップページからお探しください。
             </p>
 
             <div class="error-page__buttons">
-                <a href="index.html" class="btn-reservation">トップページへ</a>
-                <a href="index.html#contact" class="btn-outline">お問い合わせ</a>
+                <a href="index.html" class="btn-reservation" data-i18n="404.home">トップページへ</a>
+                <a href="contact.html" class="btn-outline" data-i18n="404.contact">お問い合わせ</a>
+            </div>
+
+            <div class="error-page__lang header__lang">
+                <button class="header__lang-btn active" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn" data-lang="zh">中文</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 | 日靜 - NISSEI</title>
+    <meta name="description" content="日靜的隐私政策与个人信息保护方针。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+    <link rel="canonical" href="https://xnisse.com/zh/privacy.html">
+
+    <meta property="og:title" content="隐私政策 | 日靜 - NISSEI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xnisse.com/zh/privacy.html">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:locale" content="zh_CN">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/lang-switch.js?v=1" defer></script>
+    <script src="../main.js" defer></script>
+
+    <style>
+        .privacy-page {
+            padding: 160px 20px 100px;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+        }
+        .privacy-page__inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .privacy-page__updated {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+        .privacy-section {
+            margin-bottom: 48px;
+        }
+        .privacy-section__title {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .privacy-section p,
+        .privacy-section li {
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        .privacy-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .privacy-section li {
+            padding-left: 1.2em;
+            position: relative;
+            margin-bottom: 4px;
+        }
+        .privacy-section li::before {
+            content: '・';
+            position: absolute;
+            left: 0;
+        }
+        .privacy-section p + p {
+            margin-top: 12px;
+        }
+        .privacy-contact {
+            background: rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.07);
+            padding: 24px 28px;
+            border-radius: 2px;
+            font-size: 0.88rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub">一棟貸し宿</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html">
+                    <span class="header__logo-sub">一棟貸し宿</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="index.html#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+                    <li class="header__item"><a href="index.html#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li class="header__item"><a href="index.html#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="index.html#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">预约查询</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn active" data-lang="zh">中文</button>
+            </div>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub" data-i18n="loading.sub">整栋出租</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" data-i18n-html="nav.top.link">首页<span>top</span></a></li>
+            <li><a href="index.html#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+            <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+            <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="index.html#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+            <li><a href="index.html#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+            <li><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">预约查询</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn active" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="privacy-page">
+            <div class="privacy-page__inner">
+                <h2 class="section-title" data-i18n="privacy.title">隐私政策</h2>
+                <p class="section-subtitle-en" data-i18n="privacy.sub">Privacy Policy</p>
+                <p class="privacy-page__updated" data-i18n="privacy.updated">最后更新：2026年5月30日</p>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s1.title">1. 个人信息的收集</h3>
+                    <p data-i18n="privacy.s1.p1">日靜（以下简称「本民宿」）在您使用咨询表单或预约时，可能会收集姓名、电子邮件地址、电话号码等个人信息。</p>
+                    <p data-i18n="privacy.s1.p2">本民宿的咨询表单使用 Formspree（Formspree, Inc.），提交的信息经 Formspree 服务器送达本民宿。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s2.title">2. 个人信息的使用目的</h3>
+                    <p data-i18n="privacy.s2.p1">收集的个人信息仅用于以下目的：</p>
+                    <ul>
+                        <li data-i18n="privacy.s2.li1">预约及住宿相关的通知与联系</li>
+                        <li data-i18n="privacy.s2.li2">回复咨询</li>
+                        <li data-i18n="privacy.s2.li3">为改善服务进行的统计分析（不可识别个人身份的形式）</li>
+                    </ul>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s3.title">3. 向第三方提供</h3>
+                    <p data-i18n="privacy.s3.p1">除法律规定外，未经同意本民宿不会向第三方提供个人信息。为提供服务，可能会向委托方（预约系统运营商等）提供必要范围内的信息。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s4.title">4. 个人信息的管理</h3>
+                    <p data-i18n="privacy.s4.p1">为防止个人信息泄露、灭失或损毁，本民宿采取适当的安全管理措施，并将访问权限限定于业务所需人员。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s5.title">5. Cookie 与本地存储</h3>
+                    <p data-i18n="privacy.s5.p1">本网站可能为提升便利性（如语言设置）使用浏览器本地存储等，这些不会收集您的个人信息。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s6.title">6. 披露、更正与删除</h3>
+                    <p data-i18n="privacy.s6.p1">如需披露、更正或删除您的个人信息，请通过下方联系方式与我们联系，我们将在合理期限内处理。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s7.title">7. 隐私政策的变更</h3>
+                    <p data-i18n="privacy.s7.p1">本民宿可根据需要变更本隐私政策，变更后的政策自刊登于本页面时起生效。</p>
+                </div>
+
+                <div class="privacy-section">
+                    <h3 class="privacy-section__title" data-i18n="privacy.s8.title">8. 联系我们</h3>
+                    <div class="privacy-contact">
+                        <p><strong>日靜（NISSEI）</strong></p>
+                        <p data-i18n="access.addr">〒089-2627 北海道广尾町音调津733</p>
+                        <p><span data-i18n="privacy.s8.mail">邮件：</span><a href="contact.html" data-i18n="privacy.s8.form">咨询表单</a><span data-i18n="privacy.s8.form.note">与我们联系</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub" data-i18n="loading.sub">整栋出租</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="index.html#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+                    <li><a href="index.html#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li><a href="index.html#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+                    <li><a href="index.html#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+                    <li><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li><a href="privacy.html" data-i18n-html="nav.privacy.link">隐私政策<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">Copyright © 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://reserva.be/nissei" class="floating-reserve" target="_blank" rel="noopener noreferrer" data-i18n="floating.reserve">预约查询</a>
+
+</body>
+</html>

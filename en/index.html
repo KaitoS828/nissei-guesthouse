@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- 言語設定: 日本語 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- レスポンシブ対応のためのビューポート設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissei | Whole-building Guesthouse in Oshirabetsu, Hokkaido</title>
+    <meta name="description" content="Nissei is a whole-building rental guesthouse in Oshirabetsu, Hiroo, Hokkaido. Enjoy stunning views, sauna, BBQ, and a relaxing stay.">
+
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Zen Old Mincho (明朝体) と Zen Kaku Gothic New (ゴシック体) を使用 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ファビコン設定 -->
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://xnisse.com/en/">
+    <link rel="alternate" hreflang="ja" href="https://xnisse.com/">
+    <link rel="alternate" hreflang="en" href="https://xnisse.com/en/">
+    <link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://xnisse.com/">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" content="Nissei | Whole-building Guesthouse in Oshirabetsu, Hokkaido">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xnisse.com/en/">
+    <meta property="og:image" content="https://xnisse.com/img/kobusauna_hero.jpg">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:description" content="Nissei is a whole-building rental guesthouse in Oshirabetsu, Hiroo, Hokkaido. Enjoy stunning views, sauna, BBQ, and a relaxing stay.">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nissei_hostel">
+
+    <!-- 構造化データ (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "日靜 - NISSEI",
+      "image": "https://xnisse.com/img/kobusauna_hero.jpg",
+      "@id": "https://xnisse.com",
+      "url": "https://xnisse.com",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "音調津733",
+        "addressLocality": "広尾町",
+        "addressRegion": "北海道",
+        "postalCode": "089-2627",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.223320,
+        "longitude": 143.316325
+      },
+      "priceRange": "¥28,000〜",
+      "description": "北海道広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、静寂と癒しの時間を提供します。",
+      "checkinTime": "15:00",
+      "checkoutTime": "10:00"
+    }
+    </script>
+
+
+    <!-- スタイルシートの読み込み (リセットCSSとスタイルCSS) -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css?v=4">
+    <link rel="stylesheet" href="../css/loading.css?v=2">
+    <script src="../js/lang-switch.js?v=1" defer></script>
+    <script src="../main.js?v=3" defer></script>
+</head>
+
+<body>
+
+    <!-- ローディング画面 -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- ヘッダーエリア -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="#">
+                    <span class="header__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li class="header__item"><a href="#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li class="header__item header__item--sauna">
+                        <a href="kobusauna.html" data-i18n="nav.sauna">About KOBU SAUNA</a>
+                    </li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn active" data-lang="en">EN</button>
+                <button class="header__lang-btn" data-lang="zh">中文</button>
+            </div>
+            <!-- ハンバーガーメニュー (モバイル用) -->
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルナビゲーション (フルスクリーンオーバーレイ) -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <!-- 閉じるボタン -->
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- ロゴ -->
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+
+        <!-- メニューリスト -->
+        <ul class="mobile-nav__list">
+            <li><a href="#" data-i18n-html="nav.top.link">Home<span>top</span></a></li>
+            <li><a href="#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+            <li><a href="#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+            <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+            <li><a href="#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+            <li><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+        </ul>
+
+        <!-- 予約ボタン -->
+        <div class="mobile-nav__reserve">
+            <a href="https://reserva.be/nissei" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+        </div>
+        <!-- 言語切替 -->
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn active" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ヒーローセクション: メインビジュアル -->
+        <section class="hero">
+            <div class="hero__slideshow">
+                <div class="hero__slide hero__slide--active">
+                    <img src="../img/hero_coast.webp" alt="Coastline of Oshirabetsu, Hiroo, Hokkaido" class="hero__image" data-i18n-alt="hero.alt.coast">
+                </div>
+                <div class="hero__slide">
+                    <img src="../img/kobusauna_hero.jpg" alt="Interior of KOBU SAUNA at Nissei" class="hero__image" data-i18n-alt="hero.alt.sauna">
+                </div>
+                <div class="hero__slide">
+                    <img src="../img/hero_exterior.jpg" alt="Exterior of Nissei" class="hero__image" data-i18n-alt="hero.alt.exterior">
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新情報 (NEWS) -->
+        <section id="news" class="news section-padding">
+            <div class="container--narrow">
+                <header class="news__header">
+                    <h2 class="section-title" data-i18n="news.title">News</h2>
+                    <p class="section-subtitle-en" data-i18n="news.sub">news</p>
+                </header>
+                <div class="news__list">
+                    <article class="news-card">
+                        <time class="news-card__date" datetime="2026-05-31" data-i18n="news.item1.date">2026.05.31</time>
+                        <h3 class="news-card__title" data-i18n="news.item1.title">Website Now Live</h3>
+                        <p class="news-card__body" data-i18n="news.item1.body">We have launched the official website for Nissei. Find information about stays, KOBU SAUNA, and contact us here. Thank you for your continued support.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 宿について (ABOUT) セクション -->
+        <section id="about" class="about">
+            <div class="about__header">
+                <h2 class="section-title" data-i18n="about.title">About</h2>
+                <p class="section-subtitle-en" data-i18n="about.sub">About</p>
+            </div>
+            <div class="about__content">
+                <div class="about__left-col">
+                    <figure class="about__figure about__figure--exterior">
+                        <img src="../img/about_exterior.jpg" alt="日靜の外観" class="about__main-image">
+                    </figure>
+                    <figure class="about__figure about__figure--exterior-2">
+                        <img src="../img/about_kobusauna_door.jpg" alt="KOBU SAUNAの入口" class="about__main-image">
+                    </figure>
+                </div>
+                <div class="about__text-area">
+                    <p class="about__desc" data-i18n-html="about.desc">At the southern tip of Tokachi, Hokkaido — Oshirabetsu, Hiroo-cho.<br>"Nissei" is a whole-building rental inn surrounded by sea and mountains, welcoming one group per day, with a private sauna.</p>
+                </div>
+                <figure class="about__figure about__figure--interior">
+                    <img src="../img/about_interior.jpg" alt="日靜のダイニングリビング" class="about__main-image">
+                </figure>
+            </div>
+        </section>
+
+        <!-- ロケーション/周辺環境セクション (SURROUNDINGS) -->
+        <section class="surroundings">
+            <div class="surroundings__header">
+                <h2 class="surroundings__title" data-i18n="surroundings.title">Overlooking the Hidaka Mountains</h2>
+                <div class="surroundings__lead">
+                    <p data-i18n="surroundings.lead1">A whole-building inn for one group, where you live as if you belong</p>
+                    <p data-i18n="surroundings.lead2">A place designed for quiet, everyday moments.</p>
+                    <p data-i18n-html="surroundings.lead3">A fishing village of 80 people — no supermarket, no convenience store.<br>But here you will find centuries of tradition and true silence.</p>
+                </div>
+            </div>
+            <div class="surroundings__gallery">
+                <div class="surroundings__viewport">
+                    <div class="surroundings__track">
+                        <figure class="surroundings__slide">
+                            <img src="../img/surroundings_1.png" alt="日高山脈の雪景色">
+                        </figure>
+                        <figure class="surroundings__slide">
+                            <img src="../img/surroundings_2.png" alt="日高山脈襟裳十勝国立公園の看板">
+                        </figure>
+                        <figure class="surroundings__slide">
+                            <img src="../img/activities_1.png" alt="広尾町の空撮写真">
+                        </figure>
+                        <figure class="surroundings__slide">
+                            <img src="../img/activities_2.png" alt="サーフィン">
+                        </figure>
+                        <figure class="surroundings__slide">
+                            <img src="../img/activities_3.png" alt="昆布漁">
+                        </figure>
+                    </div>
+                </div>
+                <div class="surroundings__controls">
+                    <button class="surroundings__arrow surroundings__arrow--prev" aria-label="前へ">&#8592;</button>
+                    <button class="surroundings__arrow surroundings__arrow--next" aria-label="次へ">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 客室セクション (ROOMS) -->
+        <section id="rooms" class="rooms">
+            <div class="rooms__header">
+                <h2 class="section-title" data-i18n="rooms.title">Rooms</h2>
+                <p class="section-subtitle-en" data-i18n="rooms.sub">rooms</p>
+            </div>
+            <div class="rooms__inner">
+                <div class="rooms__gallery">
+                    <img src="../img/room_bedroom1.jpg" alt="シングルベッドルーム">
+                    <img src="../img/room_kitchen.jpg" alt="キッチン">
+                    <img src="../img/room_bedroom2.jpg" alt="ツインベッドルーム">
+                    <img src="../img/room_living1.jpg" alt="リビングダイニング">
+                    <img src="../img/room_living2.jpg" alt="リビング">
+                    <img src="../img/room_washroom.jpg" alt="洗面・ランドリー">
+                </div>
+            </div>
+        </section>
+
+        <!-- 間取り・宿泊について -->
+        <section class="floor-info">
+            <div class="floor-info__inner">
+                <div class="floor-info__layout">
+                    <div class="floor-info__item floor-info__item--1f">
+                        <div class="floor-info__label-group">
+                            <span class="floor-info__label-text">1F</span>
+                            <div class="floor-info__label-line"></div>
+                        </div>
+                        <div class="floor-info__floor">
+                            <img src="../img/floor_plan/1F.png" alt="1階の間取り図" class="floor-info__image">
+                        </div>
+                    </div>
+                    <div class="floor-info__item floor-info__item--2f">
+                        <div class="floor-info__label-group">
+                            <span class="floor-info__label-text">2F</span>
+                            <div class="floor-info__label-line"></div>
+                        </div>
+                        <div class="floor-info__floor">
+                            <img src="../img/floor_plan/2F.png" alt="2階の間取り図" class="floor-info__image">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-info__details">
+                    <p class="floor-info__desc" data-i18n="rooms.desc">A charming exterior with a sense of history, paired with a comfortably renovated interior. Relax in the bright Scandinavian-style living room and peaceful bedrooms.</p>
+                    <h4 class="floor-info__title" data-i18n="rooms.stay">About Your Stay</h4>
+                    <dl class="floor-info__list">
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.checkin">Check-in</dt>
+                            <dd data-i18n="rooms.checkin.v">From 15:00</dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.checkout">Check-out</dt>
+                            <dd data-i18n="rooms.checkout.v">By 10:00</dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.max">Max occupancy</dt>
+                            <dd data-i18n="rooms.max.v">6 guests</dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.parking">Parking available</dt>
+                            <dd data-i18n="rooms.parking.v">(2 cars)</dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.meal">Room only / No meals</dt>
+                            <dd></dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.nosmoking">Non-smoking</dt>
+                            <dd></dd>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.nopet">No pets</dt>
+                        </div>
+                        <div class="floor-info__row">
+                            <dt data-i18n="rooms.winter">Closed in winter</dt>
+                            <dd data-i18n="rooms.winter.v">(Dec – Mar)</dd>
+                        </div>
+                    </dl>
+                    <a href="houserule.html" class="btn-outline" data-i18n="rooms.houserule">House Rules</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 設備・アメニティセクション -->
+        <section class="amenities">
+            <div class="amenities__inner">
+                <details class="amenities__accordion" open>
+                    <summary class="amenities__accordion-title" data-i18n="amenities.title">Facilities</summary>
+                    <div class="amenities__list">
+                        <div class="amenity-box" data-i18n="amenity.kitchen">Kitchen</div>
+                        <div class="amenity-box" data-i18n="amenity.bath">Bath</div>
+                        <div class="amenity-box" data-i18n="amenity.toilet">Portable flush toilet</div>
+                        <div class="amenity-box" data-i18n="amenity.washer">Washing machine</div>
+                        <div class="amenity-box" data-i18n="amenity.fridge">Refrigerator</div>
+                        <div class="amenity-box" data-i18n="amenity.rice_cooker">Rice cooker</div>
+                        <div class="amenity-box" data-i18n="amenity.microwave">Microwave</div>
+                        <div class="amenity-box" data-i18n="amenity.toaster">Toaster</div>
+                        <div class="amenity-box" data-i18n="amenity.stove">Gas stove</div>
+                        <div class="amenity-box" data-i18n="amenity.dryer">Hair dryer</div>
+                        <div class="amenity-box" data-i18n="amenity.air_purifier">Air purifier</div>
+                        <div class="amenity-box" data-i18n="amenity.wifi">Wi-Fi</div>
+                        <div class="amenity-box" data-i18n="amenity.parking">Parking</div>
+                    </div>
+                </details>
+
+                <details class="amenities__accordion">
+                    <summary class="amenities__accordion-title" data-i18n="amenities2.title">Amenities</summary>
+                    <div class="amenities__list">
+                        <div class="amenity-box" data-i18n="amenity2.bedding">Futon & sheets</div>
+                        <div class="amenity-box" data-i18n="amenity2.bath_towel">Bath towel</div>
+                        <div class="amenity-box" data-i18n="amenity2.face_towel">Face towel</div>
+                        <div class="amenity-box" data-i18n="amenity2.soap">Soap</div>
+                        <div class="amenity-box" data-i18n="amenity2.shampoo">Shampoo</div>
+                        <div class="amenity-box" data-i18n="amenity2.conditioner">Conditioner</div>
+                        <div class="amenity-box" data-i18n="amenity2.body_soap">Body soap</div>
+                        <div class="amenity-box" data-i18n="amenity2.detergent">Laundry detergent</div>
+                        <div class="amenity-box" data-i18n="amenity2.tableware">Tableware</div>
+                        <div class="amenity-box" data-i18n="amenity2.cookware">Cookware</div>
+                        <div class="amenity-box" data-i18n="amenity2.seasoning">Seasonings</div>
+                        <div class="amenity-box" data-i18n="amenity2.bbq">BBQ grill</div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- 暖炉イメージ -->
+        <section class="fireplace">
+            <div class="fireplace__image">
+                <img src="../img/amenities.png" alt="暖炉のある部屋">
+            </div>
+        </section>
+
+        <!-- 体験・アクティビティ (EXPERIENCES) -->
+        <section id="experiences" class="experiences">
+            <div class="experiences__header">
+                <h2 class="section-title" data-i18n="exp.title">Experiences</h2>
+                <p class="section-subtitle-en" data-i18n="exp.sub">experiences</p>
+            </div>
+
+            <div class="experiences__grid">
+                <div class="experience-card experience-card--hero">
+                    <div class="experience-card__hero-image">
+                        <img src="../img/about_kobusauna_door.jpg" alt="KOBU SAUNA入口">
+                        <div class="experience-card__hero-overlay">
+                            <div class="experience-card__hero-text">
+                                <h4 data-i18n-html="exp.sauna.title">[Reservation required] Private Sauna<br>KOBU SAUNA</h4>
+                                <small class="experience-card__badge" data-i18n="exp.sauna.badge">Extra charge</small>
+                                <p data-i18n-html="exp.sauna.desc">A sauna experience overlooking the kombu beach.<br>Refresh your mind and body<br>wrapped in the nature of Oshirabetsu.</p>
+                                <a href="kobusauna.html" class="btn-arrow btn-arrow--large btn-arrow--light" data-i18n="exp.sauna.btn">> About KOBU SAUNA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card experience-card--hero">
+                    <div class="experience-card__hero-image">
+                        <img src="../img/experiences_2.png" alt="漁師さんの昆布漁体験">
+                        <div class="experience-card__hero-overlay">
+                            <div class="experience-card__hero-text">
+                                <h4 data-i18n="exp.fisher.title">[Reservation required] Authentic Fishing Village Life</h4>
+                                <p data-i18n-html="exp.fisher.desc">Connect with local fishermen,<br>experience kombu drying and fishing firsthand.<br>A genuine encounter with something real.</p>
+                                <span class="experience-card__coming-soon" data-i18n="exp.fisher.soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card experience-card--hero">
+                    <div class="experience-card__hero-image">
+                        <img src="../img/experiences_3.png" alt="地場産BBQ">
+                        <div class="experience-card__hero-overlay">
+                            <div class="experience-card__hero-text">
+                                <h4 data-i18n="exp.bbq.title">Local Ingredients BBQ</h4>
+                                <p data-i18n-html="exp.bbq.desc">Enjoy a BBQ with fresh ingredients<br>from Hiroo-cho.<br>A special evening under a sky full of stars.</p>
+                                <a href="#" class="btn-arrow btn-arrow--large btn-arrow--light" data-i18n="exp.bbq.price">¥7,000~ per person</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 料金案内 (RATES) -->
+        <section id="rates" class="rates">
+            <div class="rates__inner">
+                <h2 class="section-title" data-i18n="rates.title">Rates</h2>
+                <p class="section-subtitle-en" data-i18n="rates.sub">rates</p>
+
+                <div class="rates__content">
+                    <div class="rates__columns">
+                        <div class="rates__column">
+                            <p class="rates__column-label" data-i18n="rates.stay.label">Whole-building Stay</p>
+                            <div class="rates__price-list">
+                                <div class="rates__price-item">
+                                    <span class="rates__guests" data-i18n="rates.2guests">2 guests</span>
+                                    <span class="rates__amount">20,000円</span><span class="rates__tax" data-i18n="tax.incl">(tax incl.)</span>
+                                </div>
+                                <div class="rates__price-item">
+                                    <span class="rates__guests" data-i18n="rates.4guests">Up to 4 guests</span>
+                                    <span class="rates__amount">28,000円</span><span class="rates__tax" data-i18n="tax.incl">(tax incl.)</span>
+                                </div>
+                            </div>
+                            <div class="rates__sauna-add">
+                                <p class="rates__sauna-add-title" data-i18n="rates.sauna.add.title">Private Sauna Use</p>
+                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">+¥3,000 per person</p>
+                                <p class="rates__sauna-add-note" data-i18n="rates.sauna.add.note">Available throughout your stay</p>
+                            </div>
+                            <div class="rates__notes">
+                                <p data-i18n="rates.note.1">* Rates above are standard weekday prices and may vary by date and season.</p>
+                                <p data-i18n="rates.note.2">* Infants and children who do not use bedding or towels are free. If used, they count as one adult.</p>
+                                <p data-i18n="rates.note.3">* Guests aged middle-school and above are charged the adult rate.</p>
+                            </div>
+                            <a href="https://reserva.be/nissei" class="btn-reservation" target="_blank" rel="noopener noreferrer" data-i18n="rates.reserve">Check Availability</a>
+                        </div>
+                        <div class="rates__column">
+                            <p class="rates__column-label" data-i18n="rates.dayuse.label">Day Use with Private Sauna</p>
+                            <div class="rates__price-list">
+                                <div class="rates__price-item rates__price-item--dayuse">
+                                    <span class="rates__guests" data-i18n="rates.4guests">Up to 4 guests</span>
+                                    <span class="rates__amount" data-i18n="rates.dayuse.amount">¥10,000</span><span class="rates__tax" data-i18n="tax.incl">(tax incl.)</span>
+                                </div>
+                            </div>
+                            <dl class="rates__detail-list">
+                                <div class="rates__detail-row">
+                                    <dt data-i18n="rates.dayuse.time.label">Session length</dt>
+                                    <dd data-i18n="rates.dayuse.time.val">3 hours per session</dd>
+                                </div>
+                                <div class="rates__detail-row">
+                                    <dt data-i18n="rates.dayuse.hours.label">Operating hours</dt>
+                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:00</dd>
+                                </div>
+                            </dl>
+                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">All facilities except guest rooms are available.<br>For other time slots, please inquire separately.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセスセクション -->
+        <section id="access" class="access">
+            <div class="access__inner">
+                <h2 class="section-title" data-i18n="access.title">Access</h2>
+                <p class="section-subtitle-en" data-i18n="access.sub">access</p>
+                <div class="access__map">
+                    <!-- Google Mapsの埋め込み (北海道広尾郡広尾町音調津) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.5846941521872!2d143.3163252!3d42.22332009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f76bc9bcdaebbc7%3A0x7326fa435ff7d577!2z44CSMDg5LTI3NzEg5YyX5rW36YGT5bqD5bC-6YOh5bqD5bC-55S66Z-z6Kq_5rSl77yX77yT77yT!5e0!3m2!1sja!2sjp!4v1769384994904!5m2!1sja!2sjp"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="access__info">
+                    <div class="access__address">
+                        <h4 class="access__location-name" data-i18n="access.name">Nissei</h4>
+                        <p data-i18n="access.addr">733 Oshirabetsu, Hiroo-cho, Hokkaido 089-2627</p>
+                    </div>
+                    <div class="access__directions">
+                        <dl>
+                            <dt data-i18n="access.dir1.label">From Obihiro Station</dt>
+                            <dd data-i18n="access.dir1.val">90 min by car</dd>
+                            <dt data-i18n="access.dir2.label">From Obihiro Airport</dt>
+                            <dd data-i18n="access.dir2.val">70 min by car</dd>
+                            <dt data-i18n="access.dir3.label">From Churui-Taiki IC</dt>
+                            <dd data-i18n="access.dir3.val">40 min by car</dd>
+                        </dl>
+                        <p class="access__car-note" data-i18n="access.note">* We recommend arriving by car</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- お問い合わせ (CONTACT) -->
+        <section id="contact" class="contact">
+            <div class="contact__inner contact__inner--simple">
+                <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+                <p class="section-subtitle-en" data-i18n="contact.sub">contact</p>
+                <p class="contact__desc" data-i18n="contact.desc">For inquiries about your stay, please use the form below.</p>
+                <a href="contact.html" class="btn-reservation" data-i18n="contact.cta">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li><a href="#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna.html" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li><a href="#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li><a href="#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li><a href="privacy.html" data-i18n-html="nav.privacy.link">Privacy Policy<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer__sns">
+                <a href="#" class="sns-icon" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                    </svg>
+                </a>
+                <a href="#" class="sns-icon" aria-label="X (Twitter)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="#" class="sns-icon" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copyright">Copyright © 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- スマホ用追従予約ボタン -->
+    <a href="https://reserva.be/nissei" class="floating-reserve" target="_blank" rel="noopener noreferrer" data-i18n="floating.reserve">Check Availability</a>
+
+</body>
+
+</html>

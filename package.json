@@ -1,0 +1,7 @@
+{
+  "name": "nissei",
+  "private": true,
+  "scripts": {
+    "build:locales": "node scripts/build-locales.mjs"
+  }
+}

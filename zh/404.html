@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到 | 日靜 - NISSEI</title>
+    <meta name="description" content="找不到您要访问的页面。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lang-switch.js?v=1" defer></script>
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f9f5;
+        }
+
+        .error-page__content {
+            max-width: 600px;
+        }
+
+        .error-page__code {
+            font-family: var(--font-serif);
+            font-size: 8rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .error-page__title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .error-page__desc {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .error-page__logo {
+            margin-bottom: 40px;
+            font-family: var(--font-serif);
+        }
+
+        .error-page__logo-sub {
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            margin-bottom: 5px;
+            font-family: var(--font-sans);
+        }
+
+        .error-page__logo-main {
+            display: block;
+            font-size: 2.5rem;
+            letter-spacing: 0.2em;
+        }
+
+        .error-page__logo-en {
+            display: block;
+            font-size: 0.9rem;
+            letter-spacing: 0.5em;
+            margin-top: 5px;
+            color: var(--text-light);
+        }
+
+        .error-page__buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-page__lang {
+            margin-top: 32px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .error-page__lang a {
+            font-size: 0.85rem;
+            padding: 6px 14px;
+            border: 1px solid rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .error-page__lang a.active {
+            background: var(--text-color);
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .error-page__code {
+                font-size: 5rem;
+            }
+
+            .error-page__title {
+                font-size: 1.4rem;
+            }
+
+            .error-page__buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .error-page__buttons a {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+        <div class="error-page__content">
+            <div class="error-page__logo">
+                <span class="error-page__logo-sub" data-i18n="loading.sub">整栋出租</span>
+                <span class="error-page__logo-main">日靜</span>
+                <span class="error-page__logo-en">Nissei</span>
+            </div>
+
+            <div class="error-page__code">404</div>
+            <h1 class="error-page__title" data-i18n="404.title">页面未找到</h1>
+            <p class="error-page__desc" data-i18n-html="404.desc">您访问的页面可能已移动或删除。<br>请检查网址或返回首页查找。</p>
+
+            <div class="error-page__buttons">
+                <a href="index.html" class="btn-reservation" data-i18n="404.home">返回首页</a>
+                <a href="contact.html" class="btn-outline" data-i18n="404.contact">联系我们</a>
+            </div>
+
+            <div class="error-page__lang header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn active" data-lang="zh">中文</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
