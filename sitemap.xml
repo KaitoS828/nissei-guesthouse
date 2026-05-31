@@ -1,115 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ====== トップページ ====== -->
   <url>
-    <loc>https://xnisse.com/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <loc>https://www.gh-nissei.jp/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <loc>https://www.gh-nissei.jp/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/"/>
+    <loc>https://www.gh-nissei.jp/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ====== KOBU SAUNA ページ ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/kobusauna.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/kobusauna.html"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/kobusauna.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/kobusauna.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/kobusauna.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/kobusauna.html"/>
+    <loc>https://www.gh-nissei.jp/en/kobusauna.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/kobusauna.html"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/en/kobusauna.html</loc>
+    <loc>https://www.gh-nissei.jp/zh/kobusauna.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/kobusauna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/kobusauna.html"/>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ====== お問い合わせ ====== -->
   <url>
-    <loc>https://xnisse.com/zh/kobusauna.html</loc>
+    <loc>https://www.gh-nissei.jp/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/contact.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/contact.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/contact.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ====== ハウスルール ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/houserule.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/houserule.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/houserule.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/houserule.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/houserule.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/houserule.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/houserule.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ====== キャンセルポリシー ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/cancel-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/cancel-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/cancel-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/cancel-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/cancel-policy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ====== プライバシーポリシー ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/privacy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/privacy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/privacy.html"/>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ====== ニュース ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/news/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/contact.html"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/en/contact.html</loc>
+    <loc>https://www.gh-nissei.jp/news/001-website-launch.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/zh/contact.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/houserule.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/houserule.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/houserule.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/houserule.html"/>
+    <loc>https://www.gh-nissei.jp/news/002-kobu-sauna-open.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xnisse.com/en/houserule.html</loc>
+    <loc>https://www.gh-nissei.jp/news/003-reservation-open.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/zh/houserule.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://xnisse.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://xnisse.com/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://xnisse.com/zh/privacy.html"/>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/en/privacy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xnisse.com/zh/privacy.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 </urlset>

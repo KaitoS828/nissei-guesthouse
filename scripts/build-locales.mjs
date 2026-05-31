@@ -16,7 +16,7 @@ const PAGES = [
     '404.html',
 ];
 
-const SITE = 'https://xnisse.com';
+const SITE = 'https://www.gh-nissei.jp';
 
 function applyI18n(html, lang) {
     const t = translations[lang];
@@ -76,7 +76,7 @@ function fixAssetPaths(html) {
         .replace(/src="\.\/img\//g, 'src="../img/')
         .replace(/src="\.\/js\//g, 'src="../js/')
         .replace(/src="\.\/main\.js/g, 'src="../main.js')
-        .replace(/content="https:\/\/xnisse\.com\/img\//g, 'content="https://xnisse.com/img/');
+        .replace(/content="https:\/\/www\.gh-nissei\.jp\/img\//g, 'content="https://www.gh-nissei.jp/img/');
 }
 
 function fixScripts(html) {
