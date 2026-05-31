@@ -94,6 +94,10 @@ const translations = {
         'access.dir3.label': '忠類大樹ICから車で',
         'access.dir3.val':   '40分',
         'access.note':    '※車でのお越しをお勧めしております',
+        'access.maps.link': 'Google マップで開く →',
+        'ks.ikitai.link': 'サウナイキタイで口コミ・施設情報を見る →',
+        'hero.alt.stones': 'KOBU SAUNAのサウナストーン',
+        'hero.alt.relax': '外気浴の様子',
 
         'contact.title':  'お問い合わせ',
         'contact.sub':    'contact',
@@ -235,6 +239,10 @@ const translations = {
         'access.dir3.label': 'From Churui-Taiki IC',
         'access.dir3.val':   '40 min by car',
         'access.note':    '* We recommend arriving by car',
+        'access.maps.link': 'Open in Google Maps →',
+        'ks.ikitai.link': 'View reviews on Sauna Ikitai →',
+        'hero.alt.stones': 'Sauna stones at KOBU SAUNA',
+        'hero.alt.relax': 'Outdoor cooling area',
 
         'contact.title':  'Contact',
         'contact.sub':    'contact',
@@ -376,6 +384,10 @@ const translations = {
         'access.dir3.label': '从忠类大树IC乘车',
         'access.dir3.val':   '约40分钟',
         'access.note':    '※建议自驾前往',
+        'access.maps.link': '在 Google 地图中打开 →',
+        'ks.ikitai.link': '在 Sauna Ikitai 查看口碑 →',
+        'hero.alt.stones': 'KOBU SAUNA 的桑拿石',
+        'hero.alt.relax': '外气浴的样子',
 
         'contact.title':  '联系我们',
         'contact.sub':    'contact',

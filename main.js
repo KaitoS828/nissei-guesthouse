@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 周辺環境ギャラリースライダーの設定
     setupSurroundingsSlider();
+
+    // 言語切替フローティングウィジェットの設定
+    setupFloatingLang();
 });
 
 // ========================================
@@ -264,5 +267,27 @@ function setupHeroSlideshow() {
         slides[current].classList.remove('hero__slide--active');
         current = (current + 1) % slides.length;
         slides[current].classList.add('hero__slide--active');
-    }, 5000);
+    }, 3500);
+}
+
+// ========================================
+// 言語切替フローティングウィジェットの制御
+// ========================================
+function setupFloatingLang() {
+    const toggle = document.getElementById('floating-lang-toggle');
+    const container = document.getElementById('floating-lang');
+
+    if (toggle && container) {
+        toggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            container.classList.toggle('open');
+        });
+
+        // パネルの外をクリックしたときに閉じる
+        document.addEventListener('click', function (e) {
+            if (!container.contains(e.target)) {
+                container.classList.remove('open');
+            }
+        });
+    }
 }

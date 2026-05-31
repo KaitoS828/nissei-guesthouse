@@ -11,6 +11,7 @@ const PAGES = [
     'kobusauna.html',
     'contact.html',
     'privacy.html',
+    'cancel-policy.html',
     'houserule.html',
     '404.html',
 ];
@@ -123,6 +124,15 @@ function fixHouserule(html, lang) {
         .replace(/<p class="rule-item__txt-en">[\s\S]*?<\/p>\s*/g, '');
 }
 
+function stripJpOnly(html, lang) {
+    if (lang === 'jp') return html;
+    // data-jp-only 属性がある要素を丸ごと削除（タグはdiv/section/aside/p/ul/li/nav/footerなど）
+    return html.replace(
+        /<([a-z]+)([^>]*\sdata-jp-only(?:="[^"]*")?[^>]*)>[\s\S]*?<\/\1>\s*/gi,
+        ''
+    );
+}
+
 function fixLangActive(html, lang) {
     ['header__lang-btn', 'mobile-nav__lang-btn'].forEach((cls) => {
         html = html.replace(new RegExp(`class="${cls} active"`, 'g'), `class="${cls}"`);
@@ -141,6 +151,7 @@ function buildLocale(lang) {
 
     for (const file of PAGES) {
         let html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+        html = stripJpOnly(html, lang);
         html = applyI18n(html, lang);
         html = fixHouserule(html, lang);
         html = fixAssetPaths(html);

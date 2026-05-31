@@ -5,57 +5,79 @@
     const LOCALES = ['jp', 'en', 'zh'];
 
     function parsePath() {
-        const parts = window.location.pathname.split('/').filter(Boolean);
+        const path = window.location.pathname;
         let locale = 'jp';
-        if (parts[0] === 'en' || parts[0] === 'zh') {
-            locale = parts.shift();
+        let relPath = path;
+
+        if (path.includes('/en/')) {
+            locale = 'en';
+            relPath = path.substring(path.indexOf('/en/') + 4);
+        } else if (path.includes('/zh/')) {
+            locale = 'zh';
+            relPath = path.substring(path.indexOf('/zh/') + 4);
+        } else if (path.endsWith('/en') || path.endsWith('/en/index.html')) {
+            locale = 'en';
+            relPath = 'index.html';
+        } else if (path.endsWith('/zh') || path.endsWith('/zh/index.html')) {
+            locale = 'zh';
+            relPath = 'index.html';
+        } else {
+            // 日本語版 (file:// プロトコルやローカルサーバーを考慮)
+            const projectRoot = 'nissei';
+            const rootIdx = path.indexOf('/' + projectRoot + '/');
+            if (rootIdx !== -1) {
+                relPath = path.substring(rootIdx + projectRoot.length + 2);
+            } else {
+                relPath = path.replace(/^\//, '');
+            }
         }
+
+        const parts = relPath.split('/').filter(Boolean);
         let page = parts[parts.length - 1] || '';
         if (!page || !page.endsWith('.html')) {
             page = 'index.html';
         }
-        return { locale, page };
+        
+        const dirs = parts.slice(0, -1);
+        return { locale, page, dirs };
     }
 
     function hrefFor(targetLocale) {
-        const { locale, page } = parsePath();
-        const file = page === 'index.html' ? 'index.html' : page;
+        const { locale, page, dirs } = parsePath();
+        
+        // ルートディレクトリまでの相対パスプレフィックスを生成
+        let toRoot = dirs.map(() => '../').join('');
+        // en/ や zh/ サブディレクトリにいる場合はそのフォルダ分も遡る
+        if (locale !== 'jp') toRoot = '../' + toRoot;
+        if (!toRoot) toRoot = './';
+
+        // ニュースの個別記事ページなどは他言語版がないため、トップページに遷移させる
+        const isNews = dirs.includes('news') || page.startsWith('00');
+        const file = isNews ? 'index.html' : page;
 
         if (targetLocale === locale) {
-            if (file === 'index.html') {
-                return locale === 'jp' ? './' : './';
-            }
-            return './' + file;
+            return toRoot + (locale === 'jp' ? '' : locale + '/') + file;
         }
 
         if (targetLocale === 'jp') {
-            if (locale === 'jp') {
-                return file === 'index.html' ? '/' : '/' + file;
-            }
-            return file === 'index.html' ? '../' : '../' + file;
+            return toRoot + file;
         }
 
-        const sub = targetLocale;
-        if (locale === 'jp') {
-            return file === 'index.html' ? sub + '/' : sub + '/' + file;
-        }
-        if (locale === targetLocale) {
-            return file === 'index.html' ? './' : './' + file;
-        }
-        return file === 'index.html' ? '../' + sub + '/' : '../' + sub + '/' + file;
+        return toRoot + targetLocale + '/' + file;
     }
 
     function wireLangControls() {
         const { locale } = parsePath();
 
-        document.querySelectorAll('.header__lang-btn, .mobile-nav__lang-btn').forEach((btn) => {
+        document.querySelectorAll('.header__lang-btn, .mobile-nav__lang-btn, .floating-lang__btn').forEach((btn) => {
             const target = btn.dataset.lang;
             if (!LOCALES.includes(target)) return;
 
             const link = document.createElement('a');
             link.href = hrefFor(target);
-            link.className = btn.className;
+            link.className = btn.className.replace(/\bactive\b/g, '').trim();
             link.textContent = btn.textContent;
+            link.setAttribute('data-lang', target);
             if (target === locale) {
                 link.classList.add('active');
                 link.setAttribute('aria-current', 'page');

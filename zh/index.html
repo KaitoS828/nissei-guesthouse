@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="google06151e1d15ade396" />
     <!-- レスポンシブ対応のためのビューポート設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日靜 - NISSEI | 北海道广尾町音调津整栋出租民宿</title>
@@ -72,10 +73,10 @@
 
     <!-- スタイルシートの読み込み (リセットCSSとスタイルCSS) -->
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css?v=4">
+    <link rel="stylesheet" href="../css/style.css?v=7">
     <link rel="stylesheet" href="../css/loading.css?v=2">
-    <script src="../js/lang-switch.js?v=1" defer></script>
-    <script src="../main.js?v=3" defer></script>
+    <script src="../js/lang-switch.js?v=2" defer></script>
+    <script src="../main.js?v=4" defer></script>
 </head>
 
 <body>
@@ -115,11 +116,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__lang">
-                <button class="header__lang-btn" data-lang="jp">JP</button>
-                <button class="header__lang-btn" data-lang="en">EN</button>
-                <button class="header__lang-btn active" data-lang="zh">中文</button>
-            </div>
             <!-- ハンバーガーメニュー (モバイル用) -->
             <button class="header__menu-btn" aria-label="メニューを開く">
                 <span></span>
@@ -181,26 +177,19 @@
                 <div class="hero__slide">
                     <img src="../img/hero_exterior.jpg" alt="日靜 外观" class="hero__image" data-i18n-alt="hero.alt.exterior">
                 </div>
-            </div>
-        </section>
-
-        <!-- 最新情報 (NEWS) -->
-        <section id="news" class="news section-padding">
-            <div class="container--narrow">
-                <header class="news__header">
-                    <h2 class="section-title" data-i18n="news.title">最新资讯</h2>
-                    <p class="section-subtitle-en" data-i18n="news.sub">news</p>
-                </header>
-                <div class="news__list">
-                    <article class="news-card">
-                        <time class="news-card__date" datetime="2026-05-31" data-i18n="news.item1.date">2026.05.31</time>
-                        <h3 class="news-card__title" data-i18n="news.item1.title">官方网站正式上线</h3>
-                        <p class="news-card__body" data-i18n="news.item1.body">日靜（NISSEI）官方网站已正式上线。住宿介绍、KOBU SAUNA资讯及咨询请通过本网站联系我们。感谢您的关注与支持。</p>
-                    </article>
+                <div class="hero__slide">
+                    <img src="../img/kobusauna_stones.jpg" alt="KOBU SAUNAのサウナストーン" class="hero__image" data-i18n-alt="hero.alt.stones">
+                </div>
+                <div class="hero__slide">
+                    <img src="../img/kobusauna_entrance.jpg" alt="KOBU SAUNAの入口" class="hero__image" data-i18n-alt="hero.alt.entrance">
+                </div>
+                <div class="hero__slide">
+                    <img src="../img/kobusauna_relax.jpg" alt="外気浴の様子" class="hero__image" data-i18n-alt="hero.alt.relax">
                 </div>
             </div>
         </section>
 
+        <!-- 最新情報 (NEWS) -->
         <!-- 宿について (ABOUT) セクション -->
         <section id="about" class="about">
             <div class="about__header">
@@ -508,11 +497,11 @@
                 <h2 class="section-title" data-i18n="access.title">交通</h2>
                 <p class="section-subtitle-en" data-i18n="access.sub">access</p>
                 <div class="access__map">
-                    <!-- Google Mapsの埋め込み (北海道広尾郡広尾町音調津) -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.5846941521872!2d143.3163252!3d42.22332009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f76bc9bcdaebbc7%3A0x7326fa435ff7d577!2z44CSMDg5LTI3NzEg5YyX5rW36YGT5bqD5bC-6YOh5bqD5bC-55S66Z-z6Kq_5rSl77yX77yT77yT!5e0!3m2!1sja!2sjp!4v1769384994904!5m2!1sja!2sjp"
                         width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.app.goo.gl/RBTT8JNqiKvBHZvW9" class="access__map-link" target="_blank" rel="noopener noreferrer" data-i18n="access.maps.link">Google マップで開く →</a>
                 </div>
                 <div class="access__info">
                     <div class="access__address">
@@ -533,6 +522,7 @@
                 </div>
             </div>
         </section>
+
 
 
 
@@ -563,22 +553,12 @@
                     <li><a href="#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
                     <li><a href="#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
                     <li><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li><a href="cancel-policy.html">キャンセルポリシー<br><span>cancel policy</span></a></li>
                     <li><a href="privacy.html" data-i18n-html="nav.privacy.link">隐私政策<br><span>privacy</span></a></li>
                 </ul>
             </nav>
             <div class="footer__sns">
-                <a href="#" class="sns-icon" aria-label="Facebook">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                    </svg>
-                </a>
-                <a href="#" class="sns-icon" aria-label="X (Twitter)">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                </a>
-                <a href="#" class="sns-icon" aria-label="Instagram">
+                <a href="https://www.instagram.com/nissei_guesthouse/" class="sns-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
@@ -591,6 +571,15 @@
 
     <!-- スマホ用追従予約ボタン -->
     <a href="https://reserva.be/nissei" class="floating-reserve" target="_blank" rel="noopener noreferrer" data-i18n="floating.reserve">预约查询</a>
+
+    <!-- 言語切替フローティングウィジェット (右下固定) -->
+    <div class="floating-lang" id="floating-lang">
+        <div class="floating-lang__panel" id="floating-lang-panel">
+            <button class="floating-lang__btn active" data-lang="jp">JP</button>
+            <button class="floating-lang__btn" data-lang="en">EN</button>
+            <button class="floating-lang__btn" data-lang="zh">中文</button>
+        </div>
+    </div>
 
 </body>
 
