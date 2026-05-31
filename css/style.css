@@ -2,21 +2,59 @@
    Base Styles & Variables
    ========================================================================== */
 :root {
-    /* 色の定義 */
+    /* === Color tokens === */
     --text-color: #333333;
     --text-light: #666666;
     --bg-color: #FAFAFA;
     --accent-color: #5b7d7c;
     --accent-light: #739695;
+    --accent-dark: #426B6E;
     --white: #ffffff;
     --gray-light: #F5F5F5;
     --gray-border: #E0E0E0;
     --ruletitle-color: #426B6E;
+    --rates-bg: #E8F0F0;
+    --dark-overlay: rgba(0, 0, 0, 0.85);
+    --header-bg: rgba(0, 0, 0, 0.6);
 
-
-    /* フォントの定義 */
+    /* === Typography tokens === */
     --font-serif: 'Zen Old Mincho', serif;
     --font-sans: 'Zen Kaku Gothic New', sans-serif;
+    --letter-wide: 0.08em;
+    --letter-extra-wide: 0.2em;
+
+    /* === Spacing tokens === */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-2xl: 64px;
+    --space-3xl: 100px;
+
+    /* === Layout tokens === */
+    --container-narrow: 760px;
+    --container-default: 960px;
+    --container-wide: 1280px;
+    --header-h: 70px;
+    --radius-sm: 2px;
+    --radius-md: 6px;
+
+    /* === Motion tokens === */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.8s ease;
+
+    /* === Shadow tokens === */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+    /* === Z-index scale === */
+    --z-base: 1;
+    --z-header: 1000;
+    --z-floating: 9998;
+    --z-overlay: 9999;
 }
 
 html {
@@ -1590,45 +1628,121 @@ a.mobile-nav__lang-btn {
    ========================================================================== */
 .faq {
     padding: 100px 20px;
-    background-color: var(--gray-light);
+    background-color: var(--bg-color, #f8f9f5);
 }
 
 .faq__inner {
-    max-width: 700px;
+    max-width: 840px;
     margin: 0 auto;
     text-align: center;
 }
 
 .faq__list {
     text-align: left;
-    margin-bottom: 40px;
+    margin-top: 48px;
 }
 
 .faq__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--gray-border);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
 }
 
-.faq__category {
-    font-size: 0.8rem;
-    color: var(--text-light);
-    flex-shrink: 0;
+.faq__item:first-child {
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 .faq__question {
-    text-decoration: none;
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    text-align: right;
-    flex: 1;
-    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 8px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    font-family: var(--font-serif);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--text-color);
+    position: relative;
+    padding-right: 44px;
 }
 
-.faq__question:hover {
+.faq__question::-webkit-details-marker { display: none; }
+
+.faq__question::after {
+    content: '+';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-light);
+    transition: transform 0.3s;
+}
+
+.faq__item[open] > .faq__question::after {
+    content: '−';
+}
+
+.faq__q-mark,
+.faq__a-mark {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.faq__q-mark {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.faq__a-mark {
+    background: rgba(0,0,0,0.06);
+    color: var(--text-color);
+}
+
+.faq__answer {
+    display: flex;
+    gap: 16px;
+    padding: 0 8px 22px 8px;
+    align-items: flex-start;
+}
+
+.faq__answer p {
+    font-size: 0.88rem;
+    line-height: 2;
+    color: var(--text-color);
+    margin: 0;
+    padding-top: 2px;
+}
+
+.faq__answer a {
+    color: var(--accent-color);
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .faq__question {
+        font-size: 0.9rem;
+        padding-right: 36px;
+        gap: 12px;
+    }
+    .faq__q-mark, .faq__a-mark {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
+    .faq__answer { gap: 12px; }
+    .faq__answer p { font-size: 0.83rem; }
 }
 
 /* ==========================================================================

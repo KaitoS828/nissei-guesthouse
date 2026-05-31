@@ -44,36 +44,147 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "name": "日靜 - NISSEI",
-      "image": "https://www.gh-nissei.jp/img/kobusauna_hero.jpg",
-      "@id": "https://www.gh-nissei.jp",
-      "url": "https://www.gh-nissei.jp",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "音調津733",
-        "addressLocality": "広尾町",
-        "addressRegion": "北海道",
-        "postalCode": "089-2627",
-        "addressCountry": "JP"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 42.223320,
-        "longitude": 143.316325
-      },
-      "priceRange": "¥28,000〜",
-      "description": "北海道広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、静寂と癒しの時間を提供します。",
-      "checkinTime": "15:00",
-      "checkoutTime": "10:00"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.gh-nissei.jp/#website",
+          "url": "https://www.gh-nissei.jp/",
+          "name": "日靜 - NISSEI",
+          "description": "北海道広尾町音調津の一棟貸しゲストハウス。プライベートサウナ KOBU SAUNA 併設。",
+          "inLanguage": ["ja", "en", "zh-CN"],
+          "publisher": {"@id": "https://www.gh-nissei.jp/#organization"}
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.gh-nissei.jp/#organization",
+          "name": "日靜 - NISSEI",
+          "url": "https://www.gh-nissei.jp/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gh-nissei.jp/img/favicon_logo.png"
+          },
+          "sameAs": [
+            "https://www.instagram.com/nissei_guesthouse/",
+            "https://sauna-ikitai.com/saunas/113386"
+          ]
+        },
+        {
+          "@type": "LodgingBusiness",
+          "@id": "https://www.gh-nissei.jp/#lodging",
+          "name": "日靜 - NISSEI",
+          "alternateName": ["NISSEI", "にっせい", "ゲストハウス日靜"],
+          "image": [
+            "https://www.gh-nissei.jp/img/kobusauna_hero.jpg",
+            "https://www.gh-nissei.jp/img/hero_coast.webp",
+            "https://www.gh-nissei.jp/img/hero_exterior.jpg"
+          ],
+          "url": "https://www.gh-nissei.jp/",
+          "telephone": "",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "音調津733",
+            "addressLocality": "広尾町",
+            "addressRegion": "北海道",
+            "postalCode": "089-2627",
+            "addressCountry": "JP"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.223320,
+            "longitude": 143.316325
+          },
+          "hasMap": "https://maps.app.goo.gl/RBTT8JNqiKvBHZvW9",
+          "priceRange": "¥20,000〜",
+          "description": "北海道広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、一日一組限定・プライベートサウナ付きの静寂と癒しの時間を提供します。",
+          "checkinTime": "15:00",
+          "checkoutTime": "10:00",
+          "numberOfRooms": "2",
+          "maximumAttendeeCapacity": 6,
+          "petsAllowed": false,
+          "smokingAllowed": false,
+          "amenityFeature": [
+            {"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true},
+            {"@type":"LocationFeatureSpecification","name":"駐車場","value":true},
+            {"@type":"LocationFeatureSpecification","name":"プライベートサウナ","value":true},
+            {"@type":"LocationFeatureSpecification","name":"BBQコンロ","value":true},
+            {"@type":"LocationFeatureSpecification","name":"キッチン","value":true},
+            {"@type":"LocationFeatureSpecification","name":"洗濯機","value":true}
+          ],
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "name": "1棟貸し宿泊（2名様）",
+              "price": "20000",
+              "priceCurrency": "JPY"
+            },
+            {
+              "@type": "Offer",
+              "name": "1棟貸し宿泊（4名様まで）",
+              "price": "28000",
+              "priceCurrency": "JPY"
+            },
+            {
+              "@type": "Offer",
+              "name": "プライベートサウナ付き日帰り宿泊（1人）",
+              "price": "3000",
+              "priceCurrency": "JPY"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.gh-nissei.jp/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "チェックイン・チェックアウトの時間は何時ですか？",
+              "acceptedAnswer": {"@type":"Answer","text":"チェックインは15:00以降、チェックアウトは10:00までとなっております。"}
+            },
+            {
+              "@type": "Question",
+              "name": "最大何名まで宿泊できますか？",
+              "acceptedAnswer": {"@type":"Answer","text":"最大6名様までご宿泊いただけます。一日一組限定の貸切のため、ご家族・ご友人同士でゆったりとお過ごしいただけます。"}
+            },
+            {
+              "@type": "Question",
+              "name": "KOBU SAUNAは宿泊者以外も利用できますか？",
+              "acceptedAnswer": {"@type":"Answer","text":"はい、日帰り利用も可能です。完全予約制で1回3時間制、11:00～14:00の時間帯にご利用いただけます。料金は1人3,000円（税込）です。"}
+            },
+            {
+              "@type": "Question",
+              "name": "食事は付いていますか？",
+              "acceptedAnswer": {"@type":"Answer","text":"素泊まりのみのご提供となります。キッチン・調理器具・BBQコンロを完備しており、地場産食材を使った自炊やBBQをお楽しみいただけます。"}
+            },
+            {
+              "@type": "Question",
+              "name": "アクセス方法を教えてください。",
+              "acceptedAnswer": {"@type":"Answer","text":"帯広駅から車で約90分、帯広空港から約70分、忠類大樹ICから約40分です。車でのお越しを推奨。駐車場2台分完備。"}
+            },
+            {
+              "@type": "Question",
+              "name": "営業期間はいつですか？冬季も利用できますか？",
+              "acceptedAnswer": {"@type":"Answer","text":"毎年4月～11月の営業。12月～3月は冬季休業期間とさせていただいております。"}
+            },
+            {
+              "@type": "Question",
+              "name": "ペットの同伴は可能ですか？",
+              "acceptedAnswer": {"@type":"Answer","text":"恐れ入りますが、当宿はペットのご利用はお断りしております。"}
+            },
+            {
+              "@type": "Question",
+              "name": "キャンセル料はかかりますか？",
+              "acceptedAnswer": {"@type":"Answer","text":"ご宿泊日の14日前から段階的にキャンセル料が発生いたします。詳細はキャンセルポリシーをご確認ください。"}
+            }
+          ]
+        }
+      ]
     }
     </script>
 
 
     <!-- スタイルシートの読み込み (リセットCSSとスタイルCSS) -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css?v=7">
+    <link rel="stylesheet" href="./css/style.css?v=6">
     <link rel="stylesheet" href="./css/loading.css?v=2">
     <script src="./js/lang-switch.js?v=2" defer></script>
     <script src="./main.js?v=4" defer></script>
@@ -565,8 +676,103 @@
             </div>
         </section>
 
+        <!-- よくある質問 (FAQ) -->
+        <section id="faq" class="faq" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq__inner">
+                <h2 class="section-title" data-i18n="faq.title">よくある質問</h2>
+                <p class="section-subtitle-en" data-i18n="faq.sub">FAQ</p>
 
+                <div class="faq__list">
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q1.q">チェックイン・チェックアウトの時間は何時ですか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q1.a">チェックインは15:00以降、チェックアウトは10:00までとなっております。ご事情がある場合は事前にご相談ください。</p>
+                        </div>
+                    </details>
 
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q2.q">最大何名まで宿泊できますか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q2.a">最大6名様までご宿泊いただけます。一日一組限定の貸切のため、ご家族・ご友人同士でゆったりとお過ごしいただけます。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q3.q">KOBU SAUNAは宿泊者以外も利用できますか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q3.a">はい、日帰り利用も可能です。完全予約制で1回3時間制、11:00～14:00の時間帯にご利用いただけます。料金は1人3,000円（税込）です。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q4.q">食事は付いていますか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q4.a">素泊まりのみのご提供となります。キッチン・調理器具・BBQコンロを完備しておりますので、地場産食材を使った自炊やBBQをお楽しみいただけます。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q5.q">アクセス方法を教えてください。</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q5.a">帯広駅から車で約90分、帯広空港から約70分、忠類大樹ICから約40分です。最寄りに公共交通機関はないため、車でのお越しを推奨しております。駐車場2台分完備。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q6.q">営業期間はいつですか？冬季も利用できますか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q6.a">毎年4月～11月の営業となります。12月～3月は冬季休業期間とさせていただいております。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q7.q">ペットの同伴は可能ですか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q7.a">恐れ入りますが、当宿はペットのご利用はお断りしております。</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq__question">
+                            <span class="faq__q-mark">Q</span>
+                            <span itemprop="name" data-i18n="faq.q8.q">キャンセル料はかかりますか？</span>
+                        </summary>
+                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <span class="faq__a-mark">A</span>
+                            <p itemprop="text" data-i18n="faq.q8.a">ご宿泊日の14日前から段階的にキャンセル料が発生いたします。詳細は<a href="cancel-policy.html">キャンセルポリシー</a>をご確認ください。</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
 
         <!-- お問い合わせ (CONTACT) -->
         <section id="contact" class="contact">
