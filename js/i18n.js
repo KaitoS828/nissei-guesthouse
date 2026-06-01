@@ -16,7 +16,7 @@ const translations = {
 
         'about.title':     '宿について',
         'about.sub':       'About',
-        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、一日一組限定のプライベートサウナ付き一棟貸宿です。',
+        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、<br class="br-mobile">一日一組限定のプライベートサウナ付き一棟貸宿です。',
 
         'surroundings.title': '日高山脈襟裳十勝国立公園に望む',
         'surroundings.lead1': '暮らすように泊まる、1日1組の一棟貸し宿',
@@ -85,7 +85,7 @@ const translations = {
 
         'access.title':   'アクセス',
         'access.sub':     'access',
-        'access.name':    '日靜',
+        'access.name':    '一棟貸しゲストハウス日靜',
         'access.addr':    '〒089-2627 北海道広尾町音調津733',
         'access.dir1.label': '帯広駅から車で',
         'access.dir1.val':   '90分',
@@ -249,7 +249,7 @@ const translations = {
 
         'access.title':   'Access',
         'access.sub':     'access',
-        'access.name':    'Nissei',
+        'access.name':    'Guest House Nissei',
         'access.addr':    '733 Oshirabetsu, Hiroo-cho, Hokkaido 089-2627',
         'access.dir1.label': 'From Obihiro Station',
         'access.dir1.val':   '90 min by car',
@@ -413,7 +413,7 @@ const translations = {
 
         'access.title':   '交通',
         'access.sub':     'access',
-        'access.name':    '日靜',
+        'access.name':    '整栋出租民宿 日靜',
         'access.addr':    '〒089-2627 北海道广尾町音调津733',
         'access.dir1.label': '从帯広站乘车',
         'access.dir1.val':   '约90分钟',

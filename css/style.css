@@ -1160,7 +1160,7 @@ a.mobile-nav__lang-btn {
     background-color: #fff;
 }
 
-.btn-arrow--boxed {
+a.btn-arrow--boxed {
     display: inline-block;
     background-color: rgba(20, 30, 35, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.7);
@@ -1168,10 +1168,24 @@ a.mobile-nav__lang-btn {
     border-radius: 2px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+    color: #fff;
+    font-weight: 700;
 }
 
-.btn-arrow--boxed:hover {
+a.btn-arrow--boxed:hover {
     background-color: rgba(20, 30, 35, 0.75);
+    color: #fff;
+}
+
+/* 携帯のみ改行する補助（縦書きでは新しい行になり縦の長さを抑える） */
+.br-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .br-mobile {
+        display: inline;
+    }
 }
 
 .experience-card__badge {
@@ -1416,10 +1430,24 @@ a.mobile-nav__lang-btn {
     font-weight: 700;
     margin-bottom: 15px;
     font-family: var(--font-serif);
+    letter-spacing: -0.02em;
 }
 
 .rates__guests {
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .rates__price-item {
+        font-size: 1.15rem;
+        letter-spacing: -0.04em;
+    }
+    .rates__price-item--dayuse {
+        flex-wrap: nowrap;
+    }
+    .rates__guests {
+        margin-right: 6px;
+    }
 }
 
 .rates__additional {
@@ -2964,14 +2992,14 @@ a.mobile-nav__lang-btn {
         transform: none;
         width: auto;
         max-width: none;
-        padding: 9px 16px;
-        font-size: 0.78rem;
+        padding: 12px 22px;
+        font-size: 0.9rem;
         letter-spacing: 0.04em;
     }
 
     /* ボタンの分だけフッターに余白を追加 */
     .footer {
-        padding-bottom: 64px;
+        padding-bottom: 70px;
     }
 }
 
@@ -3064,8 +3092,8 @@ a.mobile-nav__lang-btn {
     }
     .floating-reserve {
         left: 8px;
-        padding: 8px 11px;
-        font-size: 0.72rem;
+        padding: 10px 15px;
+        font-size: 0.8rem;
         letter-spacing: 0.02em;
     }
 }
