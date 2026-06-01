@@ -18,7 +18,7 @@ const translations = {
         'about.sub':       'About',
         'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、一日一組限定のプライベートサウナ付き一棟貸宿です。',
 
-        'surroundings.title': '襟裳十勝日高山脈に臨む',
+        'surroundings.title': '日高山脈襟裳十勝国立公園に望む',
         'surroundings.lead1': '暮らすように泊まる、1日1組の一棟貸し宿',
         'surroundings.lead2': '日常を静かに過ごしてほしいという思いを込めています。',
         'surroundings.lead3': '人口80人。スーパーもコンビニもない漁師町ですが、<br>ここには古からの伝統と静寂があります。',
@@ -182,7 +182,7 @@ const translations = {
         'about.sub':       'About',
         'about.desc':      'At the southern tip of Tokachi, Hokkaido — Oshirabetsu, Hiroo-cho.<br>"Nissei" is a whole-building rental inn surrounded by sea and mountains, welcoming one group per day, with a private sauna.',
 
-        'surroundings.title': 'Overlooking the Hidaka Mountains',
+        'surroundings.title': 'Overlooking Hidaka-Erimo-Tokachi National Park',
         'surroundings.lead1': 'A whole-building inn for one group, where you live as if you belong',
         'surroundings.lead2': 'A place designed for quiet, everyday moments.',
         'surroundings.lead3': 'A fishing village of 80 people — no supermarket, no convenience store.<br>But here you will find centuries of tradition and true silence.',
@@ -346,7 +346,7 @@ const translations = {
         'about.sub':       'About',
         'about.desc':      '位于十胜南端，北海道广尾町音调津（おしらべつ）。<br>"日靜"是一处被大海与山脉环绕，每日仅接待一组客人的私人桑拿独栋民宿。',
 
-        'surroundings.title': '眺望日高山脉',
+        'surroundings.title': '眺望日高山脉襟裳十胜国立公园',
         'surroundings.lead1': '一栋独栋，一日一组，如同生活般的住宿体验',
         'surroundings.lead2': '希望您在这里静静地享受日常的时光。',
         'surroundings.lead3': '这里是一个仅有80人的渔村，没有超市也没有便利店，<br>但拥有古老的传统与宁静。',

@@ -33,7 +33,7 @@
     <meta property="og:title" content="日靜 - NISSEI | 北海道広尾町音調津の一棟貸しゲストハウス">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.gh-nissei.jp/">
-    <meta property="og:image" content="https://www.gh-nissei.jp/img/kobusauna_hero.jpg">
+    <meta property="og:image" content="https://www.gh-nissei.jp/img/kobusauna_hero.webp">
     <meta property="og:site_name" content="日靜 - NISSEI">
     <meta property="og:description" content="北海道広尾町音調津にある一棟貸しゲストハウス「日靜」。襟裳十勝日高山脈の絶景、サウナ、BBQなど心地よい滞在をお楽しみください。">
     <meta property="og:locale" content="ja_JP">
@@ -74,9 +74,9 @@
           "name": "日靜 - NISSEI",
           "alternateName": ["NISSEI", "にっせい", "ゲストハウス日靜"],
           "image": [
-            "https://www.gh-nissei.jp/img/kobusauna_hero.jpg",
+            "https://www.gh-nissei.jp/img/kobusauna_hero.webp",
             "https://www.gh-nissei.jp/img/hero_coast.webp",
-            "https://www.gh-nissei.jp/img/hero_exterior.jpg"
+            "https://www.gh-nissei.jp/img/hero_exterior.webp"
           ],
           "url": "https://www.gh-nissei.jp/",
           "telephone": "",
@@ -280,22 +280,22 @@
         <section class="hero">
             <div class="hero__slideshow">
                 <div class="hero__slide hero__slide--active">
-                    <img src="./img/hero_coast.webp" alt="北海道・広尾町音調津の海岸線" class="hero__image" data-i18n-alt="hero.alt.coast">
+                    <img src="./img/hero_coast.webp" alt="北海道・広尾町音調津の海岸線" class="hero__image" data-i18n-alt="hero.alt.coast" fetchpriority="high">
                 </div>
                 <div class="hero__slide">
-                    <img src="./img/kobusauna_hero.jpg" alt="日靜のKOBU SAUNA内観" class="hero__image" data-i18n-alt="hero.alt.sauna">
+                    <img src="./img/kobusauna_hero.webp" alt="日靜のKOBU SAUNA内観" class="hero__image" data-i18n-alt="hero.alt.sauna" loading="lazy" decoding="async">
                 </div>
                 <div class="hero__slide">
-                    <img src="./img/hero_exterior.jpg" alt="日靜の外観" class="hero__image" data-i18n-alt="hero.alt.exterior">
+                    <img src="./img/hero_exterior.webp" alt="日靜の外観" class="hero__image" data-i18n-alt="hero.alt.exterior" loading="lazy" decoding="async">
                 </div>
                 <div class="hero__slide">
-                    <img src="./img/kobusauna_stones.jpg" alt="KOBU SAUNAのサウナストーン" class="hero__image" data-i18n-alt="hero.alt.stones">
+                    <img src="./img/kobusauna_stones.webp" alt="KOBU SAUNAのサウナストーン" class="hero__image" data-i18n-alt="hero.alt.stones" loading="lazy" decoding="async">
                 </div>
                 <div class="hero__slide">
-                    <img src="./img/kobusauna_entrance.jpg" alt="KOBU SAUNAの入口" class="hero__image" data-i18n-alt="hero.alt.entrance">
+                    <img src="./img/kobusauna_entrance.jpg" alt="KOBU SAUNAの入口" class="hero__image" data-i18n-alt="hero.alt.entrance" loading="lazy" decoding="async">
                 </div>
                 <div class="hero__slide">
-                    <img src="./img/kobusauna_relax.jpg" alt="外気浴の様子" class="hero__image" data-i18n-alt="hero.alt.relax">
+                    <img src="./img/kobusauna_relax.jpg" alt="外気浴の様子" class="hero__image" data-i18n-alt="hero.alt.relax" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
@@ -337,10 +337,10 @@
             <div class="about__content">
                 <div class="about__left-col">
                     <figure class="about__figure about__figure--exterior">
-                        <img src="./img/about_exterior.jpg" alt="日靜の外観" class="about__main-image">
+                        <img src="./img/about_exterior.webp" alt="日靜の外観" class="about__main-image" loading="lazy" decoding="async">
                     </figure>
                     <figure class="about__figure about__figure--exterior-2">
-                        <img src="./img/about_kobusauna_door.jpg" alt="KOBU SAUNAの入口" class="about__main-image">
+                        <img src="./img/about_kobusauna_door.webp" alt="KOBU SAUNAの入口" class="about__main-image" loading="lazy" decoding="async">
                     </figure>
                 </div>
                 <div class="about__text-area">
@@ -349,7 +349,7 @@
                     </p>
                 </div>
                 <figure class="about__figure about__figure--interior">
-                    <img src="./img/about_interior.jpg" alt="日靜のダイニングリビング" class="about__main-image">
+                    <img src="./img/about_interior.webp" alt="日靜のダイニングリビング" class="about__main-image" loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -357,36 +357,11 @@
         <!-- ロケーション/周辺環境セクション (SURROUNDINGS) -->
         <section class="surroundings">
             <div class="surroundings__header">
-                <h2 class="surroundings__title" data-i18n="surroundings.title">襟裳十勝日高山脈に臨む</h2>
+                <h2 class="surroundings__title" data-i18n="surroundings.title">日高山脈襟裳十勝国立公園に望む</h2>
                 <div class="surroundings__lead">
                     <p data-i18n="surroundings.lead1">暮らすように泊まる、1日1組の一棟貸し宿</p>
                     <p data-i18n="surroundings.lead2">日常を静かに過ごしてほしいという思いを込めています。</p>
                     <p data-i18n-html="surroundings.lead3">人口80人。スーパーもコンビニもない漁師町ですが、<br>ここには古からの伝統と静寂があります。</p>
-                </div>
-            </div>
-            <div class="surroundings__gallery">
-                <div class="surroundings__viewport">
-                    <div class="surroundings__track">
-                        <figure class="surroundings__slide">
-                            <img src="./img/surroundings_1.png" alt="日高山脈の雪景色">
-                        </figure>
-                        <figure class="surroundings__slide">
-                            <img src="./img/surroundings_2.png" alt="日高山脈襟裳十勝国立公園の看板">
-                        </figure>
-                        <figure class="surroundings__slide">
-                            <img src="./img/activities_1.png" alt="広尾町の空撮写真">
-                        </figure>
-                        <figure class="surroundings__slide">
-                            <img src="./img/activities_2.png" alt="サーフィン">
-                        </figure>
-                        <figure class="surroundings__slide">
-                            <img src="./img/activities_3.png" alt="昆布漁">
-                        </figure>
-                    </div>
-                </div>
-                <div class="surroundings__controls">
-                    <button class="surroundings__arrow surroundings__arrow--prev" aria-label="前へ">&#8592;</button>
-                    <button class="surroundings__arrow surroundings__arrow--next" aria-label="次へ">&#8594;</button>
                 </div>
             </div>
         </section>
@@ -400,12 +375,12 @@
             </div>
             <div class="rooms__inner">
                 <div class="rooms__gallery">
-                    <img src="./img/room_bedroom1.jpg" alt="シングルベッドルーム">
-                    <img src="./img/room_kitchen.jpg" alt="キッチン">
-                    <img src="./img/room_bedroom2.jpg" alt="ツインベッドルーム">
-                    <img src="./img/room_living1.jpg" alt="リビングダイニング">
-                    <img src="./img/room_living2.jpg" alt="リビング">
-                    <img src="./img/room_washroom.jpg" alt="洗面・ランドリー">
+                    <img src="./img/room_bedroom1.webp" alt="シングルベッドルーム" loading="lazy" decoding="async">
+                    <img src="./img/room_kitchen.webp" alt="キッチン" loading="lazy" decoding="async">
+                    <img src="./img/room_bedroom2.webp" alt="ツインベッドルーム" loading="lazy" decoding="async">
+                    <img src="./img/room_living1.webp" alt="リビングダイニング" loading="lazy" decoding="async">
+                    <img src="./img/room_living2.webp" alt="リビング" loading="lazy" decoding="async">
+                    <img src="./img/room_washroom.webp" alt="洗面・ランドリー" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
@@ -420,7 +395,7 @@
                             <div class="floor-info__label-line"></div>
                         </div>
                         <div class="floor-info__floor">
-                            <img src="./img/floor_plan/1F.png" alt="1階の間取り図" class="floor-info__image">
+                            <img src="./img/floor_plan/1F.png" alt="1階の間取り図" class="floor-info__image" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="floor-info__item floor-info__item--2f">
@@ -429,7 +404,7 @@
                             <div class="floor-info__label-line"></div>
                         </div>
                         <div class="floor-info__floor">
-                            <img src="./img/floor_plan/2F.png" alt="2階の間取り図" class="floor-info__image">
+                            <img src="./img/floor_plan/2F.png" alt="2階の間取り図" class="floor-info__image" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -491,6 +466,7 @@
                         <div class="amenity-box" data-i18n="amenity.toaster">トースター</div>
                         <div class="amenity-box" data-i18n="amenity.stove">ガスコンロ</div>
                         <div class="amenity-box" data-i18n="amenity.dryer">ドライヤー</div>
+                        <div class="amenity-box" data-i18n="amenity.gas_dryer">ガス乾燥機</div>
                         <div class="amenity-box" data-i18n="amenity.air_purifier">空気清浄機</div>
                         <div class="amenity-box" data-i18n="amenity.wifi">Wi-Fi</div>
                         <div class="amenity-box" data-i18n="amenity.parking">駐車場</div>
@@ -520,7 +496,7 @@
         <!-- 暖炉イメージ -->
         <section class="fireplace">
             <div class="fireplace__image">
-                <img src="./img/amenities.png" alt="暖炉のある部屋">
+                <img src="./img/amenities.png" alt="暖炉のある部屋" loading="lazy" decoding="async">
             </div>
         </section>
 
@@ -534,7 +510,7 @@
             <div class="experiences__grid">
                 <div class="experience-card experience-card--hero">
                     <div class="experience-card__hero-image">
-                        <img src="./img/about_kobusauna_door.jpg" alt="KOBU SAUNA入口">
+                        <img src="./img/about_kobusauna_door.webp" alt="KOBU SAUNA入口" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
                                 <h4 data-i18n-html="exp.sauna.title">【予約限定】プライベートサウナ<br>KOBU SAUNA</h4>
@@ -544,7 +520,7 @@
                                     音調津の自然に包まれながら、<br>
                                     心身ともにリフレッシュできます。
                                 </p>
-                                <a href="kobusauna.html" class="btn-arrow btn-arrow--large btn-arrow--light" data-i18n="exp.sauna.btn">&gt; KOBU SAUNAについて</a>
+                                <a href="kobusauna.html" class="btn-arrow btn-arrow--large btn-arrow--light btn-arrow--boxed" data-i18n="exp.sauna.btn">&gt; KOBU SAUNAについて</a>
                             </div>
                         </div>
                     </div>
@@ -552,7 +528,7 @@
 
                 <div class="experience-card experience-card--hero">
                     <div class="experience-card__hero-image">
-                        <img src="./img/experiences_2.png" alt="漁師さんの昆布漁体験">
+                        <img src="./img/experiences_2.png" alt="漁師さんの昆布漁体験" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
                                 <h4 data-i18n="exp.fisher.title">【予約限定】漁師町の本物の暮らし体験</h4>
@@ -569,7 +545,7 @@
 
                 <div class="experience-card experience-card--hero">
                     <div class="experience-card__hero-image">
-                        <img src="./img/experiences_3.png" alt="地場産BBQ">
+                        <img src="./img/experiences_3.png" alt="地場産BBQ" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
                                 <h4 data-i18n="exp.bbq.title">地場産食材満喫BBQ</h4>
@@ -787,6 +763,7 @@
 
     <!-- フッター -->
     <footer class="footer">
+        <a href="#top" class="footer__totop">このページのTOPへ</a>
         <div class="footer__inner">
             <div class="footer__logo">
                 <span class="footer__logo-sub" data-i18n="loading.sub">一棟貸し宿</span>
