@@ -88,7 +88,17 @@
             "https://www.gh-nissei.jp/img/hero_exterior.webp"
           ],
           "url": "https://www.gh-nissei.jp/",
-          "telephone": "",
+          "telephone": "070-1251-6275",
+          "potentialAction": [
+            {
+              "@type": "ReserveAction",
+              "target": "https://reserve.gh-nissei.jp/reserve"
+            },
+            {
+              "@type": "ReserveAction",
+              "target": "https://www.instagram.com/nissei_guesthouse/"
+            }
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "音調津733",
@@ -134,7 +144,7 @@
             },
             {
               "@type": "Offer",
-              "name": "プライベートサウナ付き日帰り宿泊（1人）",
+              "name": "プライベートサウナ付き日帰りプラン（1人）",
               "price": "3000",
               "priceCurrency": "JPY"
             }
@@ -157,7 +167,7 @@
             {
               "@type": "Question",
               "name": "KOBU SAUNAは宿泊者以外も利用できますか？",
-              "acceptedAnswer": {"@type":"Answer","text":"はい、日帰り利用も可能です。完全予約制で1回3時間制、11:00～14:00の時間帯にご利用いただけます。料金は1人3,000円（税込）です。"}
+              "acceptedAnswer": {"@type":"Answer","text":"はい、日帰りプランをご用意しております。完全予約制で1回2時間半、11:00～14:30の時間帯にご利用いただけます。料金は1人3,000円（税込）です。"}
             },
             {
               "@type": "Question",
@@ -168,11 +178,6 @@
               "@type": "Question",
               "name": "アクセス方法を教えてください。",
               "acceptedAnswer": {"@type":"Answer","text":"帯広駅から車で約90分、帯広空港から約70分、忠類大樹ICから約40分です。車でのお越しを推奨。駐車場2台分完備。"}
-            },
-            {
-              "@type": "Question",
-              "name": "営業期間はいつですか？冬季も利用できますか？",
-              "acceptedAnswer": {"@type":"Answer","text":"毎年4月～11月の営業。12月～3月は冬季休業期間とさせていただいております。"}
             },
             {
               "@type": "Question",
@@ -316,11 +321,6 @@
                 <p class="news__section-sub" data-i18n="news.sub">news</p>
             </div>
             <div class="news__grid">
-                <a href="/news/001-website-launch.html" class="news-card">
-                    <time class="news-card__date" datetime="2026-05-31">2026.05.31</time>
-                    <span class="news-card__category">お知らせ</span>
-                    <p class="news-card__title">ホームページを開設しました</p>
-                </a>
                 <a href="/news/002-kobu-sauna-open.html" class="news-card">
                     <time class="news-card__date" datetime="2026-05-31">2026.05.31</time>
                     <span class="news-card__category">お知らせ</span>
@@ -331,9 +331,14 @@
                     <span class="news-card__category">お知らせ</span>
                     <p class="news-card__title">2026年夏シーズンの予約受付を開始しました</p>
                 </a>
+                <a href="/news/004-airbnb-open.html" class="news-card">
+                    <time class="news-card__date" datetime="2026-06-21">2026.06.21</time>
+                    <span class="news-card__category">お知らせ</span>
+                    <p class="news-card__title">Airbnbでの予約ページが作成されました</p>
+                </a>
             </div>
             <div class="news__footer">
-                <a href="/news/" class="news__more-link" data-i18n="news.more">最新情報をもっと見る &rarr; news</a>
+                <a href="/news/" class="news__more-link" data-i18n="news.more">最新情報をもっと見る &rarr;</a>
             </div>
         </section>
 
@@ -449,10 +454,6 @@
                         <div class="floor-info__row">
                             <dt data-i18n="rooms.nopet">ペット利用不可</dt>
                         </div>
-                        <div class="floor-info__row">
-                            <dt data-i18n="rooms.winter">冬季休業</dt>
-                            <dd data-i18n="rooms.winter.v">（12月〜3月）</dd>
-                        </div>
                     </dl>
                     <a href="houserule.html" class="btn-outline" data-i18n="rooms.houserule">ハウスルールについて</a>
                 </div>
@@ -559,11 +560,10 @@
                             <div class="experience-card__hero-text">
                                 <h4 data-i18n="exp.bbq.title">地場産食材満喫BBQ</h4>
                                 <p data-i18n-html="exp.bbq.desc">
-                                    広尾町の新鮮な食材を使った<br>
-                                    BBQをお楽しみいただけます。<br>
-                                    静かで満天の星空の下で特別な夜を。
+                                    現在準備中です。<br>
+                                    準備が整い次第、改めてご案内いたします。
                                 </p>
-                                <a href="#" class="btn-arrow btn-arrow--large btn-arrow--light" data-i18n="exp.bbq.price">１人あたり７，０００円〜</a>
+                                <span class="experience-card__coming-soon" data-i18n="exp.bbq.price">現在準備中</span>
                             </div>
                         </div>
                     </div>
@@ -604,7 +604,7 @@
                             <a href="https://reserve.gh-nissei.jp/reserve" class="btn-reservation" target="_blank" rel="noopener noreferrer" data-i18n="rates.reserve">空室確認・ご予約</a>
                         </div>
                         <div class="rates__column">
-                            <p class="rates__column-label" data-i18n="rates.dayuse.label">プライベートサウナ付き日帰り宿泊</p>
+                            <p class="rates__column-label" data-i18n="rates.dayuse.label">プライベートサウナ付き日帰りプラン</p>
                             <div class="rates__price-list">
                                 <div class="rates__price-item rates__price-item--dayuse">
                                     <span class="rates__guests" data-i18n="rates.4guests">4名様まで</span>
@@ -614,14 +614,14 @@
                             <dl class="rates__detail-list">
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.time.label">利用時間</dt>
-                                    <dd data-i18n="rates.dayuse.time.val">1回 3時間制</dd>
+                                    <dd data-i18n="rates.dayuse.time.val">1回 2時間半制</dd>
                                 </div>
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.hours.label">営業時間</dt>
-                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:00</dd>
+                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:30</dd>
                                 </div>
                             </dl>
-                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">宿泊客室以外の施設をご利用いただけます。<br>上記以外の時間でご希望の場合は別途ご相談ください。</p>
+                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">11:00〜14:30の、日靜の日帰り利用プランです。主に宿泊はせず、KOBU SAUNAを楽しみたい方向け。<br>※貸し出しはタオルのみとなります。客室はご利用いただけません。<br>※水着をご持参ください（別途レンタルあり）。<br>※上記以外の時間でご希望の場合は別途ご相談ください。</p>
                         </div>
                     </div>
 
@@ -697,7 +697,7 @@
                         </summary>
                         <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <span class="faq__a-mark">A</span>
-                            <p itemprop="text" data-i18n="faq.q3.a">はい、日帰り利用も可能です。完全予約制で1回3時間制、11:00～14:00の時間帯にご利用いただけます。料金は1人3,000円（税込）です。</p>
+                            <p itemprop="text" data-i18n="faq.q3.a">はい、日帰りプランをご用意しております。完全予約制で1回2時間半、11:00～14:30の時間帯にご利用いただけます。料金は1人3,000円（税込）です。</p>
                         </div>
                     </details>
 
@@ -720,17 +720,6 @@
                         <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <span class="faq__a-mark">A</span>
                             <p itemprop="text" data-i18n="faq.q5.a">帯広駅から車で約90分、帯広空港から約70分、忠類大樹ICから約40分です。最寄りに公共交通機関はないため、車でのお越しを推奨しております。駐車場2台分完備。</p>
-                        </div>
-                    </details>
-
-                    <details class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary class="faq__question">
-                            <span class="faq__q-mark">Q</span>
-                            <span itemprop="name" data-i18n="faq.q6.q">営業期間はいつですか？冬季も利用できますか？</span>
-                        </summary>
-                        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <span class="faq__a-mark">A</span>
-                            <p itemprop="text" data-i18n="faq.q6.a">毎年4月～11月の営業となります。12月～3月は冬季休業期間とさせていただいております。</p>
                         </div>
                     </details>
 
