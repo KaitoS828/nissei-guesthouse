@@ -20,10 +20,10 @@ const translations = {
 
         'about.title':     '宿について',
         'about.sub':       'About',
-        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、<br class="br-mobile">一日一組限定のプライベートサウナ付き一棟貸宿です。',
+        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、<br class="br-mobile">1日1組限定のプライベートサウナ付き一棟貸しゲストハウスです。',
 
         'surroundings.title': '日高山脈襟裳十勝国立公園に望む',
-        'surroundings.lead1': '暮らすように泊まる、1日1組の一棟貸し宿',
+        'surroundings.lead1': '広尾町で暮らすように泊まる、1日1組の一棟貸し宿',
         'surroundings.lead2': '日常を静かに過ごしてほしいという思いを込めています。',
         'surroundings.lead3': '人口80人。スーパーもコンビニもない漁師町ですが、<br>ここには古からの伝統と静寂があります。',
 
@@ -53,7 +53,7 @@ const translations = {
         'exp.sub':         'experiences',
         'exp.sauna.title': '【予約限定】プライベートサウナ<br>KOBU SAUNA',
         'exp.sauna.badge': '別料金',
-        'exp.sauna.desc':  '昆布浜を眺めながらのサウナ体験。<br>音調津の自然に包まれながら、<br>心身ともにリフレッシュできます。',
+        'exp.sauna.desc':  '北海道広尾町のプライベートサウナ。<br>昆布浜を眺めながら整う、<br>心身ともにリフレッシュできる体験。',
         'exp.sauna.btn':   '> KOBU SAUNAについて',
         'exp.fisher.title':'【予約限定】漁師町の本物の暮らし体験',
         'exp.fisher.desc': '地元の漁師さんと触れ合い、<br>昆布干しや漁業の現場を体験。<br>本物との出会いを。',
@@ -89,7 +89,7 @@ const translations = {
 
         'access.title':   'アクセス',
         'access.sub':     'access',
-        'access.name':    '一棟貸しゲストハウス日靜',
+        'access.name':    '北海道広尾町 一棟貸しゲストハウス 日靜（にっせい）',
         'access.addr':    '〒089-2771 北海道広尾町音調津733',
         'access.dir1.label': '帯広駅から車で',
         'access.dir1.val':   '90分',
