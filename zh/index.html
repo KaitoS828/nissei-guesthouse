@@ -22,6 +22,13 @@
     <!-- Google Fontsの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- パフォーマンス: リソースヒント -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LCP画像（ヒーロー先頭スライド）の先読み -->
+    <link rel="preload" as="image" href="../img/hero_coast.webp" fetchpriority="high">
     <!-- Zen Old Mincho (明朝体) と Zen Kaku Gothic New (ゴシック体) を使用 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
@@ -59,7 +66,7 @@
           "@id": "https://www.gh-nissei.jp/#website",
           "url": "https://www.gh-nissei.jp/",
           "name": "日靜 - NISSEI",
-          "description": "北海道広尾町音調津の一棟貸しゲストハウス。プライベートサウナ KOBU SAUNA 併設。",
+          "description": "北海道十勝・広尾町音調津の一棟貸しゲストハウス。プライベートサウナ KOBU SAUNA 併設。1日1組限定。",
           "inLanguage": ["ja", "en", "zh-CN"],
           "publisher": {"@id": "https://www.gh-nissei.jp/#organization"}
         },
@@ -88,7 +95,17 @@
             "https://www.gh-nissei.jp/img/hero_exterior.webp"
           ],
           "url": "https://www.gh-nissei.jp/",
-          "telephone": "",
+          "telephone": "070-1251-6275",
+          "potentialAction": [
+            {
+              "@type": "ReserveAction",
+              "target": "https://reserve.gh-nissei.jp/reserve"
+            },
+            {
+              "@type": "ReserveAction",
+              "target": "https://www.instagram.com/nissei_guesthouse/"
+            }
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "音調津733",
@@ -103,8 +120,8 @@
             "longitude": 143.316325
           },
           "hasMap": "https://maps.app.goo.gl/RBTT8JNqiKvBHZvW9",
-          "priceRange": "¥20,000〜",
-          "description": "北海道広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、一日一組限定・プライベートサウナ付きの静寂と癒しの時間を提供します。",
+          "priceRange": "¥7,000〜",
+          "description": "北海道十勝・広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、1日1組限定・プライベートサウナ付きの静寂と癒しの宿泊体験を提供します。帯広から車で90分。",
           "checkinTime": "15:00",
           "checkoutTime": "10:00",
           "numberOfRooms": "2",
@@ -122,20 +139,20 @@
           "makesOffer": [
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（2名様）",
-              "price": "20000",
+              "name": "ご宿泊 サウナなしプラン（お一人様）",
+              "price": "7000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（4名様まで）",
-              "price": "28000",
+              "name": "ご宿泊 サウナ付きプラン（お一人様）",
+              "price": "10000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "プライベートサウナ付き日帰り宿泊（1人）",
-              "price": "3000",
+              "name": "プライベートサウナ付き日帰りプラン（4名様まで）",
+              "price": "10000",
               "priceCurrency": "JPY"
             }
           ]
@@ -180,6 +197,13 @@
               "acceptedAnswer": {"@type":"Answer","text":"ご宿泊日の14日前から段階的にキャンセル料が発生いたします。詳細はキャンセルポリシーをご確認ください。"}
             }
           ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.gh-nissei.jp/#breadcrumb",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"ホーム","item":"https://www.gh-nissei.jp/"}
+          ]
         }
       ]
     }
@@ -223,6 +247,7 @@
                     <li class="header__item"><a href="#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
                     <li class="header__item"><a href="#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
                     <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li class="header__item"><a href="https://note.com/gh_nissei" target="_blank" rel="noopener noreferrer">note<br><span>blog</span></a></li>
                     <li class="header__item header__item--sauna">
                         <a href="kobusauna.html" data-i18n="nav.sauna">了解KOBU SAUNA</a>
                     </li>
@@ -265,6 +290,7 @@
             <li><a href="#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
             <li><a href="#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
             <li><a href="contact.html" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+            <li><a href="https://note.com/gh_nissei" target="_blank" rel="noopener noreferrer">note<span>blog</span></a></li>
         </ul>
 
         <!-- 予約ボタン -->
@@ -332,7 +358,7 @@
         <!-- ロケーション/周辺環境セクション (SURROUNDINGS) -->
         <section class="surroundings">
             <div class="surroundings__header">
-                <h2 class="surroundings__title" data-i18n="surroundings.title">眺望日高山脉襟裳十胜国立公园</h2>
+                <h2 class="surroundings__title" data-i18n="surroundings.title">眺望日高山脉</h2>
                 <div class="surroundings__lead">
                     <p data-i18n="surroundings.lead1">一栋独栋，一日一组，如同生活般的住宿体验</p>
                     <p data-i18n="surroundings.lead2">希望您在这里静静地享受日常的时光。</p>
@@ -385,7 +411,7 @@
                 </div>
                 <div class="floor-info__details">
                     <p class="floor-info__desc" data-i18n="rooms.desc">建筑外观古朴典雅，内部经过翻新改造，温馨舒适。北欧风格的宽敞客厅与安静的卧室，让您放松身心。</p>
-                    <h4 class="floor-info__title" data-i18n="rooms.stay">住宿须知</h4>
+                    <h3 class="floor-info__title" data-i18n="rooms.stay">住宿须知</h3>
                     <dl class="floor-info__list">
                         <div class="floor-info__row">
                             <dt data-i18n="rooms.checkin">入住时间</dt>
@@ -436,7 +462,7 @@
                         <div class="amenity-box" data-i18n="amenity.toaster">烤面包机</div>
                         <div class="amenity-box" data-i18n="amenity.stove">燃气灶</div>
                         <div class="amenity-box" data-i18n="amenity.dryer">吹风机</div>
-                        <div class="amenity-box" data-i18n="amenity.gas_dryer">燃气烘干机</div>
+                        <div class="amenity-box" data-i18n="amenity.gas_dryer">ガス乾燥機</div>
                         <div class="amenity-box" data-i18n="amenity.air_purifier">空气净化器</div>
                         <div class="amenity-box" data-i18n="amenity.wifi">Wi-Fi</div>
                         <div class="amenity-box" data-i18n="amenity.parking">停车场</div>
@@ -483,7 +509,7 @@
                         <img src="../img/about_kobusauna_door.webp" alt="KOBU SAUNA入口" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n-html="exp.sauna.title">【预约限定】私人桑拿<br>KOBU SAUNA</h4>
+                                <h3 data-i18n-html="exp.sauna.title">【预约限定】私人桑拿<br>KOBU SAUNA</h3>
                                 <small class="experience-card__badge" data-i18n="exp.sauna.badge">额外收费</small>
                                 <p data-i18n-html="exp.sauna.desc">一边眺望昆布海滩，一边享受桑拿体验。<br>置身音调津的大自然之中，<br>让身心彻底放松。</p>
                                 <a href="kobusauna.html" class="btn-arrow btn-arrow--large btn-arrow--light btn-arrow--boxed" data-i18n="exp.sauna.btn">> 了解KOBU SAUNA</a>
@@ -497,7 +523,7 @@
                         <img src="../img/experiences_2.png" alt="漁師さんの昆布漁体験" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.fisher.title">【预约限定】渔村真实生活体验</h4>
+                                <h3 data-i18n="exp.fisher.title">【预约限定】渔村真实生活体验</h3>
                                 <p data-i18n-html="exp.fisher.desc">与当地渔民亲密接触，<br>体验晒昆布和渔业现场。<br>与真实生活的相遇。</p>
                                 <span class="experience-card__coming-soon" data-i18n="exp.fisher.soon">即将推出</span>
                             </div>
@@ -510,9 +536,9 @@
                         <img src="../img/experiences_3.png" alt="地場産BBQ" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.bbq.title">当地食材BBQ</h4>
-                                <p data-i18n-html="exp.bbq.desc">目前正在筹备中。<br>准备就绪后将另行通知。</p>
-                                <span class="experience-card__coming-soon" data-i18n="exp.bbq.price">筹备中</span>
+                                <h3 data-i18n="exp.bbq.title">当地食材BBQ</h3>
+                                <p data-i18n-html="exp.bbq.desc">使用广尾町新鲜食材，<br>享受户外烧烤的乐趣。<br>在满天繁星下度过特别的夜晚。</p>
+                                <span class="experience-card__coming-soon" data-i18n="exp.bbq.price">每人7,000日元起</span>
                             </div>
                         </div>
                     </div>
@@ -529,20 +555,20 @@
                 <div class="rates__content">
                     <div class="rates__columns">
                         <div class="rates__column">
-                            <p class="rates__column-label" data-i18n="rates.stay.label">整栋住宿</p>
+                            <p class="rates__column-label" data-i18n="rates.stay.label">住宿（1人起）</p>
                             <div class="rates__price-list">
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.2guests">2位客人</span>
-                                    <span class="rates__amount">20,000円</span><span class="rates__tax" data-i18n="tax.incl">（含税）</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.nosauna">无桑拿方案</span>
+                                    <span class="rates__amount">7,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax">／人（含税）</span>
                                 </div>
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.4guests">最多4位</span>
-                                    <span class="rates__amount">28,000円</span><span class="rates__tax" data-i18n="tax.incl">（含税）</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.sauna">含桑拿方案</span>
+                                    <span class="rates__amount">10,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax">／人（含税）</span>
                                 </div>
                             </div>
                             <div class="rates__sauna-add">
                                 <p class="rates__sauna-add-title" data-i18n="rates.sauna.add.title">私人桑拿使用</p>
-                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">每人另加3,000日元</p>
+                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">在无桑拿方案基础上每人另加3,000日元</p>
                                 <p class="rates__sauna-add-note" data-i18n="rates.sauna.add.note">住宿期间均可使用</p>
                             </div>
                             <div class="rates__notes">
@@ -563,14 +589,14 @@
                             <dl class="rates__detail-list">
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.time.label">使用时间</dt>
-                                    <dd data-i18n="rates.dayuse.time.val">每次2.5小时</dd>
+                                    <dd data-i18n="rates.dayuse.time.val">每次3小时</dd>
                                 </div>
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.hours.label">营业时间</dt>
-                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:30</dd>
+                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:00</dd>
                                 </div>
                             </dl>
-                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">11:00〜14:30的日靜日归利用方案。主要面向不住宿、但想体验KOBU SAUNA的客人。<br>※仅提供毛巾租借。不可使用客房。<br>※请自备泳衣（可租借：泳衣 300日元／斗篷 300日元）。<br>※如需其他时间段，请另行咨询。</p>
+                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">可使用除住宿客房以外的所有设施。<br>如需其他时间段，请另行咨询。</p>
                         </div>
                     </div>
 
@@ -592,7 +618,7 @@
                 </div>
                 <div class="access__info">
                     <div class="access__address">
-                        <h4 class="access__location-name" data-i18n="access.name">日靜</h4>
+                        <h3 class="access__location-name" data-i18n="access.name">日靜</h3>
                         <p data-i18n="access.addr">〒089-2771 北海道广尾町音调津733</p>
                     </div>
                     <div class="access__directions">
@@ -710,7 +736,7 @@
 
     <!-- フッター -->
     <footer class="footer">
-        <a href="#top" class="footer__totop">返回页面顶部</a>
+        <a href="#top" class="footer__totop">このページのTOPへ</a>
         <div class="footer__inner">
             <div class="footer__logo">
                 <span class="footer__logo-sub" data-i18n="loading.sub">整栋出租</span>

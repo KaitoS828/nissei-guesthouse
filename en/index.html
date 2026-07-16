@@ -22,6 +22,13 @@
     <!-- Google Fontsの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- パフォーマンス: リソースヒント -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LCP画像（ヒーロー先頭スライド）の先読み -->
+    <link rel="preload" as="image" href="../img/hero_coast.webp" fetchpriority="high">
     <!-- Zen Old Mincho (明朝体) と Zen Kaku Gothic New (ゴシック体) を使用 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
@@ -59,7 +66,7 @@
           "@id": "https://www.gh-nissei.jp/#website",
           "url": "https://www.gh-nissei.jp/",
           "name": "日靜 - NISSEI",
-          "description": "北海道広尾町音調津の一棟貸しゲストハウス。プライベートサウナ KOBU SAUNA 併設。",
+          "description": "北海道十勝・広尾町音調津の一棟貸しゲストハウス。プライベートサウナ KOBU SAUNA 併設。1日1組限定。",
           "inLanguage": ["ja", "en", "zh-CN"],
           "publisher": {"@id": "https://www.gh-nissei.jp/#organization"}
         },
@@ -88,7 +95,17 @@
             "https://www.gh-nissei.jp/img/hero_exterior.webp"
           ],
           "url": "https://www.gh-nissei.jp/",
-          "telephone": "",
+          "telephone": "070-1251-6275",
+          "potentialAction": [
+            {
+              "@type": "ReserveAction",
+              "target": "https://reserve.gh-nissei.jp/reserve"
+            },
+            {
+              "@type": "ReserveAction",
+              "target": "https://www.instagram.com/nissei_guesthouse/"
+            }
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "音調津733",
@@ -103,8 +120,8 @@
             "longitude": 143.316325
           },
           "hasMap": "https://maps.app.goo.gl/RBTT8JNqiKvBHZvW9",
-          "priceRange": "¥20,000〜",
-          "description": "北海道広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、一日一組限定・プライベートサウナ付きの静寂と癒しの時間を提供します。",
+          "priceRange": "¥7,000〜",
+          "description": "北海道十勝・広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、1日1組限定・プライベートサウナ付きの静寂と癒しの宿泊体験を提供します。帯広から車で90分。",
           "checkinTime": "15:00",
           "checkoutTime": "10:00",
           "numberOfRooms": "2",
@@ -122,20 +139,20 @@
           "makesOffer": [
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（2名様）",
-              "price": "20000",
+              "name": "ご宿泊 サウナなしプラン（お一人様）",
+              "price": "7000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（4名様まで）",
-              "price": "28000",
+              "name": "ご宿泊 サウナ付きプラン（お一人様）",
+              "price": "10000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "プライベートサウナ付き日帰り宿泊（1人）",
-              "price": "3000",
+              "name": "プライベートサウナ付き日帰りプラン（4名様まで）",
+              "price": "10000",
               "priceCurrency": "JPY"
             }
           ]
@@ -180,6 +197,13 @@
               "acceptedAnswer": {"@type":"Answer","text":"ご宿泊日の14日前から段階的にキャンセル料が発生いたします。詳細はキャンセルポリシーをご確認ください。"}
             }
           ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.gh-nissei.jp/#breadcrumb",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"ホーム","item":"https://www.gh-nissei.jp/"}
+          ]
         }
       ]
     }
@@ -223,6 +247,7 @@
                     <li class="header__item"><a href="#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
                     <li class="header__item"><a href="#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
                     <li class="header__item"><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li class="header__item"><a href="https://note.com/gh_nissei" target="_blank" rel="noopener noreferrer">note<br><span>blog</span></a></li>
                     <li class="header__item header__item--sauna">
                         <a href="kobusauna.html" data-i18n="nav.sauna">About KOBU SAUNA</a>
                     </li>
@@ -265,6 +290,7 @@
             <li><a href="#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
             <li><a href="#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
             <li><a href="contact.html" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+            <li><a href="https://note.com/gh_nissei" target="_blank" rel="noopener noreferrer">note<span>blog</span></a></li>
         </ul>
 
         <!-- 予約ボタン -->
@@ -332,7 +358,7 @@
         <!-- ロケーション/周辺環境セクション (SURROUNDINGS) -->
         <section class="surroundings">
             <div class="surroundings__header">
-                <h2 class="surroundings__title" data-i18n="surroundings.title">Overlooking Hidaka-Erimo-Tokachi National Park</h2>
+                <h2 class="surroundings__title" data-i18n="surroundings.title">Overlooking the Hidaka Mountains</h2>
                 <div class="surroundings__lead">
                     <p data-i18n="surroundings.lead1">A whole-building inn for one group, where you live as if you belong</p>
                     <p data-i18n="surroundings.lead2">A place designed for quiet, everyday moments.</p>
@@ -385,7 +411,7 @@
                 </div>
                 <div class="floor-info__details">
                     <p class="floor-info__desc" data-i18n="rooms.desc">A charming exterior with a sense of history, paired with a comfortably renovated interior. Relax in the bright Scandinavian-style living room and peaceful bedrooms.</p>
-                    <h4 class="floor-info__title" data-i18n="rooms.stay">About Your Stay</h4>
+                    <h3 class="floor-info__title" data-i18n="rooms.stay">About Your Stay</h3>
                     <dl class="floor-info__list">
                         <div class="floor-info__row">
                             <dt data-i18n="rooms.checkin">Check-in</dt>
@@ -436,7 +462,7 @@
                         <div class="amenity-box" data-i18n="amenity.toaster">Toaster</div>
                         <div class="amenity-box" data-i18n="amenity.stove">Gas stove</div>
                         <div class="amenity-box" data-i18n="amenity.dryer">Hair dryer</div>
-                        <div class="amenity-box" data-i18n="amenity.gas_dryer">Gas dryer</div>
+                        <div class="amenity-box" data-i18n="amenity.gas_dryer">ガス乾燥機</div>
                         <div class="amenity-box" data-i18n="amenity.air_purifier">Air purifier</div>
                         <div class="amenity-box" data-i18n="amenity.wifi">Wi-Fi</div>
                         <div class="amenity-box" data-i18n="amenity.parking">Parking</div>
@@ -483,7 +509,7 @@
                         <img src="../img/about_kobusauna_door.webp" alt="KOBU SAUNA入口" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n-html="exp.sauna.title">[Reservation required] Private Sauna<br>KOBU SAUNA</h4>
+                                <h3 data-i18n-html="exp.sauna.title">[Reservation required] Private Sauna<br>KOBU SAUNA</h3>
                                 <small class="experience-card__badge" data-i18n="exp.sauna.badge">Extra charge</small>
                                 <p data-i18n-html="exp.sauna.desc">A sauna experience overlooking the kombu beach.<br>Refresh your mind and body<br>wrapped in the nature of Oshirabetsu.</p>
                                 <a href="kobusauna.html" class="btn-arrow btn-arrow--large btn-arrow--light btn-arrow--boxed" data-i18n="exp.sauna.btn">> About KOBU SAUNA</a>
@@ -497,7 +523,7 @@
                         <img src="../img/experiences_2.png" alt="漁師さんの昆布漁体験" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.fisher.title">[Reservation required] Authentic Fishing Village Life</h4>
+                                <h3 data-i18n="exp.fisher.title">[Reservation required] Authentic Fishing Village Life</h3>
                                 <p data-i18n-html="exp.fisher.desc">Connect with local fishermen,<br>experience kombu drying and fishing firsthand.<br>A genuine encounter with something real.</p>
                                 <span class="experience-card__coming-soon" data-i18n="exp.fisher.soon">Coming Soon</span>
                             </div>
@@ -510,9 +536,9 @@
                         <img src="../img/experiences_3.png" alt="地場産BBQ" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.bbq.title">Local Ingredients BBQ</h4>
-                                <p data-i18n-html="exp.bbq.desc">Currently in preparation.<br>We will share the details once it is ready.</p>
-                                <span class="experience-card__coming-soon" data-i18n="exp.bbq.price">Coming soon</span>
+                                <h3 data-i18n="exp.bbq.title">Local Ingredients BBQ</h3>
+                                <p data-i18n-html="exp.bbq.desc">Enjoy a BBQ with fresh ingredients<br>from Hiroo-cho.<br>A special evening under a sky full of stars.</p>
+                                <span class="experience-card__coming-soon" data-i18n="exp.bbq.price">¥7,000~ per person</span>
                             </div>
                         </div>
                     </div>
@@ -529,20 +555,20 @@
                 <div class="rates__content">
                     <div class="rates__columns">
                         <div class="rates__column">
-                            <p class="rates__column-label" data-i18n="rates.stay.label">Whole-building Stay</p>
+                            <p class="rates__column-label" data-i18n="rates.stay.label">Stay (from 1 guest)</p>
                             <div class="rates__price-list">
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.2guests">2 guests</span>
-                                    <span class="rates__amount">20,000円</span><span class="rates__tax" data-i18n="tax.incl">(tax incl.)</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.nosauna">Without Sauna</span>
+                                    <span class="rates__amount">7,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax"> / person (tax incl.)</span>
                                 </div>
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.4guests">Up to 4 guests</span>
-                                    <span class="rates__amount">28,000円</span><span class="rates__tax" data-i18n="tax.incl">(tax incl.)</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.sauna">With Sauna</span>
+                                    <span class="rates__amount">10,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax"> / person (tax incl.)</span>
                                 </div>
                             </div>
                             <div class="rates__sauna-add">
                                 <p class="rates__sauna-add-title" data-i18n="rates.sauna.add.title">Private Sauna Use</p>
-                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">+¥3,000 per person</p>
+                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">+¥3,000 per person (adds sauna to the no-sauna plan)</p>
                                 <p class="rates__sauna-add-note" data-i18n="rates.sauna.add.note">Available throughout your stay</p>
                             </div>
                             <div class="rates__notes">
@@ -563,14 +589,14 @@
                             <dl class="rates__detail-list">
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.time.label">Session length</dt>
-                                    <dd data-i18n="rates.dayuse.time.val">2.5 hours per session</dd>
+                                    <dd data-i18n="rates.dayuse.time.val">3 hours per session</dd>
                                 </div>
                                 <div class="rates__detail-row">
                                     <dt data-i18n="rates.dayuse.hours.label">Operating hours</dt>
-                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:30</dd>
+                                    <dd data-i18n="rates.dayuse.hours.val">11:00 – 14:00</dd>
                                 </div>
                             </dl>
-                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">Nissei's day-use plan from 11:00 to 14:30, mainly for those who wish to enjoy KOBU SAUNA without staying overnight.<br>* Only towels are provided. Guest rooms are not available.<br>* Please bring your own swimwear (rental available: swimwear ¥300 / poncho ¥300).<br>* For other time slots, please inquire separately.</p>
+                            <p class="rates__dayuse-note" data-i18n-html="rates.dayuse.note">All facilities except guest rooms are available.<br>For other time slots, please inquire separately.</p>
                         </div>
                     </div>
 
@@ -592,7 +618,7 @@
                 </div>
                 <div class="access__info">
                     <div class="access__address">
-                        <h4 class="access__location-name" data-i18n="access.name">Nissei</h4>
+                        <h3 class="access__location-name" data-i18n="access.name">Nissei</h3>
                         <p data-i18n="access.addr">733 Oshirabetsu, Hiroo-cho, Hokkaido 089-2771</p>
                     </div>
                     <div class="access__directions">
@@ -710,7 +736,7 @@
 
     <!-- フッター -->
     <footer class="footer">
-        <a href="#top" class="footer__totop">Back to top</a>
+        <a href="#top" class="footer__totop">このページのTOPへ</a>
         <div class="footer__inner">
             <div class="footer__logo">
                 <span class="footer__logo-sub" data-i18n="loading.sub">Whole-building rental</span>

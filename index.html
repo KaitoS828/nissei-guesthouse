@@ -22,6 +22,13 @@
     <!-- Google Fontsの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- パフォーマンス: リソースヒント -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LCP画像（ヒーロー先頭スライド）の先読み -->
+    <link rel="preload" as="image" href="./img/hero_coast.webp" fetchpriority="high">
     <!-- Zen Old Mincho (明朝体) と Zen Kaku Gothic New (ゴシック体) を使用 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap"
@@ -113,7 +120,7 @@
             "longitude": 143.316325
           },
           "hasMap": "https://maps.app.goo.gl/RBTT8JNqiKvBHZvW9",
-          "priceRange": "¥20,000〜",
+          "priceRange": "¥7,000〜",
           "description": "北海道十勝・広尾町音調津にある一棟貸しゲストハウス。海と山に囲まれた自然豊かな場所で、1日1組限定・プライベートサウナ付きの静寂と癒しの宿泊体験を提供します。帯広から車で90分。",
           "checkinTime": "15:00",
           "checkoutTime": "10:00",
@@ -132,20 +139,20 @@
           "makesOffer": [
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（2名様）",
-              "price": "20000",
+              "name": "ご宿泊 サウナなしプラン（お一人様）",
+              "price": "7000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "1棟貸し宿泊（4名様まで）",
-              "price": "28000",
+              "name": "ご宿泊 サウナ付きプラン（お一人様）",
+              "price": "10000",
               "priceCurrency": "JPY"
             },
             {
               "@type": "Offer",
-              "name": "プライベートサウナ付き日帰りプラン（1人）",
-              "price": "3000",
+              "name": "プライベートサウナ付き日帰りプラン（4名様まで）",
+              "price": "10000",
               "priceCurrency": "JPY"
             }
           ]
@@ -189,6 +196,13 @@
               "name": "キャンセル料はかかりますか？",
               "acceptedAnswer": {"@type":"Answer","text":"ご宿泊日の14日前から段階的にキャンセル料が発生いたします。詳細はキャンセルポリシーをご確認ください。"}
             }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.gh-nissei.jp/#breadcrumb",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"ホーム","item":"https://www.gh-nissei.jp/"}
           ]
         }
       ]
@@ -427,7 +441,7 @@
                 <div class="floor-info__details">
                     <p class="floor-info__desc" data-i18n="rooms.desc">築年数を感じさせる趣ある外観と、リノベーションで生まれ変わった心地よい空間。北欧風で開放的なリビングと、落ち着いた寝室でおくつろぎください。
                     </p>
-                    <h4 class="floor-info__title" data-i18n="rooms.stay">宿泊について</h4>
+                    <h3 class="floor-info__title" data-i18n="rooms.stay">宿泊について</h3>
                     <dl class="floor-info__list">
                         <div class="floor-info__row">
                             <dt data-i18n="rooms.checkin">チェックイン</dt>
@@ -525,7 +539,7 @@
                         <img src="./img/about_kobusauna_door.webp" alt="KOBU SAUNA入口" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n-html="exp.sauna.title">【予約限定】プライベートサウナ<br>KOBU SAUNA</h4>
+                                <h3 data-i18n-html="exp.sauna.title">【予約限定】プライベートサウナ<br>KOBU SAUNA</h3>
                                 <small class="experience-card__badge" data-i18n="exp.sauna.badge">別料金</small>
                                 <p data-i18n-html="exp.sauna.desc">
                                     昆布浜を眺めながらのサウナ体験。<br>
@@ -543,7 +557,7 @@
                         <img src="./img/experiences_2.png" alt="漁師さんの昆布漁体験" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.fisher.title">【予約限定】漁師町の本物の暮らし体験</h4>
+                                <h3 data-i18n="exp.fisher.title">【予約限定】漁師町の本物の暮らし体験</h3>
                                 <p data-i18n-html="exp.fisher.desc">
                                     地元の漁師さんと触れ合い、<br>
                                     昆布干しや漁業の現場を体験。<br>
@@ -560,7 +574,7 @@
                         <img src="./img/experiences_3.png" alt="地場産BBQ" loading="lazy" decoding="async">
                         <div class="experience-card__hero-overlay">
                             <div class="experience-card__hero-text">
-                                <h4 data-i18n="exp.bbq.title">地場産食材満喫BBQ</h4>
+                                <h3 data-i18n="exp.bbq.title">地場産食材満喫BBQ</h3>
                                 <p data-i18n-html="exp.bbq.desc">
                                     現在準備中です。<br>
                                     準備が整い次第、改めてご案内いたします。
@@ -582,20 +596,20 @@
                 <div class="rates__content">
                     <div class="rates__columns">
                         <div class="rates__column">
-                            <p class="rates__column-label" data-i18n="rates.stay.label">1棟貸し宿泊</p>
+                            <p class="rates__column-label" data-i18n="rates.stay.label">ご宿泊（お一人様から）</p>
                             <div class="rates__price-list">
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.2guests">2名様</span>
-                                    <span class="rates__amount">20,000円</span><span class="rates__tax" data-i18n="tax.incl">（税込）</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.nosauna">サウナなしプラン</span>
+                                    <span class="rates__amount">7,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax">／人（税込）</span>
                                 </div>
                                 <div class="rates__price-item">
-                                    <span class="rates__guests" data-i18n="rates.4guests">4名様まで</span>
-                                    <span class="rates__amount">28,000円</span><span class="rates__tax" data-i18n="tax.incl">（税込）</span>
+                                    <span class="rates__guests" data-i18n="rates.plan.sauna">サウナ付きプラン</span>
+                                    <span class="rates__amount">10,000円</span><span class="rates__tax" data-i18n="rates.perperson.tax">／人（税込）</span>
                                 </div>
                             </div>
                             <div class="rates__sauna-add">
                                 <p class="rates__sauna-add-title" data-i18n="rates.sauna.add.title">プライベートサウナ使用</p>
-                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">利用人数 1人につき +3,000円</p>
+                                <p class="rates__sauna-add-price" data-i18n="rates.sauna.add.price">サウナなしプランに お一人様 +3,000円</p>
                                 <p class="rates__sauna-add-note" data-i18n="rates.sauna.add.note">宿泊している間はご利用できます</p>
                             </div>
                             <div class="rates__notes">
@@ -645,7 +659,7 @@
                 </div>
                 <div class="access__info">
                     <div class="access__address">
-                        <h4 class="access__location-name" data-i18n="access.name">一棟貸しゲストハウス日靜</h4>
+                        <h3 class="access__location-name" data-i18n="access.name">一棟貸しゲストハウス日靜</h3>
                         <p data-i18n="access.addr">〒089-2771 北海道広尾町音調津733</p>
                     </div>
                     <div class="access__directions">

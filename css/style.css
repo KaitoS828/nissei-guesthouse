@@ -1073,7 +1073,7 @@ a.mobile-nav__lang-btn {
     flex: 1;
 }
 
-.experience-card__text h4 {
+.experience-card__text h3 {
     font-family: var(--font-serif);
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -1136,7 +1136,7 @@ a.mobile-nav__lang-btn {
     max-width: 500px;
 }
 
-.experience-card__hero-text h4 {
+.experience-card__hero-text h3 {
     font-family: var(--font-serif);
     font-size: 1.8rem;
     margin-bottom: 24px;
@@ -1230,7 +1230,7 @@ a.btn-arrow--boxed:hover {
         max-width: 100%;
     }
 
-    .experience-card__hero-text h4 {
+    .experience-card__hero-text h3 {
         font-size: 1.3rem;
     }
 }
