@@ -18,6 +18,17 @@ const PAGES = [
 
 const SITE = 'https://www.gh-nissei.jp';
 
+function publicPath(filename) {
+    return filename === 'index.html' ? '/' : `/${filename.replace(/\.html$/, '')}`;
+}
+
+function publicUrl(lang, filename) {
+    if (lang === 'jp') return `${SITE}${publicPath(filename)}`;
+    return filename === 'index.html'
+        ? `${SITE}/${lang}/`
+        : `${SITE}/${lang}${publicPath(filename)}`;
+}
+
 function applyI18n(html, lang) {
     const t = translations[lang];
     if (!t) throw new Error(`Unknown lang: ${lang}`);
@@ -96,21 +107,12 @@ function fixHtmlLang(html, lang) {
 }
 
 function fixCanonical(html, lang, filename) {
-    const base = lang === 'jp' ? SITE : `${SITE}/${lang}`;
-    const pagePath = filename === 'index.html' ? '/' : `/${filename}`;
-    const url = lang === 'jp'
-        ? (filename === 'index.html' ? `${SITE}/` : `${SITE}${pagePath}`)
-        : `${base}/${filename === 'index.html' ? '' : filename}`.replace(/\/$/, '/') ;
-
     let out = html.replace(
         /<link\s+rel="canonical"\s+href="[^"]*"/,
-        `<link rel="canonical" href="${lang === 'jp' ? (filename === 'index.html' ? `${SITE}/` : `${SITE}/${filename}`) : (filename === 'index.html' ? `${base}/` : `${base}/${filename}`)}"`
+        `<link rel="canonical" href="${publicUrl(lang, filename)}"`
     );
     out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"/g, (m) => {
-        const u = lang === 'jp'
-            ? (filename === 'index.html' ? `${SITE}/` : `${SITE}/${filename}`)
-            : (filename === 'index.html' ? `${base}/` : `${base}/${filename}`);
-        return `<meta property="og:url" content="${u}"`;
+        return `<meta property="og:url" content="${publicUrl(lang, filename)}"`;
     });
     const locale = lang === 'jp' ? 'ja_JP' : lang === 'en' ? 'en_US' : 'zh_CN';
     out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"/, `<meta property="og:locale" content="${locale}"`);

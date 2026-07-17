@@ -15,10 +15,10 @@
         } else if (path.includes('/zh/')) {
             locale = 'zh';
             relPath = path.substring(path.indexOf('/zh/') + 4);
-        } else if (path.endsWith('/en') || path.endsWith('/en/index.html')) {
+        } else if (path.endsWith('/en') || path.endsWith('/en/') || path.endsWith('/en/index.html')) {
             locale = 'en';
             relPath = 'index.html';
-        } else if (path.endsWith('/zh') || path.endsWith('/zh/index.html')) {
+        } else if (path.endsWith('/zh') || path.endsWith('/zh/') || path.endsWith('/zh/index.html')) {
             locale = 'zh';
             relPath = 'index.html';
         } else {
@@ -34,9 +34,8 @@
 
         const parts = relPath.split('/').filter(Boolean);
         let page = parts[parts.length - 1] || '';
-        if (!page || !page.endsWith('.html')) {
-            page = 'index.html';
-        }
+        if (!page) page = 'index.html';
+        if (!page.endsWith('.html')) page = `${page}.html`;
         
         const dirs = parts.slice(0, -1);
         return { locale, page, dirs };
@@ -54,16 +53,17 @@
         // ニュースの個別記事ページなどは他言語版がないため、トップページに遷移させる
         const isNews = dirs.includes('news') || page.startsWith('00');
         const file = isNews ? 'index.html' : page;
+        const cleanFile = file === 'index.html' ? '' : file.replace(/\.html$/, '');
 
         if (targetLocale === locale) {
-            return toRoot + (locale === 'jp' ? '' : locale + '/') + file;
+            return toRoot + (locale === 'jp' ? '' : locale + '/') + cleanFile;
         }
 
         if (targetLocale === 'jp') {
-            return toRoot + file;
+            return toRoot + cleanFile;
         }
 
-        return toRoot + targetLocale + '/' + file;
+        return toRoot + targetLocale + '/' + cleanFile;
     }
 
     function wireLangControls() {

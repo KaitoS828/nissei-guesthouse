@@ -424,7 +424,7 @@ export const translations = {
         'faq.q7.q':         'Are pets allowed?',
         'faq.q7.a':         'We are sorry, but pets are not permitted at our guesthouse.',
         'faq.q8.q':         'Is there a cancellation fee?',
-        'faq.q8.a':         'Cancellation fees apply on a sliding scale starting 14 days before your stay. Please see our <a href="cancel-policy.html">Cancellation Policy</a> for details.',
+        'faq.q8.a':         'Cancellation fees apply on a sliding scale starting 14 days before your stay. Please see our <a href="cancel-policy">Cancellation Policy</a> for details.',
         'ks.price.note3':   '* Please bring your own swimwear (rental available: swimwear ¥300 / poncho ¥300).',
         'ks.ikitai.link':   'View reviews & facility info on Sauna Ikitai →',
 
@@ -730,7 +730,7 @@ export const translations = {
         'faq.q7.q':         '可以携带宠物吗？',
         'faq.q7.a':         '非常抱歉，本住宿不接受携带宠物。',
         'faq.q8.q':         '会收取取消费用吗？',
-        'faq.q8.a':         '自入住日的14天前起将分阶段收取取消费用。详情请查看<a href="cancel-policy.html">取消政策</a>。',
+        'faq.q8.a':         '自入住日的14天前起将分阶段收取取消费用。详情请查看<a href="cancel-policy">取消政策</a>。',
         'ks.price.note3':   '※请自备泳衣（可租借：泳衣300日元／斗篷300日元）。',
         'ks.ikitai.link':   '在Sauna Ikitai查看评价与设施信息 →',
 
@@ -893,4 +893,3 @@ export const translations = {
         'menu.close': '关闭菜单',
     }
 };
-
