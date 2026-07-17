@@ -2412,7 +2412,7 @@ a.btn-arrow--boxed:hover {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1px;
     background-color: var(--gray-border);
     border: 1px solid var(--gray-border);
@@ -2451,6 +2451,7 @@ a.btn-arrow--boxed:hover {
     align-items: baseline;
     gap: 12px;
     flex-wrap: wrap;
+    min-width: 0;
 }
 
 .news-card:hover {
