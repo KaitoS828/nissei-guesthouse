@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWZ6JXXCSW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TWZ6JXXCSW');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Guide | Nissei</title>
+    <meta name="description" content="Guest guide for Nissei, including check-in, facilities, sauna, house rules, and local information to review before your stay.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+    <link rel="canonical" href="https://www.gh-nissei.jp/en/guest-guide">
+    <link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/guest-guide">
+    <link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/guest-guide">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/guest-guide">
+    <link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/guest-guide">
+
+    <meta property="og:title" content="Guest Guide | Nissei">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.gh-nissei.jp/en/guest-guide">
+    <meta property="og:image" content="https://www.gh-nissei.jp/img/about_interior.webp">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:description" content="Guest guide for Nissei, including check-in, facilities, sauna, house rules, and local information to review before your stay.">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nissei_hostel">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Guest Guide | Nissei",
+      "url": "https://www.gh-nissei.jp/en/guest-guide",
+      "description": "Guest guide for Nissei, including check-in, facilities, sauna, house rules, and local information to review before your stay.",
+      "inLanguage": "en",
+      "isPartOf": {"@type":"WebSite","name":"日靜 - NISSEI","url":"https://www.gh-nissei.jp/"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"HOME","item":"https://www.gh-nissei.jp/"},
+          {"@type":"ListItem","position":2,"name":"Guest Guide","item":"https://www.gh-nissei.jp/en/guest-guide"}
+        ]
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css?v=7">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/lang-switch.js?v=2" defer></script>
+    <script src="../main.js?v=4" defer></script>
+
+    <style>
+        .guide-page {
+            padding: 140px 20px 100px;
+            background-color: var(--bg-color);
+        }
+        .guide-page__inner {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .guide-lead {
+            max-width: 760px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+        .guide-lead p {
+            font-size: 0.92rem;
+            line-height: 2.1;
+            color: var(--text-color);
+        }
+        .guide-note {
+            margin-top: 20px;
+            padding: 18px 20px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.55);
+            font-size: 0.82rem;
+            line-height: 1.9;
+            color: var(--text-light);
+        }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+        .guide-card {
+            padding: 30px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.64);
+        }
+        .guide-card--wide {
+            grid-column: 1 / -1;
+        }
+        .guide-card__title {
+            font-family: var(--font-serif);
+            font-size: 1.08rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .guide-card p,
+        .guide-card li,
+        .guide-card dd {
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        .guide-card ul {
+            padding-left: 1.2em;
+        }
+        .guide-recommend {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+        .guide-recommend__item {
+            padding: 18px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.5);
+        }
+        .guide-recommend__item h4 {
+            font-family: var(--font-serif);
+            font-size: 0.98rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .guide-recommend__item p {
+            font-size: 0.82rem;
+            line-height: 1.8;
+        }
+        .guide-recommend__item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .guide-card dl {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 10px 20px;
+        }
+        .guide-card dt {
+            color: var(--text-light);
+            font-size: 0.82rem;
+            line-height: 2;
+        }
+        .guide-card p + p,
+        .guide-card p + ul,
+        .guide-card ul + p {
+            margin-top: 12px;
+        }
+        .guide-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .guide-links a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 42px;
+            padding: 0 18px;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            font-size: 0.82rem;
+            letter-spacing: 0;
+        }
+        @media (max-width: 768px) {
+            .guide-page {
+                padding: 110px 18px 80px;
+            }
+            .guide-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+            .guide-card {
+                padding: 24px 20px;
+            }
+            .guide-card dl {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+            .guide-recommend {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="./">
+                    <span class="header__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li class="header__item"><a href="./#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="./#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="./#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li class="header__item header__item--sauna">
+                        <a href="kobusauna" data-i18n="nav.sauna">About KOBU SAUNA</a>
+                    </li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn active" data-lang="en">EN</button>
+                <button class="header__lang-btn" data-lang="zh">中文</button>
+            </div>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="./" data-i18n-html="nav.top.link">Home<span>top</span></a></li>
+            <li><a href="./#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+            <li><a href="./#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+            <li><a href="kobusauna" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="./#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+            <li><a href="./#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+            <li><a href="contact" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Check Availability</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn active" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="breadcrumb" style="margin-top: 70px;">
+            <div class="breadcrumb__inner">
+                <ul class="breadcrumb__list">
+                    <li><a href="./">HOME</a></li>
+                    <li data-i18n="guide.breadcrumb">Guest Guide</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="guide-page">
+            <div class="guide-page__inner">
+                <div class="guide-lead">
+                    <h2 class="section-title" data-i18n="guide.title">Guest Guide</h2>
+                    <p class="section-subtitle-en" data-i18n="guide.sub">Guest Guide</p>
+                    <p data-i18n="guide.lead1">Welcome to Oshirabetsu, Hiroo, Hokkaido, overlooking the Pacific Ocean. Nissei is a whole-building guesthouse with a private sauna.</p>
+                    <p data-i18n="guide.lead2">Here is the essential information to review before your stay. Please enjoy the quiet rhythm of this fishing village at your own pace.</p>
+                    <p class="guide-note" data-i18n="guide.note">For security and operations, details such as Wi-Fi, keys, equipment operation, and trash disposal locations are provided after booking confirmation or in the on-site welcome guide.</p>
+                </div>
+
+                <div class="guide-grid">
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.check.title">Check-in and Check-out</h3>
+                        <dl>
+                            <dt data-i18n="guide.check.in.label">Check-in</dt>
+                            <dd data-i18n="guide.check.in.val">3:00 PM - 9:00 PM</dd>
+                            <dt data-i18n="guide.check.out.label">Check-out</dt>
+                            <dd data-i18n="guide.check.out.val">By 10:00 AM</dd>
+                        </dl>
+                        <ul>
+                            <li data-i18n="guide.check.li1">Please contact us in advance if your arrival will be delayed.</li>
+                            <li data-i18n="guide.check.li2">Early check-in and late check-out may be available depending on availability.</li>
+                            <li data-i18n="guide.check.li3">Please check the booking confirmation for key pickup and return instructions.</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.facility.title">About the Facility</h3>
+                        <p data-i18n="guide.facility.p">Nissei is a whole-building rental limited to one group per day. During your stay, the rooms, living area, kitchen, bathroom, and parking area are reserved for your group.</p>
+                        <ul>
+                            <li data-i18n="guide.facility.li1">Up to 6 guests can stay.</li>
+                            <li data-i18n="guide.facility.li2">Parking is available for 2 cars.</li>
+                            <li data-i18n="guide.facility.li3">Meals are not included, so please bring food freely.</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.sauna.title">Private Sauna</h3>
+                        <p data-i18n="guide.sauna.p">KOBU SAUNA is a small sauna inspired by Oshirabetsu's sea and kombu-drying culture. It is available with sauna plans or as an optional add-on.</p>
+                        <ul>
+                            <li data-i18n="guide.sauna.li1">Please use the sauna only when you feel well.</li>
+                            <li data-i18n="guide.sauna.li2">Stay hydrated and avoid sauna use after drinking alcohol.</li>
+                            <li data-i18n="guide.sauna.li3">Please follow the on-site instructions for detailed operation.</li>
+                        </ul>
+                        <div class="guide-links">
+                            <a href="kobusauna" data-i18n="guide.sauna.link">View KOBU SAUNA</a>
+                        </div>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.kitchen.title">Kitchen and Bath</h3>
+                        <p data-i18n="guide.kitchen.p">A refrigerator, cookware, and tableware are available. You may cook and bring food into the property.</p>
+                        <ul>
+                            <li data-i18n="guide.kitchen.li1">Please wash dishes and tidy up after use.</li>
+                            <li data-i18n="guide.kitchen.li2">Please do not leave food behind.</li>
+                            <li data-i18n="guide.kitchen.li3">Please keep the shower and bathroom clean.</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card guide-card--wide">
+                        <h3 class="guide-card__title" data-i18n="guide.rules.title">House Rules</h3>
+                        <ul>
+                            <li data-i18n="guide.rules.li1">The entire building is non-smoking. Please smoke only in the designated outdoor area.</li>
+                            <li data-i18n="guide.rules.li2">Quiet hours are 10:00 PM - 8:00 AM. Please be considerate of neighbors.</li>
+                            <li data-i18n="guide.rules.li3">Pets are not allowed.</li>
+                            <li data-i18n="guide.rules.li4">Only registered guests may stay or enter the property.</li>
+                            <li data-i18n="guide.rules.li5">Repair or replacement costs may be charged for damaged or lost items.</li>
+                        </ul>
+                        <div class="guide-links">
+                            <a href="houserule" data-i18n="guide.rules.link">View House Rules</a>
+                            <a href="accommodation-terms" data-i18n="guide.rules.terms">View Accommodation Terms</a>
+                        </div>
+                    </section>
+
+                    <section class="guide-card guide-card--wide">
+                        <h3 class="guide-card__title" data-i18n="guide.local.title">Hiroo Recommendations</h3>
+                        <p data-i18n="guide.local.lead">For the latest dining and sightseeing information, please also visit the official Hiroo Tourism Association website, which includes seasonal highlights and event updates.</p>
+                        <div class="guide-links">
+                            <a href="https://hiroo-kanko.jp/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.official">Visit Hiroo Tourism Association</a>
+                        </div>
+
+                        <h4 class="guide-card__title" data-i18n="guide.food.title">Dining and Shopping</h4>
+                        <div class="guide-recommend">
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r1.name">Ajino Hakko</h4>
+                                <p data-i18n="guide.food.r1.desc">Japanese dishes, lunch boxes, and pork rice bowls. A useful option for meals in town.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E5%91%B3%E3%81%AE%E5%85%AB%E5%B9%B8/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r2.name">Chinese Restaurant Wanfu</h4>
+                                <p data-i18n="guide.food.r2.desc">A long-established Chinese restaurant in Hiroo, good for casual ramen, fried rice, and other meals.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86%E5%BA%97-%E7%8E%8B%E5%BA%9C/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r3.name">Yakiniku Wahiro</h4>
+                                <p data-i18n="guide.food.r3.desc">A barbecue restaurant for a hearty meal, also open for lunch.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E7%84%BC%E8%82%89%E5%92%8C%E6%AF%94%E5%91%82/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r4.name">Kikuchi Farm Cafe</h4>
+                                <p data-i18n="guide.food.r4.desc">Good for a driving break, sweets, or a light meal. Please check opening days and hours in advance.</p>
+                                <a href="https://hiroo-kanko.jp/spot/kikuchifarm-cafe/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                        </div>
+
+                        <h4 class="guide-card__title" data-i18n="guide.spot.title">Sightseeing Spots</h4>
+                        <div class="guide-recommend">
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r1.name">Golden Road</h4>
+                                <p data-i18n="guide.spot.r1.desc">A scenic route along the Pacific, recommended for a drive from Oshirabetsu.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E9%BB%84%E9%87%91%E9%81%93%E8%B7%AF/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r2.name">Funbe Falls</h4>
+                                <p data-i18n="guide.spot.r2.desc">A waterfall flowing down the coastal cliff, with Hiroo-like seaside scenery.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%83%95%E3%83%B3%E3%83%99%E3%81%AE%E6%BB%9D/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r3.name">Seaside Park Hiroo</h4>
+                                <p data-i18n="guide.spot.r3.desc">A seaside park facing the Pacific, with walking and park golf among several ways to enjoy it.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%82%B7%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%83%E5%B0%BE/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r4.name">Santa Land and Daimaruyama Forest Park</h4>
+                                <p data-i18n="guide.spot.r4.desc">One of Hiroo's signature spots, known for seasonal flowers and illuminations.</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%82%B5%E3%83%B3%E3%82%BF%E3%83%A9%E3%83%B3%E3%83%89%EF%BC%86%E5%A4%A7%E4%B8%B8%E5%B1%B1%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">View details</a>
+                            </article>
+                        </div>
+                        <p class="guide-note" data-i18n="guide.local.note">This section refers to public information from the Hiroo Tourism Association. Please check the official site before going for business hours, closing days, winter access, and event status.</p>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.lost.title">Lost Items and Assistance</h3>
+                        <p data-i18n="guide.lost.p1">Lost items found after check-out are generally kept for 7 days including the day found. Valuables may be turned in to the nearest police station.</p>
+                        <p data-i18n="guide.lost.p2">If you need assistance during your stay, please use the contact provided at booking or our contact form.</p>
+                        <div class="guide-links">
+                            <a href="contact" data-i18n="guide.lost.link">Contact</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub" data-i18n="loading.sub">Whole-building rental</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./#about" data-i18n-html="nav.about.link">About<br><span>about</span></a></li>
+                    <li><a href="./#rooms" data-i18n-html="nav.rooms.link">Rooms<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li><a href="./#rates" data-i18n-html="nav.rates.link">Rates<br><span>rates</span></a></li>
+                    <li><a href="./#access" data-i18n-html="nav.access.link">Access<br><span>access</span></a></li>
+                    <li><a href="contact" data-i18n-html="nav.contact.link">Contact<br><span>contact</span></a></li>
+                    <li><a href="guest-guide" data-i18n-html="nav.guestguide.link">Guest Guide<br><span>guide</span></a></li>
+                    <li><a href="accommodation-terms">宿泊約款<br><span>terms</span></a></li>
+                    <li><a href="cancel-policy">キャンセルポリシー<br><span>cancel policy</span></a></li>
+                    <li><a href="privacy" data-i18n-html="nav.privacy.link">Privacy Policy<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer__sns">
+                <a href="https://www.instagram.com/nissei_guesthouse/" class="sns-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copyright">Copyright &copy; 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

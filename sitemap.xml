@@ -130,6 +130,38 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- ====== 滞在ガイド ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/guest-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/guest-guide"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/guest-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/guest-guide"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/guest-guide</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/guest-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/guest-guide"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- ====== キャンセルポリシー ====== -->
   <url>
     <loc>https://www.gh-nissei.jp/cancel-policy</loc>

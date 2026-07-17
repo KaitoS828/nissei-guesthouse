@@ -10,6 +10,7 @@ const PAGES = [
     'index.html',
     'kobusauna.html',
     'contact.html',
+    'guest-guide.html',
     'privacy.html',
     'accommodation-terms.html',
     'cancel-policy.html',
@@ -170,6 +171,7 @@ function buildLocale(lang) {
         const metaKey = {
             'index.html': 'meta.index',
             'contact.html': 'meta.contact',
+            'guest-guide.html': 'meta.guestguide',
             'privacy.html': 'meta.privacy',
             'houserule.html': 'meta.houserule',
             'kobusauna.html': 'meta.kobusauna',
@@ -198,6 +200,20 @@ function buildLocale(lang) {
                 /"description":\s*"[^"]*"/,
                 `"description": "${escapeAttr(t[`${metaKey}.desc`])}"`
             );
+            if (file === 'guest-guide.html') {
+                html = html.replace(
+                    /"url":\s*"[^"]*"/,
+                    `"url": "${publicUrl(lang, file)}"`
+                );
+                html = html.replace(
+                    /"inLanguage":\s*"[^"]*"/,
+                    `"inLanguage": "${lang === 'zh' ? 'zh-CN' : lang}"`
+                );
+                html = html.replace(
+                    /"name":"滞在ガイド","item":"https:\/\/www\.gh-nissei\.jp\/guest-guide"/,
+                    `"name":"${escapeAttr(t['guide.breadcrumb'])}","item":"${publicUrl(lang, file)}"`
+                );
+            }
         }
 
         fs.writeFileSync(path.join(dir, file), html, 'utf8');

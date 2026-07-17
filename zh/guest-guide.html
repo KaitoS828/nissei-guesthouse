@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWZ6JXXCSW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TWZ6JXXCSW');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住宿指南 | 日靜 - NISSEI</title>
+    <meta name="description" content="日靜住宿指南，包括入住、设施、桑拿、住宿规则及周边信息等入住前建议确认的内容。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="../img/favicon_logo.png">
+    <link rel="canonical" href="https://www.gh-nissei.jp/zh/guest-guide">
+    <link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/guest-guide">
+    <link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/guest-guide">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/guest-guide">
+    <link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/guest-guide">
+
+    <meta property="og:title" content="住宿指南 | 日靜 - NISSEI">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.gh-nissei.jp/zh/guest-guide">
+    <meta property="og:image" content="https://www.gh-nissei.jp/img/about_interior.webp">
+    <meta property="og:site_name" content="日靜 - NISSEI">
+    <meta property="og:description" content="日靜住宿指南，包括入住、设施、桑拿、住宿规则及周边信息等入住前建议确认的内容。">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nissei_hostel">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "住宿指南 | 日靜 - NISSEI",
+      "url": "https://www.gh-nissei.jp/zh/guest-guide",
+      "description": "日靜住宿指南，包括入住、设施、桑拿、住宿规则及周边信息等入住前建议确认的内容。",
+      "inLanguage": "zh-CN",
+      "isPartOf": {"@type":"WebSite","name":"日靜 - NISSEI","url":"https://www.gh-nissei.jp/"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"HOME","item":"https://www.gh-nissei.jp/"},
+          {"@type":"ListItem","position":2,"name":"住宿指南","item":"https://www.gh-nissei.jp/zh/guest-guide"}
+        ]
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css?v=7">
+    <link rel="stylesheet" href="../css/loading.css">
+    <script src="../js/lang-switch.js?v=2" defer></script>
+    <script src="../main.js?v=4" defer></script>
+
+    <style>
+        .guide-page {
+            padding: 140px 20px 100px;
+            background-color: var(--bg-color);
+        }
+        .guide-page__inner {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .guide-lead {
+            max-width: 760px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+        .guide-lead p {
+            font-size: 0.92rem;
+            line-height: 2.1;
+            color: var(--text-color);
+        }
+        .guide-note {
+            margin-top: 20px;
+            padding: 18px 20px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.55);
+            font-size: 0.82rem;
+            line-height: 1.9;
+            color: var(--text-light);
+        }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+        .guide-card {
+            padding: 30px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.64);
+        }
+        .guide-card--wide {
+            grid-column: 1 / -1;
+        }
+        .guide-card__title {
+            font-family: var(--font-serif);
+            font-size: 1.08rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .guide-card p,
+        .guide-card li,
+        .guide-card dd {
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        .guide-card ul {
+            padding-left: 1.2em;
+        }
+        .guide-recommend {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+        .guide-recommend__item {
+            padding: 18px;
+            border: 1px solid rgba(0,0,0,0.08);
+            background: rgba(255,255,255,0.5);
+        }
+        .guide-recommend__item h4 {
+            font-family: var(--font-serif);
+            font-size: 0.98rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .guide-recommend__item p {
+            font-size: 0.82rem;
+            line-height: 1.8;
+        }
+        .guide-recommend__item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .guide-card dl {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 10px 20px;
+        }
+        .guide-card dt {
+            color: var(--text-light);
+            font-size: 0.82rem;
+            line-height: 2;
+        }
+        .guide-card p + p,
+        .guide-card p + ul,
+        .guide-card ul + p {
+            margin-top: 12px;
+        }
+        .guide-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .guide-links a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 42px;
+            padding: 0 18px;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            font-size: 0.82rem;
+            letter-spacing: 0;
+        }
+        @media (max-width: 768px) {
+            .guide-page {
+                padding: 110px 18px 80px;
+            }
+            .guide-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+            .guide-card {
+                padding: 24px 20px;
+            }
+            .guide-card dl {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+            .guide-recommend {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <span class="loading-logo-sub" data-i18n="loading.sub">整栋出租</span>
+            <span class="loading-logo-main">日靜</span>
+            <span class="loading-logo-en">Nissei</span>
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="./">
+                    <span class="header__logo-sub" data-i18n="loading.sub">整栋出租</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+                    <li class="header__item"><a href="./#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="./#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="./#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li class="header__item header__item--sauna">
+                        <a href="kobusauna" data-i18n="nav.sauna">了解KOBU SAUNA</a>
+                    </li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">预约查询</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <button class="header__lang-btn" data-lang="jp">JP</button>
+                <button class="header__lang-btn" data-lang="en">EN</button>
+                <button class="header__lang-btn active" data-lang="zh">中文</button>
+            </div>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub" data-i18n="loading.sub">整栋出租</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="./" data-i18n-html="nav.top.link">首页<span>top</span></a></li>
+            <li><a href="./#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+            <li><a href="./#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+            <li><a href="kobusauna" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="./#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+            <li><a href="./#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+            <li><a href="contact" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">预约查询</a>
+        </div>
+        <div class="mobile-nav__lang">
+            <button class="mobile-nav__lang-btn" data-lang="jp">JP</button>
+            <button class="mobile-nav__lang-btn" data-lang="en">EN</button>
+            <button class="mobile-nav__lang-btn active" data-lang="zh">中文</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="breadcrumb" style="margin-top: 70px;">
+            <div class="breadcrumb__inner">
+                <ul class="breadcrumb__list">
+                    <li><a href="./">HOME</a></li>
+                    <li data-i18n="guide.breadcrumb">住宿指南</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="guide-page">
+            <div class="guide-page__inner">
+                <div class="guide-lead">
+                    <h2 class="section-title" data-i18n="guide.title">住宿指南</h2>
+                    <p class="section-subtitle-en" data-i18n="guide.sub">Guest Guide</p>
+                    <p data-i18n="guide.lead1">欢迎来到面向太平洋的北海道广尾町音调津。日靜是一栋配有私人桑拿的整栋出租民宿。</p>
+                    <p data-i18n="guide.lead2">这里整理了入住前建议确认的基本信息。请慢慢享受安静渔村的时光。</p>
+                    <p class="guide-note" data-i18n="guide.note">出于安全与运营原因，Wi-Fi、钥匙、设备操作、垃圾投放地点等详细信息，将在预约确认后或现场欢迎指南中告知。</p>
+                </div>
+
+                <div class="guide-grid">
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.check.title">入住与退房</h3>
+                        <dl>
+                            <dt data-i18n="guide.check.in.label">入住</dt>
+                            <dd data-i18n="guide.check.in.val">15:00〜21:00</dd>
+                            <dt data-i18n="guide.check.out.label">退房</dt>
+                            <dd data-i18n="guide.check.out.val">次日10:00前</dd>
+                        </dl>
+                        <ul>
+                            <li data-i18n="guide.check.li1">如抵达时间延迟，请提前联系我们。</li>
+                            <li data-i18n="guide.check.li2">提前入住或延迟退房可根据空房情况商议。</li>
+                            <li data-i18n="guide.check.li3">钥匙领取与归还方式请查看预约确认后的说明。</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.facility.title">设施介绍</h3>
+                        <p data-i18n="guide.facility.p">日靜为每日仅接待一组客人的整栋出租民宿。入住期间，客房、客厅、厨房、浴室和停车场等均供您专用。</p>
+                        <ul>
+                            <li data-i18n="guide.facility.li1">最多可入住6位客人。</li>
+                            <li data-i18n="guide.facility.li2">提供2个停车位。</li>
+                            <li data-i18n="guide.facility.li3">住宿不含餐食，您可自由携带食材。</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.sauna.title">私人桑拿</h3>
+                        <p data-i18n="guide.sauna.p">KOBU SAUNA 是一座从音调津大海与晒昆布文化汲取灵感的小型桑拿。可通过含桑拿的住宿方案或追加选项使用。</p>
+                        <ul>
+                            <li data-i18n="guide.sauna.li1">请在身体状况良好时使用桑拿。</li>
+                            <li data-i18n="guide.sauna.li2">请注意补充水分，饮酒后请勿使用桑拿。</li>
+                            <li data-i18n="guide.sauna.li3">具体使用方法请查看现场说明。</li>
+                        </ul>
+                        <div class="guide-links">
+                            <a href="kobusauna" data-i18n="guide.sauna.link">查看 KOBU SAUNA</a>
+                        </div>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.kitchen.title">厨房与浴室</h3>
+                        <p data-i18n="guide.kitchen.p">可使用冰箱、烹饪器具和餐具，也可以自行烹饪或携带食物。</p>
+                        <ul>
+                            <li data-i18n="guide.kitchen.li1">使用后请清洗餐具并整理干净。</li>
+                            <li data-i18n="guide.kitchen.li2">请勿遗留食物。</li>
+                            <li data-i18n="guide.kitchen.li3">请保持淋浴间和浴室清洁。</li>
+                        </ul>
+                    </section>
+
+                    <section class="guide-card guide-card--wide">
+                        <h3 class="guide-card__title" data-i18n="guide.rules.title">住宿规则</h3>
+                        <ul>
+                            <li data-i18n="guide.rules.li1">馆内全面禁烟。吸烟请仅在指定室外区域进行。</li>
+                            <li data-i18n="guide.rules.li2">22:00〜8:00为安静时间，请顾及周边邻里。</li>
+                            <li data-i18n="guide.rules.li3">不可携带宠物。</li>
+                            <li data-i18n="guide.rules.li4">仅限已登记客人住宿或进入设施。</li>
+                            <li data-i18n="guide.rules.li5">如有备品或设备损坏、遗失，可能需负担实际费用。</li>
+                        </ul>
+                        <div class="guide-links">
+                            <a href="houserule" data-i18n="guide.rules.link">查看住宿规则</a>
+                            <a href="accommodation-terms" data-i18n="guide.rules.terms">查看住宿条款</a>
+                        </div>
+                    </section>
+
+                    <section class="guide-card guide-card--wide">
+                        <h3 class="guide-card__title" data-i18n="guide.local.title">广尾町推荐</h3>
+                        <p data-i18n="guide.local.lead">关于餐饮和观光的最新信息，也请查看广尾町观光协会官方网站。网站上还整理了季节看点和活动信息。</p>
+                        <div class="guide-links">
+                            <a href="https://hiroo-kanko.jp/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.official">查看广尾町观光协会</a>
+                        </div>
+
+                        <h4 class="guide-card__title" data-i18n="guide.food.title">餐饮与购物</h4>
+                        <div class="guide-recommend">
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r1.name">味之八幸</h4>
+                                <p data-i18n="guide.food.r1.desc">有日式料理、便当和猪肉饭等，是在町内用餐的候选之一。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E5%91%B3%E3%81%AE%E5%85%AB%E5%B9%B8/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r2.name">中餐馆 王府</h4>
+                                <p data-i18n="guide.food.r2.desc">广尾町的老字号中餐馆，适合轻松享用拉面、炒饭等餐食。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E4%B8%AD%E8%8F%AF%E6%96%99%E7%90%86%E5%BA%97-%E7%8E%8B%E5%BA%9C/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r3.name">烤肉和比呂</h4>
+                                <p data-i18n="guide.food.r3.desc">想吃一顿丰盛晚餐时可考虑的烤肉店，也提供午餐。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E7%84%BC%E8%82%89%E5%92%8C%E6%AF%94%E5%91%82/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.food.r4.name">菊地农场咖啡</h4>
+                                <p data-i18n="guide.food.r4.desc">适合自驾途中休息、甜点或轻食。建议提前确认营业日和时间。</p>
+                                <a href="https://hiroo-kanko.jp/spot/kikuchifarm-cafe/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                        </div>
+
+                        <h4 class="guide-card__title" data-i18n="guide.spot.title">观光景点</h4>
+                        <div class="guide-recommend">
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r1.name">黄金道路</h4>
+                                <p data-i18n="guide.spot.r1.desc">沿太平洋而行的绝景路线，也适合从音调津出发自驾。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E9%BB%84%E9%87%91%E9%81%93%E8%B7%AF/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r2.name">フンベ瀑布</h4>
+                                <p data-i18n="guide.spot.r2.desc">从海岸断崖流下的瀑布，可欣赏广尾特色的海岸景色。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%83%95%E3%83%B3%E3%83%99%E3%81%AE%E6%BB%9D/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r3.name">广尾海滨公园</h4>
+                                <p data-i18n="guide.spot.r3.desc">面向太平洋的临海公园，可散步、体验公园高尔夫等。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%82%B7%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E3%83%91%E3%83%BC%E3%82%AF%E5%BA%83%E5%B0%BE/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                            <article class="guide-recommend__item">
+                                <h4 data-i18n="guide.spot.r4.name">Santa Land 与大丸山森林公园</h4>
+                                <p data-i18n="guide.spot.r4.desc">广尾町代表性景点，可欣赏季节花卉和灯饰。</p>
+                                <a href="https://hiroo-kanko.jp/spot/%E3%82%B5%E3%83%B3%E3%82%BF%E3%83%A9%E3%83%B3%E3%83%89%EF%BC%86%E5%A4%A7%E4%B8%B8%E5%B1%B1%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92/" target="_blank" rel="noopener noreferrer" data-i18n="guide.local.detail">查看详情</a>
+                            </article>
+                        </div>
+                        <p class="guide-note" data-i18n="guide.local.note">本节参考广尾町观光协会公开信息。营业时间、休息日、冬季通行及活动举办情况等，请出发前在官方网站确认。</p>
+                    </section>
+
+                    <section class="guide-card">
+                        <h3 class="guide-card__title" data-i18n="guide.lost.title">遗失物与协助</h3>
+                        <p data-i18n="guide.lost.p1">退房后发现的遗失物原则上自发现日起保管7天。贵重物品可能会交至附近警察署。</p>
+                        <p data-i18n="guide.lost.p2">入住期间如需协助，请通过预约时提供的联系方式或咨询表单联系我们。</p>
+                        <div class="guide-links">
+                            <a href="contact" data-i18n="guide.lost.link">联系我们</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub" data-i18n="loading.sub">整栋出租</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./#about" data-i18n-html="nav.about.link">关于住宿<br><span>About</span></a></li>
+                    <li><a href="./#rooms" data-i18n-html="nav.rooms.link">客房介绍<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna" data-i18n-html="nav.sauna.mobile">KOBU SAUNA<span>sauna</span></a></li>
+                    <li><a href="./#rates" data-i18n-html="nav.rates.link">价格<br><span>rates</span></a></li>
+                    <li><a href="./#access" data-i18n-html="nav.access.link">交通<br><span>access</span></a></li>
+                    <li><a href="contact" data-i18n-html="nav.contact.link">联系我们<br><span>contact</span></a></li>
+                    <li><a href="guest-guide" data-i18n-html="nav.guestguide.link">住宿指南<br><span>guide</span></a></li>
+                    <li><a href="accommodation-terms">宿泊約款<br><span>terms</span></a></li>
+                    <li><a href="cancel-policy">キャンセルポリシー<br><span>cancel policy</span></a></li>
+                    <li><a href="privacy" data-i18n-html="nav.privacy.link">隐私政策<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer__sns">
+                <a href="https://www.instagram.com/nissei_guesthouse/" class="sns-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copyright">Copyright &copy; 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
