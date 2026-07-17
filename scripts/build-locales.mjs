@@ -190,6 +190,14 @@ function buildLocale(lang) {
                 /<meta\s+property="og:description"\s+content="[^"]*"/,
                 `<meta property="og:description" content="${escapeAttr(t[`${metaKey}.desc`])}"`
             );
+            html = html.replace(
+                /"name":\s*"[^"]*"/,
+                `"name": "${escapeAttr(t[`${metaKey}.title`])}"`
+            );
+            html = html.replace(
+                /"description":\s*"[^"]*"/,
+                `"description": "${escapeAttr(t[`${metaKey}.desc`])}"`
+            );
         }
 
         fs.writeFileSync(path.join(dir, file), html, 'utf8');
