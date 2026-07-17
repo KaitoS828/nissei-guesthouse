@@ -162,6 +162,38 @@
     <priority>0.4</priority>
   </url>
 
+  <!-- ====== 宿泊約款 ====== -->
+  <url>
+    <loc>https://www.gh-nissei.jp/accommodation-terms</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/en/accommodation-terms</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/zh/accommodation-terms</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gh-nissei.jp/en/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.gh-nissei.jp/zh/accommodation-terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gh-nissei.jp/accommodation-terms"/>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- ====== プライバシーポリシー ====== -->
   <url>
     <loc>https://www.gh-nissei.jp/privacy</loc>

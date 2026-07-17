@@ -11,6 +11,7 @@ const PAGES = [
     'kobusauna.html',
     'contact.html',
     'privacy.html',
+    'accommodation-terms.html',
     'cancel-policy.html',
     'houserule.html',
     '404.html',
