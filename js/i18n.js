@@ -29,6 +29,10 @@ const translations = {
 
         'rooms.title':     'お部屋紹介',
         'rooms.sub':       'rooms',
+
+        'tour.title':      '360°バーチャルツアー',
+        'tour.sub':        'virtual tour',
+        'tour.note':       '※画面をドラッグすると室内を360°ご覧いただけます',
         'rooms.stay':      '宿泊について',
         'rooms.checkin':   'チェックイン',
         'rooms.checkin.v': '15:00〜',
@@ -191,6 +195,10 @@ const translations = {
 
         'rooms.title':     'Rooms',
         'rooms.sub':       'rooms',
+
+        'tour.title':      '360° Virtual Tour',
+        'tour.sub':        'virtual tour',
+        'tour.note':       'Drag the screen to look around the house in 360°.',
         'rooms.stay':      'About Your Stay',
         'rooms.checkin':   'Check-in',
         'rooms.checkin.v': 'From 15:00',
@@ -353,6 +361,10 @@ const translations = {
 
         'rooms.title':     '客房介绍',
         'rooms.sub':       'rooms',
+
+        'tour.title':      '360°全景导览',
+        'tour.sub':        'virtual tour',
+        'tour.note':       '※拖动画面即可360°查看室内',
         'rooms.stay':      '住宿须知',
         'rooms.checkin':   '入住时间',
         'rooms.checkin.v': '15:00起',
