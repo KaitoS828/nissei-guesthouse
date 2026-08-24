@@ -51,7 +51,7 @@
         if (!toRoot) toRoot = './';
 
         // ニュースの個別記事ページなどは他言語版がないため、トップページに遷移させる
-        const isNews = dirs.includes('news') || page.startsWith('00');
+        const isNews = dirs.includes('news') || page.startsWith('00') || page === 'news.html';
         const file = isNews ? 'index.html' : page;
         const cleanFile = file === 'index.html' ? '' : file.replace(/\.html$/, '');
 
