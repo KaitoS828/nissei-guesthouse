@@ -1056,7 +1056,7 @@ a.mobile-nav__lang-btn {
 .experiences__grid {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 56px;
 }
 
 .experience-card {
@@ -1106,7 +1106,7 @@ a.mobile-nav__lang-btn {
 .experience-card__hero-image {
     position: relative;
     width: 100%;
-    height: 560px;
+    height: 420px;
     overflow: hidden;
     border-radius: 2px;
 }
@@ -1138,8 +1138,8 @@ a.mobile-nav__lang-btn {
 
 .experience-card__hero-text h3 {
     font-family: var(--font-serif);
-    font-size: 1.8rem;
-    margin-bottom: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
     line-height: 1.5;
     color: #fff;
 }
@@ -1217,7 +1217,7 @@ a.btn-arrow--boxed:hover {
     }
 
     .experience-card__hero-image {
-        height: 420px;
+        height: 320px;
     }
 
     .experience-card__hero-overlay {
