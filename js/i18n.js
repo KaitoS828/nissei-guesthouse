@@ -89,7 +89,7 @@ const translations = {
 
         'access.title':   'アクセス',
         'access.sub':     'access',
-        'access.name':    '北海道広尾町 一棟貸ゲストハウス 日靜（にっせい）',
+        'access.name':    '音調津プライベートサウナ付き一棟貸ゲストハウス日靜',
         'access.addr':    '〒089-2771 北海道広尾町音調津733',
         'access.dir1.label': '帯広駅から車で',
         'access.dir1.val':   '90分',
