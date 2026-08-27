@@ -20,7 +20,7 @@ const translations = {
 
         'about.title':     '宿について',
         'about.sub':       'About',
-        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜"は、海と山に囲まれた、<br class="br-mobile">1日1組限定のプライベートサウナ付き一棟貸しゲストハウスです。',
+        'about.desc':      '十勝の南端、北海道広尾町・音調津（おしらべつ）。<br>"日靜（にっせい）"は、海と山に囲まれた、<br class="br-mobile">1日1組限定のプライベートサウナ付き一棟貸しゲストハウスです。',
 
         'surroundings.title': '日高山脈襟裳十勝国立公園に望む',
         'surroundings.lead1': '広尾町で暮らすように泊まる、1日1組の一棟貸し宿',
@@ -89,7 +89,7 @@ const translations = {
 
         'access.title':   'アクセス',
         'access.sub':     'access',
-        'access.name':    '北海道広尾町 一棟貸しゲストハウス 日靜（にっせい）',
+        'access.name':    '北海道広尾町 一棟貸ゲストハウス 日靜（にっせい）',
         'access.addr':    '〒089-2771 北海道広尾町音調津733',
         'access.dir1.label': '帯広駅から車で',
         'access.dir1.val':   '90分',
