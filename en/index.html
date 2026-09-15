@@ -3,6 +3,18 @@
 <html lang="en">
 
 <head>
+    <!-- ローディング画面: セッション中は初回のみ表示（FOUC防止のためhead先頭で同期実行） -->
+    <script>
+    (function () {
+        try {
+            if (sessionStorage.getItem('nisseiLoadingShown')) {
+                document.documentElement.classList.add('loading-skip');
+            } else {
+                sessionStorage.setItem('nisseiLoadingShown', '1');
+            }
+        } catch (e) {}
+    })();
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWZ6JXXCSW"></script>
     <script>

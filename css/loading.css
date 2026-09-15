@@ -19,6 +19,11 @@
     visibility: hidden;
 }
 
+/* セッション中に一度表示済みの場合は初めから非表示 */
+html.loading-skip .loading-screen {
+    display: none !important;
+}
+
 .loading-logo-img {
     width: 180px;
     height: 180px;
