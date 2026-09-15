@@ -45,7 +45,7 @@ function hideLoadingScreen() {
             setTimeout(() => {
                 loadingScreen.remove();
             }, 500);
-        }, 800);
+        }, 1300);
     }
 }
 
