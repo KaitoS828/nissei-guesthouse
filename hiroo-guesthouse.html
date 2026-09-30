@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- ローディング画面: セッション中は初回のみ表示（FOUC防止のためhead先頭で同期実行） -->
+    <script>
+    (function () {
+        try {
+            if (sessionStorage.getItem('nisseiLoadingShown')) {
+                document.documentElement.classList.add('loading-skip');
+            } else {
+                sessionStorage.setItem('nisseiLoadingShown', '1');
+            }
+        } catch (e) {}
+    })();
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWZ6JXXCSW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TWZ6JXXCSW');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>広尾町のゲストハウス｜一棟貸し・貸切サウナ付きの宿「日靜」</title>
+    <meta name="description" content="広尾町音調津の一棟貸しゲストハウス「日靜」。1日1組限定・最大6名、貸切のプライベートサウナ「KOBU SAUNA」付き。帯広駅から車で約90分。アクセスと特徴をご案内します。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./img/favicon_logo.png">
+    <link rel="apple-touch-icon" href="./img/favicon_logo.png">
+    <link rel="canonical" href="https://www.gh-nissei.jp/hiroo-guesthouse">
+
+    <meta property="og:title" content="広尾町のゲストハウス｜一棟貸し・貸切サウナ付きの宿「日靜」">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gh-nissei.jp/hiroo-guesthouse">
+    <meta property="og:image" content="https://www.gh-nissei.jp/img/hero_exterior.webp">
+    <meta property="og:site_name" content="一棟貸ゲストハウス日靜">
+    <meta property="og:description" content="広尾町音調津の一棟貸しゲストハウス「日靜」。1日1組限定・最大6名、貸切のプライベートサウナ「KOBU SAUNA」付き。帯広駅から車で約90分。アクセスと特徴をご案内します。">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nissei_hostel">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "広尾町のゲストハウス｜一棟貸し・貸切サウナ付きの宿「日靜」",
+      "url": "https://www.gh-nissei.jp/hiroo-guesthouse",
+      "description": "広尾町音調津の一棟貸しゲストハウス日靜の特徴とアクセス。",
+      "inLanguage": "ja",
+      "isPartOf": {"@type":"WebSite","name":"一棟貸ゲストハウス日靜","url":"https://www.gh-nissei.jp/"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"HOME","item":"https://www.gh-nissei.jp/"},
+          {"@type":"ListItem","position":2,"name":"広尾町のゲストハウス","item":"https://www.gh-nissei.jp/hiroo-guesthouse"}
+        ]
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css?v=7">
+    <link rel="stylesheet" href="./css/loading.css?v=4">
+    <script src="./js/i18n.js?v=3" defer></script>
+    <script src="./js/lang-switch.js?v=2" defer></script>
+    <script src="./main.js?v=4" defer></script>
+
+    <style>
+        .legal-page {
+            padding: 140px 20px 100px;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+        }
+        .legal-page__inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .legal-page__updated {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 48px;
+            margin-top: 8px;
+        }
+        .legal-section {
+            margin-bottom: 48px;
+        }
+        .legal-section__title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .legal-section p,
+        .legal-section li {
+            font-size: 0.88rem;
+            line-height: 2;
+            color: var(--text-color);
+        }
+        .legal-section p + p {
+            margin-top: 12px;
+        }
+        .legal-fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.88rem;
+        }
+        .legal-fee-table th,
+        .legal-fee-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            text-align: left;
+            vertical-align: top;
+        }
+        .legal-fee-table th {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.82rem;
+            background-color: rgba(0,0,0,0.02);
+            white-space: nowrap;
+        }
+        .legal-fee-table td.fee {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            color: var(--accent-color);
+            white-space: nowrap;
+        }
+        .legal-note {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            margin-top: 12px;
+            line-height: 1.9;
+        }
+        .legal-lang-divider {
+            margin: 80px 0 40px;
+            text-align: center;
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            color: var(--text-light);
+            position: relative;
+        }
+        .legal-lang-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(0,0,0,0.1);
+            z-index: 0;
+        }
+        .legal-lang-divider span {
+            background: var(--bg-color);
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        @media (max-width: 600px) {
+            .legal-fee-table th,
+            .legal-fee-table td {
+                padding: 10px 8px;
+                font-size: 0.78rem;
+            }
+        }
+            .legal-section ul {
+            list-style: disc;
+            padding-left: 1.4em;
+        }
+        .legal-section a {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">
+            <img src="./img/loading_logo.png" alt="一棟貸ゲストハウス日靜 NISSEI" class="loading-logo-img">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="./">
+                    <span class="header__logo-sub">一棟貸ゲストハウス</span>
+                    日靜
+                    <span class="header__logo-en">Nissei</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="./#about">宿について<br><span>About</span></a></li>
+                    <li class="header__item"><a href="./#rooms">お部屋紹介<br><span>rooms</span></a></li>
+                    <li class="header__item"><a href="./#rates">料金案内<br><span>rates</span></a></li>
+                    <li class="header__item"><a href="./#access">アクセス<br><span>access</span></a></li>
+                    <li class="header__item"><a href="contact">お問い合わせ<br><span>contact</span></a></li>
+                    <li class="header__item header__item--sauna">
+                        <a href="kobusauna">KOBU SAUNAについて</a>
+                    </li>
+                    <li class="header__item header__item--reserve">
+                        <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer">空室確認・ご予約</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" aria-label="メニューを閉じる">
+            <span></span><span></span>
+        </button>
+        <div class="mobile-nav__logo">
+            <span class="mobile-nav__logo-sub">一棟貸ゲストハウス</span>
+            <span class="mobile-nav__logo-main">日靜</span>
+            <span class="mobile-nav__logo-line"></span>
+            <span class="mobile-nav__logo-en">Nissei</span>
+        </div>
+        <ul class="mobile-nav__list">
+            <li><a href="./">トップページ<span>top</span></a></li>
+            <li><a href="./#about">宿について<span>about</span></a></li>
+            <li><a href="./#rooms">お部屋紹介<span>rooms</span></a></li>
+            <li><a href="kobusauna">KOBU SAUNA<span>sauna</span></a></li>
+            <li><a href="./#rates">料金案内<span>rates</span></a></li>
+            <li><a href="./#access">アクセス<span>access</span></a></li>
+            <li><a href="contact">お問い合わせ<span>contact</span></a></li>
+        </ul>
+        <div class="mobile-nav__reserve">
+            <a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer">空室確認・ご予約</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="legal-page">
+            <div class="legal-page__inner">
+                <h2 class="section-title">広尾町のゲストハウス<br>「一棟貸ゲストハウス日靜」</h2>
+                <p class="legal-page__updated">北海道十勝・広尾町音調津</p>
+
+                <div class="legal-section">
+                    <p>一棟貸ゲストハウス日靜（にっせい）は、北海道十勝の南端、広尾町音調津（おしらべつ）にある、1日1組限定の一棟貸しのゲストハウスです。最大6名様まで、ご家族やご友人同士で貸切でご滞在いただけます。</p>
+                    <p><img src="./img/hero_exterior.webp" alt="広尾町音調津にある一棟貸しゲストハウス日靜の外観" loading="lazy" decoding="async" style="width:100%;height:auto;margin-top:16px;"></p>
+                </div>
+
+                <div class="legal-section">
+                    <h3 class="legal-section__title">広尾町で貸切のサウナ付きゲストハウス</h3>
+                    <p>敷地内には、貸切のプライベートサウナ「<a href="kobusauna">KOBU SAUNA</a>」があります。ご宿泊のほか、完全予約制の日帰りサウナもご利用いただけます。日帰りは1回2時間半（11:00～14:30）、4名様まで10,000円（税込）です。</p>
+                    <p><img src="./img/kobusauna_hero.webp" alt="広尾町の一棟貸しゲストハウス日靜のプライベートサウナ KOBU SAUNA" loading="lazy" decoding="async" style="width:100%;height:auto;margin-top:16px;"></p>
+                </div>
+
+                <div class="legal-section">
+                    <h3 class="legal-section__title">日靜の泊まり方</h3>
+                    <ul>
+                        <li>1日1組限定の一棟貸し（最大6名様）</li>
+                        <li>素泊まり。キッチン・調理器具・BBQコンロを完備しており、自炊やBBQをお楽しみいただけます</li>
+                        <li>チェックインは15:00～21:00、チェックアウトは10:00まで</li>
+                        <li>駐車場2台分あり。ペットのご同伴はお断りしています</li>
+                    </ul>
+                    <p>料金や空室は<a href="./#rates">料金案内</a>、または<a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer">予約ページ</a>でご確認ください。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h3 class="legal-section__title">広尾町・音調津について</h3>
+                    <p>音調津は、人口約80人の小さな漁師町です。スーパーやコンビニはありませんが、海と山に囲まれた静かな環境で、日常を離れてゆっくり過ごしていただけます。日高山脈襟裳十勝国立公園を望む場所にあります。</p>
+                    <p>周辺にお店が少ないため、飲み物やお食事の食材は、お越しの前にご準備いただくことをおすすめします。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h3 class="legal-section__title">広尾町・日靜へのアクセス</h3>
+                    <ul>
+                        <li>住所：〒089-2771 北海道広尾郡広尾町音調津733</li>
+                        <li>帯広駅から車で約90分</li>
+                        <li>帯広空港から車で約70分</li>
+                        <li>忠類大樹ICから車で約40分</li>
+                    </ul>
+                    <p>最寄りに公共交通機関はないため、車でのお越しをおすすめしています。詳しい地図は<a href="./#access">アクセス</a>をご覧ください。</p>
+                </div>
+
+                <div class="legal-section">
+                    <p><a href="https://reserve.gh-nissei.jp/reserve" target="_blank" rel="noopener noreferrer">空室確認・ご予約はこちら</a></p>
+                    <p><a href="./">トップページに戻る</a>　<a href="guest-guide">滞在ガイド</a>　<a href="contact">お問い合わせ</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <span class="footer__logo-sub">一棟貸ゲストハウス</span>
+                <h2>日靜</h2>
+                <p class="footer__logo-en">Nissei</p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./#about">宿について<br><span>About</span></a></li>
+                    <li><a href="./#rooms">お部屋紹介<br><span>rooms</span></a></li>
+                    <li><a href="kobusauna">KOBU SAUNA<br><span>sauna</span></a></li>
+                    <li><a href="hiroo-guesthouse">広尾町のゲストハウス<br><span>hiroo</span></a></li>
+                    <li><a href="./#rates">料金案内<br><span>rates</span></a></li>
+                    <li><a href="./#access">アクセス<br><span>access</span></a></li>
+                    <li><a href="contact">お問い合わせ<br><span>contact</span></a></li>
+                    <li><a href="guest-guide" data-i18n-html="nav.guestguide.link">滞在ガイド<br><span>guide</span></a></li>
+                    <li><a href="accommodation-terms">宿泊約款<br><span>terms</span></a></li>
+
+                    <li><a href="cancel-policy">キャンセルポリシー<br><span>cancel policy</span></a></li>
+                    <li><a href="privacy">プライバシーポリシー<br><span>privacy</span></a></li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">Copyright © 2026 guesthouses Nissei. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://reserve.gh-nissei.jp/reserve" class="floating-reserve" target="_blank" rel="noopener noreferrer">
+        空室確認・ご予約
+    </a>
+
+</body>
+</html>

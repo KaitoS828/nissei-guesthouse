@@ -301,4 +301,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://www.gh-nissei.jp/hiroo-guesthouse</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
 </urlset>
