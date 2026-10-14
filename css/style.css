@@ -1998,6 +1998,19 @@ a.btn-arrow--boxed:hover {
     text-align: center;
 }
 
+.footer__about {
+    max-width: 640px;
+    margin: 0 auto 24px;
+    font-size: 0.68rem;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+.footer__about a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .footer__press-title {
     font-size: 0.65rem;
     letter-spacing: 0.1em;
