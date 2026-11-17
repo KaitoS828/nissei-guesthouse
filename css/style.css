@@ -151,7 +151,7 @@ img {
     display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1156px) {
     .header__nav {
         display: block;
     }
@@ -292,7 +292,7 @@ a.mobile-nav__lang-btn {
     transition: all 0.3s;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1156px) {
     .header__menu-btn {
         display: none;
     }
@@ -1767,7 +1767,7 @@ a.btn-arrow--boxed:hover {
 }
 
 /* デスクトップのみ言語切替を表示 */
-@media (max-width: 1023px) {
+@media (max-width: 1155px) {
     .header__lang {
         display: none;
     }
