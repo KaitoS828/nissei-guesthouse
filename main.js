@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // お問い合わせフォームの設定
     setupContactForm();
 
+    // 予約ボタンの計測
+    setupReserveClickTracking();
+
     // ヒーロースライドショーの設定
     setupHeroSlideshow();
 
@@ -58,6 +61,9 @@ function setupContactForm() {
 
     if (form) {
         form.addEventListener('submit', function (e) {
+            // 問い合わせ件数をGA4で計測する（入力内容は送らない）
+            trackEvent('generate_lead', { form_id: 'contact' });
+
             // Formspreeに送信されるので、デフォルトの動作は維持
             // 送信後にメッセージを表示するため、少し遅延させる
             setTimeout(() => {
@@ -70,6 +76,30 @@ function setupContactForm() {
             }, 1000);
         });
     }
+}
+
+// ========================================
+// GA4イベント計測
+// ========================================
+// 広告ブロッカー等でgtagが読み込めない場合は何もしない
+function trackEvent(name, params) {
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', name, params);
+    }
+}
+
+// 予約サイトはサブドメインのためGA4の離脱クリック計測に含まれず、独自イベントで送る
+function setupReserveClickTracking() {
+    document.querySelectorAll('a[href^="https://reserve.gh-nissei.jp"]').forEach(link => {
+        link.addEventListener('click', () => {
+            // どの位置のボタンが押されたかをクラス名で区別する
+            const area = link.closest('.header, .mobile-nav, .floating-reserve, section');
+            trackEvent('reserve_click', {
+                link_area: area ? area.classList[0] : 'other',
+                page_language: document.documentElement.lang
+            });
+        });
+    });
 }
 
 // ========================================
